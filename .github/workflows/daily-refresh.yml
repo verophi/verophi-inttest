@@ -1,0 +1,131 @@
+name: Daily Refresh (Layer 2)
+
+# Daily trivy-drift check and baseline refresh. Regenerates the SBOM with live
+# trivy, runs verophi against the existing fixture requests, and verifies in
+# drift mode: pass/fail depends only on the fixed expectations (every expected
+# correlation must still be found, invariants must hold); new CVEs and score
+# shifts from the fresh SBOM do not fail the run, they only show up in the diff.
+#
+# On a green run it regenerates the baseline (frozen SBOM + expectations), runs
+# an exact self-check so the new baseline is guaranteed to pass Layer 1, and
+# opens or updates a single PR on ci/baseline-refresh. A red run fails the job
+# (alert) and opens no PR. It is read-only on the platforms: no clean, no
+# Renovate, no write tokens.
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # daily 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Shared with weekly-refresh so the two never race on the ci/baseline-refresh branch.
+concurrency:
+  group: baseline-refresh
+  cancel-in-progress: false
+
+env:
+  VEROPHI_IMAGE: ${{ vars.VEROPHI_IMAGE || 'ghcr.io/verophi/verophi:latest' }}
+  VEROPHI_TRIVY_IMAGE: ${{ vars.VEROPHI_TRIVY_IMAGE || 'ghcr.io/verophi/verophi-trivy:latest' }}
+
+jobs:
+  refresh:
+    name: Daily drift + baseline refresh (GitLab)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout verophi-inttest
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          path: verophi-inttest
+
+      - name: Checkout verophi (sibling for ../verophi replace)
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          repository: verophi/verophi
+          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
+          path: verophi
+
+      - name: Checkout verophi-devtools (gen-expectations)
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          repository: verophi/verophi-devtools
+          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
+          path: verophi-devtools
+
+      - name: Checkout test-fixtures
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          repository: verophi/test-fixtures
+          path: test-fixtures
+
+      - uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c # v6.4.0
+        with:
+          go-version-file: verophi-inttest/go.mod
+          cache-dependency-path: verophi-inttest/go.sum
+
+      - name: Log in to ghcr.io
+        uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull images
+        run: |
+          docker pull "$VEROPHI_IMAGE"
+          docker pull "$VEROPHI_TRIVY_IMAGE"
+
+      - name: Fresh SBOM + drift verify (GitLab, existing requests)
+        working-directory: verophi-inttest
+        env:
+          VEROPHI_GITLAB_TOKEN: ${{ secrets.VEROPHI_GITLAB_TOKEN }}
+        run: make drift-gitlab
+
+      # The steps below run only if drift verification passed.
+      - name: Regenerate baseline (expectations + frozen SBOM)
+        working-directory: verophi-devtools
+        run: |
+          go run ./tools/gen-expectations \
+            --result ../verophi-inttest/out/results/gitlab.json \
+            --out ../verophi-inttest/expectations.yaml
+          cp ../verophi-inttest/out/sboms/sbom-frozen.json \
+             ../verophi-inttest/testdata/sbom-frozen.json
+
+      - name: Exact self-check (the new baseline must pass Layer 1)
+        working-directory: verophi-inttest
+        run: go run ./tools/verify --expectations expectations.yaml --result out/results/gitlab.json --mode exact
+
+      - name: Open or update baseline-refresh PR
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
+          path: verophi-inttest
+          branch: ci/baseline-refresh
+          base: main
+          title: "chore: refresh E2E baseline (frozen SBOM + expectations)"
+          commit-message: "chore: refresh E2E baseline from scheduled drift run"
+          body: |
+            Automated baseline refresh from a scheduled drift run.
+
+            Drift verification passed, so every pinned correlation still holds and
+            the pipeline is healthy. This diff reflects new upstream CVEs or score
+            shifts in the fresh SBOM rather than a regression. An exact self-check
+            confirmed the regenerated baseline passes the Layer 1 gate.
+
+            Review the diff before merging: it becomes the new deterministic
+            baseline the regression gate runs against.
+          labels: |
+            ci
+            baseline-refresh
+          delete-branch: false
+
+      - name: Upload run artifacts
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: daily-refresh-gitlab
+          path: |
+            verophi-inttest/out/results/gitlab.json
+          retention-days: 30
+          if-no-files-found: ignore

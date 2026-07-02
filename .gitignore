@@ -1,0 +1,23 @@
+# Binaries
+verophi
+analyze-log
+bin/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Go
+*.test
+.env
+!.env.example
+*.pem
+
+# Generated output (SBOMs, logs, etc.)
+out/
+!out/sboms/.gitkeep
+!out/logs/.gitkeep
+!out/results/.gitkeep

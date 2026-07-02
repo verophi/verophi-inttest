@@ -1,0 +1,43 @@
+name: Regression (Layer 1)
+
+# Thin caller of the reusable layer1.yml. The actual steps live there so the same
+# logic backs the PR gate (in verophi and here), the post-publish confirmation,
+# and the nightly safety net.
+#
+# Triggers:
+#   - repository_dispatch (verophi-image-published): verophi fires this after
+#     publishing an image; it is validated end to end against that exact image
+#     and the matching verophi ref.
+#   - pull_request: validate changes to the harness (verify tool, expectations,
+#     frozen SBOM) against the current released image.
+#   - schedule: daily safety net.
+#   - workflow_dispatch: manual / ad hoc.
+
+on:
+  repository_dispatch:
+    types: [verophi-image-published]
+  pull_request:
+  schedule:
+    - cron: "0 2 * * *" # daily 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: read
+
+concurrency:
+  group: regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  layer1:
+    uses: ./.github/workflows/layer1.yml
+    with:
+      # On a dispatch: the published image and its tag. Otherwise the configured
+      # default image (latest). Empty image would trigger an ephemeral build,
+      # which is the verophi PR gate's job, not this workflow's.
+      image: ${{ github.event.client_payload.image || vars.VEROPHI_IMAGE || 'ghcr.io/verophi/verophi:latest' }}
+      verophi-ref: ${{ github.event.client_payload.ref || '' }}
+      # On a PR here, test the PR's harness; otherwise the triggering ref (main).
+      inttest-ref: ${{ github.event.pull_request.head.sha || github.sha }}
+    secrets: inherit

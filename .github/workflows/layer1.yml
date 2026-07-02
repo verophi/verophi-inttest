@@ -1,0 +1,133 @@
+name: Layer 1 (E2E regression, reusable)
+
+# Deterministic end-to-end regression against the committed frozen SBOM, verified
+# in exact mode for both platforms. Reusable (workflow_call) so the same logic
+# backs the PR gate, the post-publish confirmation, and the nightly safety net.
+#
+# Two ways to supply the verophi under test:
+#   - image set: pull that published image (post-publish dispatch / nightly).
+#   - image empty: check out verophi at verophi-ref and build an ephemeral local
+#     image. Nothing is pushed to any registry (the "no pile of snapshots" path).
+#
+# Reusable workflows run in the CALLER's repo context, so a bare checkout would
+# grab the caller, not this repo. Both repos are therefore checked out explicitly
+# by name. The verify tool imports ../verophi pkg/model, so verophi-ref must match
+# the schema of the image under test.
+
+on:
+  workflow_call:
+    inputs:
+      image:
+        description: "verophi image to test; empty builds an ephemeral image from verophi-ref"
+        type: string
+        required: false
+        default: ""
+      verophi-ref:
+        description: "verophi git ref (verify decoder + ephemeral build); empty = default branch"
+        type: string
+        required: false
+        default: ""
+      inttest-ref:
+        description: "verophi-inttest git ref (the harness); empty = default branch"
+        type: string
+        required: false
+        default: ""
+    secrets:
+      VEROPHI_REPO_TOKEN:
+        description: "PAT to check out the still-private verophi / verophi-inttest repos"
+        required: false
+      VEROPHI_GITHUB_TOKEN:
+        description: "GitHub API token for the analyze step (optional for public repos)"
+        required: false
+      VEROPHI_GITLAB_TOKEN:
+        description: "GitLab API token for the analyze step (optional for public projects)"
+        required: false
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  regression:
+    name: Regression (${{ matrix.platform }}, frozen SBOM)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [github, gitlab]
+    defaults:
+      run:
+        working-directory: verophi-inttest
+    env:
+      VEROPHI_IMAGE: ${{ inputs.image != '' && inputs.image || 'verophi:ephemeral' }}
+    steps:
+      - name: Require platform token (fail fast on fork PRs without org secrets)
+        working-directory: ${{ github.workspace }}
+        env:
+          VEROPHI_GITHUB_TOKEN: ${{ secrets.VEROPHI_GITHUB_TOKEN }}
+          VEROPHI_GITLAB_TOKEN: ${{ secrets.VEROPHI_GITLAB_TOKEN }}
+        run: |
+          if [ "${{ matrix.platform }}" = "github" ]; then tok="$VEROPHI_GITHUB_TOKEN"; else tok="$VEROPHI_GITLAB_TOKEN"; fi
+          if [ -z "$tok" ]; then
+            echo "::error::No ${{ matrix.platform }} token. The E2E layer needs the org secrets, which GitHub does not share with fork pull requests. Open the PR from a branch in the repo, not a fork." >&2
+            exit 1
+          fi
+
+      - name: Checkout verophi-inttest (harness)
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          repository: verophi/verophi-inttest
+          ref: ${{ inputs.inttest-ref }}
+          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
+          path: verophi-inttest
+
+      - name: Checkout verophi (sibling for ../verophi replace + ephemeral build)
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          repository: verophi/verophi
+          ref: ${{ inputs.verophi-ref }}
+          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
+          path: verophi
+
+      - uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c # v6.4.0
+        with:
+          go-version-file: verophi-inttest/go.mod
+          cache-dependency-path: verophi-inttest/go.sum
+
+      - name: Build ephemeral verophi image (only when no image was provided)
+        if: ${{ inputs.image == '' }}
+        working-directory: verophi
+        env:
+          CGO_ENABLED: "0"
+          GOOS: linux
+          GOARCH: amd64
+        run: |
+          go build -trimpath -ldflags="-s -w" -o verophi ./cmd/verophi
+          docker build -t verophi:ephemeral -f Dockerfile .
+
+      - name: Log in to ghcr.io (only when pulling a published image)
+        if: ${{ inputs.image != '' }}
+        uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull verophi image (only when one was provided)
+        if: ${{ inputs.image != '' }}
+        run: docker pull "$VEROPHI_IMAGE"
+
+      - name: Run regression (exact, against the committed frozen SBOM)
+        env:
+          VEROPHI_GITHUB_TOKEN: ${{ secrets.VEROPHI_GITHUB_TOKEN }}
+          VEROPHI_GITLAB_TOKEN: ${{ secrets.VEROPHI_GITLAB_TOKEN }}
+        run: make test-${{ matrix.platform }} MODE=exact
+
+      - name: Upload analysis result on failure
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: regression-${{ matrix.platform }}-result
+          path: verophi-inttest/out/results/${{ matrix.platform }}.json
+          retention-days: 14
+          if-no-files-found: ignore
