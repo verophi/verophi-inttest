@@ -34,6 +34,17 @@ jobs:
     name: Daily drift + baseline refresh (GitLab)
     runs-on: ubuntu-latest
     steps:
+      - name: Mint verophi-ci token (devtools checkout + baseline PR)
+        id: ci_token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          app-id: ${{ vars.VEROPHI_CI_APP_ID }}
+          private-key: ${{ secrets.VEROPHI_CI_APP_PRIVATE_KEY }}
+          owner: verophi
+          repositories: |
+            verophi-inttest
+            verophi-devtools
+
       - name: Checkout verophi-inttest
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
@@ -43,14 +54,13 @@ jobs:
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           repository: verophi/verophi
-          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
           path: verophi
 
       - name: Checkout verophi-devtools (gen-expectations)
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           repository: verophi/verophi-devtools
-          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
+          token: ${{ steps.ci_token.outputs.token }}
           path: verophi-devtools
 
       - name: Checkout test-fixtures
@@ -99,7 +109,7 @@ jobs:
       - name: Open or update baseline-refresh PR
         uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:
-          token: ${{ secrets.VEROPHI_REPO_TOKEN }}
+          token: ${{ steps.ci_token.outputs.token }}
           path: verophi-inttest
           branch: ci/baseline-refresh
           base: main
