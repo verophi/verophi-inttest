@@ -115,9 +115,11 @@ jobs:
         run: go run ./tools/verify --expectations expectations.yaml --result out/results/gitlab.json --mode exact
 
       - name: Open or update baseline-refresh PR
+        id: cpr
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           token: ${{ steps.ci_token.outputs.token }}
+          sign-commits: true
           path: verophi-inttest
           branch: ci/baseline-refresh
           base: main
@@ -138,6 +140,12 @@ jobs:
             ci
             baseline-refresh
           delete-branch: false
+
+      - name: Enable auto-merge on the baseline PR
+        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
+        env:
+          GH_TOKEN: ${{ steps.ci_token.outputs.token }}
+        run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}" --repo verophi/verophi-inttest
 
       - name: Upload run artifacts
         if: always()
