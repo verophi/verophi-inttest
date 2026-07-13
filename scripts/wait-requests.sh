@@ -41,7 +41,8 @@ count_github() {
 # count_gitlab prints the number of open Renovate MRs.
 count_gitlab() {
   local repo="${RENOVATE_GITLAB_TEST_FIXTURE_REPO:-verophi/test-fixtures}"
-  glab mr list --source-branch "renovate/" --state opened -P 100 -F json -R "$repo" 2>/dev/null | jq 'length'
+  glab mr list -P 100 -F json -R "$repo" 2>/dev/null \
+    | jq '[.[] | select(.source_branch | startswith("renovate/"))] | length'
 }
 
 setup_github() {

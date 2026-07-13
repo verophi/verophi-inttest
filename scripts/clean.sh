@@ -68,19 +68,21 @@ clean_gitlab() {
 
   echo "==> Closing Renovate MRs on GitLab ($repo)..."
   local mr_count=0
-  for iid in $(glab mr list --source-branch "renovate/" --state opened -F json -R "$repo" 2>/dev/null | jq -r '.[].iid'); do
+  for iid in $(glab mr list -F json -R "$repo" 2>/dev/null | jq -r '.[] | select(.source_branch | startswith("renovate/")) | .iid'); do
     echo "    Closing MR !$iid"
-    glab mr close "$iid" -R "$repo" -y
+    glab mr close "$iid" -R "$repo"
     ((mr_count++))
   done
 
   echo "==> Deleting renovate/* branches on GitLab..."
   local branch_count=0
-  for branch in $(glab api "projects/:id/repository/branches?search=renovate/&per_page=100" -R "$repo" --paginate 2>/dev/null | jq -r '.[].name'); do
+  local project
+  project="$(printf '%s' "$repo" | jq -Rr @uri)"
+  for branch in $(glab api "projects/$project/repository/branches?search=renovate/&per_page=100" -R "$repo" --paginate 2>/dev/null | jq -r '.[].name'); do
     local encoded_branch
     encoded_branch="$(printf '%s' "$branch" | jq -Rr @uri)"
     echo "    Deleting branch $branch"
-    glab api --method DELETE "projects/:id/repository/branches/$encoded_branch" -R "$repo"
+    glab api --method DELETE "projects/$project/repository/branches/$encoded_branch" -R "$repo"
     ((branch_count++))
   done
 
