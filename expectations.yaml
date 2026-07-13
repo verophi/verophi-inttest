@@ -22,10 +22,10 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 184
+    totalAdvisories: 185
     severity: {critical: 19, high: 92, medium: 50, low: 17}
     correlated: 47
-    uncorrelated: 137
+    uncorrelated: 138
     totalImpactScore: 637
     reducibleImpactScore: 219
     matchedRequests: 22
@@ -2057,4 +2057,12 @@ uncorrelatedAdvisories:
         - dependencyName: crass
           affectedVersion: 1.0.6
           fixVersion: 1.0.7
+          addressed: false
+    - id: GO-2026-5932
+      severity: unknown
+      dependency: golang.org/x/crypto@v0.16.0
+      occurrences:
+        - dependencyName: golang.org/x/crypto
+          affectedVersion: v0.16.0
+          fixVersion: ""
           addressed: false
