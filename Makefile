@@ -82,7 +82,7 @@ test-all: test-github test-gitlab ## Run both platform tests
 
 .PHONY: renovate-github renovate-gitlab
 renovate-github: ## Run Renovate against GitHub (creates PRs)
-	@test -n "$(RENOVATE_GITHUB_APP_ID)" || (echo "ERROR: RENOVATE_GITHUB_APP_ID is required" >&2; exit 1)
+	@test -n "$(RENOVATE_GITHUB_TOKEN)$(RENOVATE_GITHUB_APP_ID)" || (echo "ERROR: set RENOVATE_GITHUB_TOKEN or RENOVATE_GITHUB_APP_ID" >&2; exit 1)
 	@./scripts/renovate.sh github
 
 renovate-gitlab: ## Run Renovate against GitLab (creates MRs)
@@ -130,7 +130,7 @@ wait-gitlab: ## Wait until open Renovate MRs on GitLab settle
 
 # --- Drift verification (fresh SBOM, existing requests) ---
 
-.PHONY: drift-github drift-gitlab
+.PHONY: drift-github drift-gitlab drift-all
 drift-github: ## Generate a fresh SBOM and verify GitHub in drift mode (no clean/renovate)
 	@$(MAKE) sboms
 	@$(MAKE) test-github SBOM_DIR=$(SBOM_OUT_DIR) MODE=drift
@@ -139,20 +139,42 @@ drift-gitlab: ## Generate a fresh SBOM and verify GitLab in drift mode (no clean
 	@$(MAKE) sboms
 	@$(MAKE) test-gitlab SBOM_DIR=$(SBOM_OUT_DIR) MODE=drift
 
-# --- Full E2E Cycle (clean slate, live, drift mode) ---
+drift-all: ## One fresh SBOM, drift verify both platforms
+	@$(MAKE) sboms
+	@$(MAKE) test-github SBOM_DIR=$(SBOM_OUT_DIR) MODE=drift
+	@$(MAKE) test-gitlab SBOM_DIR=$(SBOM_OUT_DIR) MODE=drift
 
-.PHONY: e2e-github e2e-gitlab
-e2e-github: ## Full cycle (GitHub): clean -> renovate -> wait -> fresh SBOM -> drift verify
+# --- Seed (clean slate: close + recreate PRs/MRs, no drift) ---
+
+.PHONY: seed-github seed-gitlab seed-all
+seed-github: ## Clean slate on GitHub: close existing PRs/branches, run Renovate, wait to settle
 	@$(MAKE) clean-github
 	@$(MAKE) renovate-github
 	@$(MAKE) wait-github
-	@$(MAKE) drift-github
 
-e2e-gitlab: ## Full cycle (GitLab): clean -> renovate -> wait -> fresh SBOM -> drift verify
+seed-gitlab: ## Clean slate on GitLab: close existing MRs/branches, run Renovate, wait to settle
 	@$(MAKE) clean-gitlab
 	@$(MAKE) renovate-gitlab
 	@$(MAKE) wait-gitlab
+
+seed-all: ## Clean slate on both platforms
+	@$(MAKE) seed-github
+	@$(MAKE) seed-gitlab
+
+# --- Full E2E Cycle (seed + drift; local use) ---
+
+.PHONY: e2e-github e2e-gitlab e2e-all
+e2e-github: ## Full cycle (GitHub): seed + drift verify
+	@$(MAKE) seed-github
+	@$(MAKE) drift-github
+
+e2e-gitlab: ## Full cycle (GitLab): seed + drift verify
+	@$(MAKE) seed-gitlab
 	@$(MAKE) drift-gitlab
+
+e2e-all: ## Full cycle on both platforms
+	@$(MAKE) e2e-github
+	@$(MAKE) e2e-gitlab
 
 # --- Help ---
 

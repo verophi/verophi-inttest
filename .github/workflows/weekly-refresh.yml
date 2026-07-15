@@ -1,77 +1,43 @@
 name: Weekly Refresh (Layer 3)
 
-# Weekly clean-slate full cycle. Deletes and recreates the fixture MRs with
-# Renovate, regenerates the SBOM with live trivy, runs verophi, and verifies in
-# drift mode. Over the daily run it additionally catches Renovate drift: a new
-# Renovate version changing target versions or change types surfaces here.
-#
-# On a green run it regenerates the baseline, runs an exact self-check, and opens
-# or updates the same ci/baseline-refresh PR as the daily run. A red run fails
-# the job (alert) and opens no PR. This cycle is destructive and needs write
-# credentials, so it never runs on pull_request: schedule and manual only.
-
 on:
   schedule:
-    - cron: "0 3 * * 1" # Monday 03:00 UTC (Sunday night)
+    - cron: "0 3 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: read
 
-# Shared with daily-refresh so the two never race on the ci/baseline-refresh branch.
 concurrency:
   group: baseline-refresh
   cancel-in-progress: false
 
-env:
-  VEROPHI_IMAGE: ${{ vars.VEROPHI_IMAGE || 'ghcr.io/verophi/verophi:latest' }}
-  VEROPHI_TRIVY_IMAGE: ${{ vars.VEROPHI_TRIVY_IMAGE || 'ghcr.io/verophi/verophi-trivy:latest' }}
-  GLAB_VERSION: 1.48.0
-
 jobs:
-  refresh:
-    name: Weekly clean-slate cycle + baseline refresh (GitLab)
+  seed:
+    name: Clean-slate seed (Gitlab/Github)
     runs-on: ubuntu-latest
+    env:
+      VEROPHI_IMAGE: ${{ vars.VEROPHI_IMAGE || 'ghcr.io/verophi/verophi:latest' }}
+      VEROPHI_TRIVY_IMAGE: ${{ vars.VEROPHI_TRIVY_IMAGE || 'ghcr.io/verophi/verophi-trivy:latest' }}
+      GLAB_VERSION: "1.108.0"
     steps:
-      - name: Mint verophi-ci token (devtools checkout + baseline PR)
-        id: ci_token
+      - name: Mint verophi-fixtures token (recreate github fixture PRs)
+        id: fixtures_token
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
         with:
-          client-id: ${{ vars.VEROPHI_CI_APP_CLIENT_ID }}
-          private-key: ${{ secrets.VEROPHI_CI_APP_PRIVATE_KEY }}
+          client-id: ${{ vars.VEROPHI_FIXTURES_APP_CLIENT_ID }}
+          private-key: ${{ secrets.VEROPHI_FIXTURES_APP_PRIVATE_KEY }}
           owner: verophi
-          repositories: |
-            verophi-inttest
-            verophi-devtools
+          repositories: test-fixtures
 
-      - name: Checkout verophi-inttest
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           path: verophi-inttest
 
-      - name: Checkout verophi (sibling for ../verophi replace)
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-        with:
-          repository: verophi/verophi
-          path: verophi
-
-      - name: Checkout verophi-devtools (gen-expectations)
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-        with:
-          repository: verophi/verophi-devtools
-          token: ${{ steps.ci_token.outputs.token }}
-          path: verophi-devtools
-
-      - name: Checkout test-fixtures
-        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           repository: verophi/test-fixtures
           path: test-fixtures
-
-      - uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c # v6.4.0
-        with:
-          go-version-file: verophi-inttest/go.mod
-          cache-dependency-path: verophi-inttest/go.sum
 
       - name: Install glab
         run: |
@@ -80,80 +46,23 @@ jobs:
           tar -xzf /tmp/glab.tar.gz -C /tmp
           sudo install /tmp/bin/glab /usr/local/bin/glab
 
-      - name: Log in to ghcr.io
-        uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4.2.0
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Pull images
-        run: |
-          docker pull "$VEROPHI_IMAGE"
-          docker pull "$VEROPHI_TRIVY_IMAGE"
-
-      - name: Full cycle (GitLab, clean slate, drift verify)
+      - name: Seed (Gitlab/Github)
         working-directory: verophi-inttest
         env:
+          RENOVATE_GITHUB_TOKEN: ${{ steps.fixtures_token.outputs.token }}
           RENOVATE_GITLAB_TOKEN: ${{ secrets.RENOVATE_GITLAB_TOKEN }}
           RENOVATE_GITHUB_COM_TOKEN: ${{ secrets.RENOVATE_GITHUB_COM_TOKEN }}
-          VEROPHI_GITLAB_TOKEN: ${{ secrets.VEROPHI_GITLAB_TOKEN }}
-        run: make e2e-gitlab
+        run: make seed-all
 
-      # The steps below run only if the full cycle (including drift verify) passed.
-      - name: Regenerate baseline (expectations + frozen SBOM)
-        working-directory: verophi-devtools
-        run: |
-          go run ./tools/gen-expectations \
-            --result ../verophi-inttest/out/results/gitlab.json \
-            --out ../verophi-inttest/expectations.yaml
-          cp ../verophi-inttest/out/sboms/sbom-frozen.json \
-             ../verophi-inttest/testdata/sbom-frozen.json
-
-      - name: Exact self-check (the new baseline must pass Layer 1)
-        working-directory: verophi-inttest
-        run: go run ./tools/verify --expectations expectations.yaml --result out/results/gitlab.json --mode exact
-
-      - name: Open or update baseline-refresh PR
-        id: cpr
-        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
-        with:
-          token: ${{ steps.ci_token.outputs.token }}
-          sign-commits: true
-          path: verophi-inttest
-          branch: ci/baseline-refresh
-          base: main
-          title: "chore: refresh E2E baseline (frozen SBOM + expectations)"
-          commit-message: "chore: refresh E2E baseline from weekly clean-slate cycle"
-          body: |
-            Automated baseline refresh from the weekly clean-slate cycle.
-
-            The fixture MRs were recreated with Renovate and drift verification
-            passed, so every pinned correlation still holds. This diff reflects new
-            upstream CVEs, Renovate output, or score shifts rather than a
-            regression. An exact self-check confirmed the regenerated baseline
-            passes the Layer 1 gate.
-
-            Review the diff before merging: it becomes the new deterministic
-            baseline the regression gate runs against.
-          labels: |
-            ci
-            baseline-refresh
-          delete-branch: false
-
-      - name: Enable auto-merge on the baseline PR
-        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
-        env:
-          GH_TOKEN: ${{ steps.ci_token.outputs.token }}
-        run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}" --repo verophi/verophi-inttest
-
-      - name: Upload run artifacts
-        if: always()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: weekly-refresh-gitlab
-          path: |
-            verophi-inttest/out/results/gitlab.json
-            verophi-inttest/out/logs/
-          retention-days: 30
-          if-no-files-found: ignore
+  refresh:
+    needs: seed
+    uses: ./.github/workflows/refresh.yml
+    with:
+      pr-commit-message: "chore: refresh E2E baseline from weekly clean-slate cycle"
+      artifact-name: weekly-refresh-results
+      pr-body: |
+        Automated baseline refresh from the weekly clean-slate cycle. Fixture
+        MRs/PRs were recreated with Renovate on both platforms and drift
+        verification passed; this diff reflects upstream CVE, Renovate, or
+        score changes, not a regression.
+    secrets: inherit
