@@ -38,7 +38,7 @@ clean_github() {
   for number in $(gh pr list --repo "$repo" --label renovate --json number -q '.[].number'); do
     echo "    Closing PR #$number + deleting branch"
     gh pr close "$number" --repo "$repo" --delete-branch
-    ((pr_count++))
+    pr_count=$((pr_count + 1))
   done
 
   echo "==> Deleting remaining renovate/* branches on GitHub..."
@@ -46,7 +46,7 @@ clean_github() {
   for branch in $(gh api "repos/$repo/branches" --paginate -q '.[].name | select(startswith("renovate/"))'); do
     echo "    Deleting branch $branch"
     gh api --method DELETE "repos/$repo/git/refs/heads/$branch"
-    ((branch_count++))
+    branch_count=$((branch_count + 1))
   done
 
   echo "==> Done. Closed $pr_count PRs, deleted $branch_count branches."
@@ -71,7 +71,7 @@ clean_gitlab() {
   for iid in $(glab mr list -F json -R "$repo" 2>/dev/null | jq -r '.[] | select(.source_branch | startswith("renovate/")) | .iid'); do
     echo "    Closing MR !$iid"
     glab mr close "$iid" -R "$repo"
-    ((mr_count++))
+    mr_count=$((mr_count + 1))
   done
 
   echo "==> Deleting renovate/* branches on GitLab..."
@@ -83,7 +83,7 @@ clean_gitlab() {
     encoded_branch="$(printf '%s' "$branch" | jq -Rr @uri)"
     echo "    Deleting branch $branch"
     glab api --method DELETE "projects/$project/repository/branches/$encoded_branch" -R "$repo"
-    ((branch_count++))
+    branch_count=$((branch_count + 1))
   done
 
   echo "==> Done. Closed $mr_count MRs, deleted $branch_count branches."
