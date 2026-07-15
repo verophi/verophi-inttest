@@ -18,20 +18,20 @@ MODE="${1:-}"
 clean_github() {
   local repo="${RENOVATE_GITHUB_TEST_FIXTURE_REPO:-verophi/test-fixtures}"
 
-  if [ -z "${RENOVATE_GITHUB_APP_ID:-}" ]; then
-    echo "ERROR: RENOVATE_GITHUB_APP_ID is required" >&2
+  export GH_PAGER=""
+  export GH_TOKEN
+  if [ -n "${RENOVATE_GITHUB_TOKEN:-}" ]; then
+    GH_TOKEN="$RENOVATE_GITHUB_TOKEN"
+  elif [ -n "${RENOVATE_GITHUB_APP_ID:-}" ]; then
+    GH_TOKEN="$(gh token generate \
+      --app-id "${RENOVATE_GITHUB_APP_ID}" \
+      --installation-id "${RENOVATE_GITHUB_APP_INSTALLATION_ID:-}" \
+      --key "$ROOT_DIR/${RENOVATE_GITHUB_APP_KEY_FILE:-verophi-renovate.private-key.pem}" \
+      --token-only)"
+  else
+    echo "ERROR: set RENOVATE_GITHUB_TOKEN or RENOVATE_GITHUB_APP_ID" >&2
     exit 1
   fi
-
-  export GH_PAGER=""
-
-  # Generate installation token for gh CLI
-  export GH_TOKEN
-  GH_TOKEN="$(gh token generate \
-    --app-id "${RENOVATE_GITHUB_APP_ID}" \
-    --installation-id "${RENOVATE_GITHUB_APP_INSTALLATION_ID:-}" \
-    --key "$ROOT_DIR/${RENOVATE_GITHUB_APP_KEY_FILE:-verophi-renovate.private-key.pem}" \
-    --token-only)"
 
   echo "==> Closing Renovate PRs on GitHub ($repo)..."
   local pr_count=0

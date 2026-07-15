@@ -45,8 +45,8 @@ ENV_ARGS=()
 
 case "$MODE" in
   github)
-    if [ -z "${RENOVATE_GITHUB_APP_ID:-}" ]; then
-      echo "ERROR: RENOVATE_GITHUB_APP_ID is required." >&2
+    if [ -z "${RENOVATE_GITHUB_TOKEN:-}" ] && [ -z "${RENOVATE_GITHUB_APP_ID:-}" ]; then
+      echo "ERROR: set RENOVATE_GITHUB_TOKEN or RENOVATE_GITHUB_APP_ID." >&2
       exit 1
     fi
 
@@ -89,15 +89,19 @@ esac
 # --- GitHub App auth (github mode only) ---
 
 if [ "$PLATFORM" = "github" ]; then
-  echo "    Generating GitHub App installation token..."
-  RENOVATE_TOKEN="$(gh token generate \
-    --app-id "${RENOVATE_GITHUB_APP_ID}" \
-    --installation-id "${RENOVATE_GITHUB_APP_INSTALLATION_ID:-}" \
-    --key "$ROOT_DIR/${RENOVATE_GITHUB_APP_KEY_FILE:-verophi-renovate.private-key.pem}" \
-    --token-only)"
+  if [ -n "${RENOVATE_GITHUB_TOKEN:-}" ]; then
+    RENOVATE_TOKEN="$RENOVATE_GITHUB_TOKEN"
+  else
+    echo "    Generating GitHub App installation token..."
+    RENOVATE_TOKEN="$(gh token generate \
+      --app-id "${RENOVATE_GITHUB_APP_ID}" \
+      --installation-id "${RENOVATE_GITHUB_APP_INSTALLATION_ID:-}" \
+      --key "$ROOT_DIR/${RENOVATE_GITHUB_APP_KEY_FILE:-verophi-renovate.private-key.pem}" \
+      --token-only)"
+  fi
 
   if [ -z "$RENOVATE_TOKEN" ]; then
-    echo "ERROR: Failed to generate GitHub App installation token." >&2
+    echo "ERROR: Failed to obtain a GitHub token." >&2
     exit 1
   fi
 
