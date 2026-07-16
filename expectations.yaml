@@ -23,10 +23,10 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 187
-    severity: {critical: 19, high: 92, medium: 51, low: 16}
+    severity: {critical: 19, high: 92, medium: 52, low: 15}
     correlated: 47
     uncorrelated: 140
-    totalImpactScore: 638
+    totalImpactScore: 639
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1666,6 +1666,15 @@ uncorrelatedAdvisories:
           affectedVersion: 2.31.0
           fixVersion: 2.33.0
           addressed: false
+    - id: CVE-2026-28898
+      severity: medium
+      dependency: github.com/apple/swift-nio-http2@1.25.0
+      recommendation: Upgrade github.com/apple/swift-nio-http2 to version 1.44.0
+      occurrences:
+        - dependencyName: github.com/apple/swift-nio-http2
+          affectedVersion: 1.25.0
+          fixVersion: 1.44.0
+          addressed: false
     - id: CVE-2026-28970
       severity: medium
       dependency: github.com/apple/swift-nio@2.55.0
@@ -1877,15 +1886,6 @@ uncorrelatedAdvisories:
         - dependencyName: actionpack
           affectedVersion: 6.1.4
           fixVersion: 7.0.8.7
-          addressed: false
-    - id: CVE-2026-28898
-      severity: low
-      dependency: github.com/apple/swift-nio-http2@1.25.0
-      recommendation: Upgrade github.com/apple/swift-nio-http2 to version 1.44.1
-      occurrences:
-        - dependencyName: github.com/apple/swift-nio-http2
-          affectedVersion: 1.25.0
-          fixVersion: 1.44.1
           addressed: false
     - id: CVE-2026-42040
       severity: low
