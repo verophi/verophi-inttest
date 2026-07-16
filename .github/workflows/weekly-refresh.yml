@@ -51,7 +51,7 @@ jobs:
         env:
           RENOVATE_GITHUB_TOKEN: ${{ steps.fixtures_token.outputs.token }}
           RENOVATE_GITLAB_TOKEN: ${{ secrets.RENOVATE_GITLAB_TOKEN }}
-          RENOVATE_GITHUB_COM_TOKEN: ${{ secrets.RENOVATE_GITHUB_COM_TOKEN }}
+          RENOVATE_GITHUB_COM_TOKEN: ${{ steps.fixtures_token.outputs.token }}
         run: make seed-all
 
   refresh:
