@@ -1,6 +1,6 @@
 module github.com/verophi/verophi-inttest
 
-go 1.26
+go 1.26.5
 
 require (
 	github.com/verophi/verophi v0.0.0
