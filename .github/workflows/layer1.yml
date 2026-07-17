@@ -93,7 +93,7 @@ jobs:
           GOOS: linux
           GOARCH: amd64
         run: |
-          go build -trimpath -ldflags="-s -w" -o verophi ./cmd/verophi
+          go build -trimpath -ldflags="-s -w" -o verophi-amd64 ./cmd/verophi
           docker build -t verophi:ephemeral -f Dockerfile .
 
       - name: Log in to ghcr.io (only when pulling a published image)
