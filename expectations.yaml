@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 187
-    severity: {critical: 19, high: 92, medium: 52, low: 15}
+    totalAdvisories: 191
+    severity: {critical: 19, high: 92, medium: 53, low: 15}
     correlated: 47
-    uncorrelated: 140
-    totalImpactScore: 639
+    uncorrelated: 144
+    totalImpactScore: 641
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1833,6 +1833,15 @@ uncorrelatedAdvisories:
           affectedVersion: 1.13.10
           fixVersion: 1.19.4
           addressed: false
+    - id: GHSA-9wjq-cp2p-hrgf
+      severity: medium
+      dependency: loofah@2.25.1
+      recommendation: Upgrade loofah to version >= 2.25.2
+      occurrences:
+        - dependencyName: loofah
+          affectedVersion: 2.25.1
+          fixVersion: 2.25.2
+          addressed: false
     - id: GHSA-pxvg-2qj5-37jq
       severity: medium
       dependency: nokogiri@1.13.10
@@ -2031,6 +2040,15 @@ uncorrelatedAdvisories:
           affectedVersion: v0.14.0
           fixVersion: 0.39.0
           addressed: false
+    - id: GHSA-5qhf-9phg-95m2
+      severity: unknown
+      dependency: loofah@2.25.1
+      recommendation: Upgrade loofah to version >= 2.25.2
+      occurrences:
+        - dependencyName: loofah
+          affectedVersion: 2.25.1
+          fixVersion: 2.25.2
+          addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
       dependency: crass@1.0.6
@@ -2057,6 +2075,24 @@ uncorrelatedAdvisories:
         - dependencyName: crass
           affectedVersion: 1.0.6
           fixVersion: 1.0.7
+          addressed: false
+    - id: GHSA-8whx-365g-h9vv
+      severity: unknown
+      dependency: loofah@2.25.1
+      recommendation: Upgrade loofah to version >= 2.25.2
+      occurrences:
+        - dependencyName: loofah
+          affectedVersion: 2.25.1
+          fixVersion: 2.25.2
+          addressed: false
+    - id: GHSA-cj75-f6xr-r4g7
+      severity: unknown
+      dependency: rails-html-sanitizer@1.5.0
+      recommendation: Upgrade rails-html-sanitizer to version >= 1.7.1
+      occurrences:
+        - dependencyName: rails-html-sanitizer
+          affectedVersion: 1.5.0
+          fixVersion: 1.7.1
           addressed: false
     - id: GHSA-g9g8-vgvw-g3vf
       severity: unknown

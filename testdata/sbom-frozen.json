@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:ee351d5e-fccc-4006-8d75-3dc8ba80f372",
+  "serialNumber": "urn:uuid:d73b57a0-9e14-403c-b03c-b20519d4b389",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-07-17T07:17:31+00:00",
+    "timestamp": "2026-07-18T09:37:07+00:00",
     "tools": {
       "components": [
         {
@@ -15,12 +15,12 @@
           },
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.71.2"
+          "version": "0.72.0"
         }
       ]
     },
     "component": {
-      "bom-ref": "c93767a5-e6d3-4e87-b1c8-abc7251dd25f",
+      "bom-ref": "ef8cb604-1da6-4ecf-af68-b8781b172321",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,97 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "043f5aaa-e542-4560-b43a-3bd0cdd4e7cb",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "15dbde97-9772-4de6-a880-695d5ed66391",
-      "type": "application",
-      "name": "ruby/Gemfile.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1a9be72e-b21e-41c0-9c56-9492ca3ef919",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "2dd68cdf-62f7-4edc-907e-49fc2bc6715e",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "511d9678-cf62-42a0-a98f-04c3af90d569",
-      "type": "application",
-      "name": "nuget/packages.lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "nuget"
-        }
-      ]
-    },
-    {
-      "bom-ref": "5768fd1b-07dc-4093-a6d5-7543cee6095d",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7bc0c97e-faf3-4ce1-a6f3-63a4c56e6ab3",
+      "bom-ref": "1f30d7d2-2666-44fb-bd1c-7d4a515e22f7",
       "type": "application",
       "name": "npm/package-lock.json",
       "properties": [
@@ -138,37 +48,7 @@
       ]
     },
     {
-      "bom-ref": "b025b315-cb24-4808-85a3-4a594cde62ad",
-      "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ca44936b-7475-438b-83e2-df4e5c4c1d73",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "e17c5e15-5e13-4aa5-a8e2-11c8be23f8bf",
+      "bom-ref": "23c20383-98e9-46ca-be71-1207ab60a425",
       "type": "application",
       "name": "swift/Package.resolved",
       "properties": [
@@ -183,7 +63,112 @@
       ]
     },
     {
-      "bom-ref": "ea24dba4-a6a6-405a-a2ff-085baf036aec",
+      "bom-ref": "2a2b4d78-8e4e-4427-b219-05f8c75906a4",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "57f9ff4e-a3e4-4cac-ad8d-1e99b0824dd8",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "63434385-e5cc-4585-a6ec-b5df43f7fac2",
+      "type": "application",
+      "name": "maven/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6a23811a-b68a-420f-bfb3-46f46aee83a2",
+      "type": "application",
+      "name": "python/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "92a3bb99-43b9-4b71-8a2d-13691d77a8d1",
+      "type": "application",
+      "name": "php/composer.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "composer"
+        }
+      ]
+    },
+    {
+      "bom-ref": "aee3a589-0479-456c-b287-cf2477d9e8a2",
+      "type": "application",
+      "name": "lockfile-maintenance/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bb9c204a-f1ea-49cb-812a-84808f2ea66f",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c4646752-9f1d-4bdf-82f4-7d11dba873a4",
       "type": "application",
       "name": "elixir/mix.lock",
       "properties": [
@@ -198,9 +183,9 @@
       ]
     },
     {
-      "bom-ref": "f157bb4b-c81d-4ea6-b438-f230b7069c41",
+      "bom-ref": "c781824c-89ab-45ac-b7e3-77ace474be50",
       "type": "application",
-      "name": "php/composer.lock",
+      "name": "nuget/packages.lock.json",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +193,22 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "composer"
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f1fc42aa-cc65-4be2-a7fe-57de3f5e7706",
+      "type": "application",
+      "name": "ruby/Gemfile.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "bundler"
         }
       ]
     },
@@ -4675,54 +4675,7 @@
   ],
   "dependencies": [
     {
-      "ref": "043f5aaa-e542-4560-b43a-3bd0cdd4e7cb",
-      "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
-      ]
-    },
-    {
-      "ref": "15dbde97-9772-4de6-a880-695d5ed66391",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "1a9be72e-b21e-41c0-9c56-9492ca3ef919",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "2dd68cdf-62f7-4edc-907e-49fc2bc6715e",
-      "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
-      ]
-    },
-    {
-      "ref": "511d9678-cf62-42a0-a98f-04c3af90d569",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "5768fd1b-07dc-4093-a6d5-7543cee6095d",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
-      ]
-    },
-    {
-      "ref": "7bc0c97e-faf3-4ce1-a6f3-63a4c56e6ab3",
+      "ref": "1f30d7d2-2666-44fb-bd1c-7d4a515e22f7",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4739,36 +4692,7 @@
       ]
     },
     {
-      "ref": "b025b315-cb24-4808-85a3-4a594cde62ad",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
-      ]
-    },
-    {
-      "ref": "c93767a5-e6d3-4e87-b1c8-abc7251dd25f",
-      "dependsOn": [
-        "043f5aaa-e542-4560-b43a-3bd0cdd4e7cb",
-        "15dbde97-9772-4de6-a880-695d5ed66391",
-        "1a9be72e-b21e-41c0-9c56-9492ca3ef919",
-        "2dd68cdf-62f7-4edc-907e-49fc2bc6715e",
-        "511d9678-cf62-42a0-a98f-04c3af90d569",
-        "5768fd1b-07dc-4093-a6d5-7543cee6095d",
-        "7bc0c97e-faf3-4ce1-a6f3-63a4c56e6ab3",
-        "b025b315-cb24-4808-85a3-4a594cde62ad",
-        "ca44936b-7475-438b-83e2-df4e5c4c1d73",
-        "e17c5e15-5e13-4aa5-a8e2-11c8be23f8bf",
-        "ea24dba4-a6a6-405a-a2ff-085baf036aec",
-        "f157bb4b-c81d-4ea6-b438-f230b7069c41"
-      ]
-    },
-    {
-      "ref": "ca44936b-7475-438b-83e2-df4e5c4c1d73",
-      "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
-      ]
-    },
-    {
-      "ref": "e17c5e15-5e13-4aa5-a8e2-11c8be23f8bf",
+      "ref": "23c20383-98e9-46ca-be71-1207ab60a425",
       "dependsOn": [
         "pkg:swift/github.com/apple/swift-atomics@1.0.2",
         "pkg:swift/github.com/apple/swift-collections@1.0.4",
@@ -4780,7 +4704,59 @@
       ]
     },
     {
-      "ref": "ea24dba4-a6a6-405a-a2ff-085baf036aec",
+      "ref": "2a2b4d78-8e4e-4427-b219-05f8c75906a4",
+      "dependsOn": [
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+      ]
+    },
+    {
+      "ref": "57f9ff4e-a3e4-4cac-ad8d-1e99b0824dd8",
+      "dependsOn": [
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
+      ]
+    },
+    {
+      "ref": "63434385-e5cc-4585-a6ec-b5df43f7fac2",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "6a23811a-b68a-420f-bfb3-46f46aee83a2",
+      "dependsOn": [
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
+      ]
+    },
+    {
+      "ref": "92a3bb99-43b9-4b71-8a2d-13691d77a8d1",
+      "dependsOn": [
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+      ]
+    },
+    {
+      "ref": "aee3a589-0479-456c-b287-cf2477d9e8a2",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "bb9c204a-f1ea-49cb-812a-84808f2ea66f",
+      "dependsOn": [
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+      ]
+    },
+    {
+      "ref": "c4646752-9f1d-4bdf-82f4-7d11dba873a4",
       "dependsOn": [
         "pkg:hex/mime@2.0.7",
         "pkg:hex/phoenix@1.6.0",
@@ -4792,9 +4768,33 @@
       ]
     },
     {
-      "ref": "f157bb4b-c81d-4ea6-b438-f230b7069c41",
+      "ref": "c781824c-89ab-45ac-b7e3-77ace474be50",
       "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "ef8cb604-1da6-4ecf-af68-b8781b172321",
+      "dependsOn": [
+        "1f30d7d2-2666-44fb-bd1c-7d4a515e22f7",
+        "23c20383-98e9-46ca-be71-1207ab60a425",
+        "2a2b4d78-8e4e-4427-b219-05f8c75906a4",
+        "57f9ff4e-a3e4-4cac-ad8d-1e99b0824dd8",
+        "63434385-e5cc-4585-a6ec-b5df43f7fac2",
+        "6a23811a-b68a-420f-bfb3-46f46aee83a2",
+        "92a3bb99-43b9-4b71-8a2d-13691d77a8d1",
+        "aee3a589-0479-456c-b287-cf2477d9e8a2",
+        "bb9c204a-f1ea-49cb-812a-84808f2ea66f",
+        "c4646752-9f1d-4bdf-82f4-7d11dba873a4",
+        "c781824c-89ab-45ac-b7e3-77ace474be50",
+        "f1fc42aa-cc65-4be2-a7fe-57de3f5e7706"
+      ]
+    },
+    {
+      "ref": "f1fc42aa-cc65-4be2-a7fe-57de3f5e7706",
+      "dependsOn": [
+        "pkg:gem/actionpack@6.1.4"
       ]
     },
     {
@@ -9675,7 +9675,7 @@
         212
       ],
       "description": "Guzzle is an open source PHP HTTP client. In affected versions the `Cookie` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, or on making a request to a server which responds with a redirect to a a URI to a different host, we should not forward the `Cookie` header on. Prior to this fix, only cookies that were managed by our cookie middleware would be safely removed, and any `Cookie` header manually added to the initial request would not be stripped. We now always strip it, and allow the cookie middleware to re-add any cookies that it deems should be there. Affected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4. Users unable to upgrade may consider an alternative approach to use your own redirect middleware, rather than ours. If you do not require or expect redirects to be followed, one should simply disable redirects all together.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.4, 6.5.7",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.7, 7.4.4",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31042"
@@ -11851,6 +11851,15 @@
         },
         {
           "source": {
+            "name": "julia"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
             "name": "nvd"
           },
           "score": 7.5,
@@ -13003,6 +13012,15 @@
         },
         {
           "source": {
+            "name": "julia"
+          },
+          "score": 8.8,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "source": {
             "name": "nvd"
           },
           "score": 8.8,
@@ -13393,6 +13411,15 @@
         {
           "source": {
             "name": "ghsa"
+          },
+          "score": 5.9,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        },
+        {
+          "source": {
+            "name": "julia"
           },
           "score": 5.9,
           "severity": "medium",
@@ -16780,6 +16807,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40138"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40984"
         },
         {
@@ -16898,7 +16928,7 @@
         }
       ],
       "published": "2026-01-21T20:16:05+00:00",
-      "updated": "2026-07-16T12:16:44+00:00",
+      "updated": "2026-07-17T13:17:16+00:00",
       "affects": [
         {
           "ref": "pkg:npm/lodash-es@4.17.20",
@@ -20593,6 +20623,27 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41030"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41055"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39821"
         },
         {
@@ -20651,7 +20702,7 @@
         }
       ],
       "published": "2026-05-22T16:16:20+00:00",
-      "updated": "2026-07-16T12:17:37+00:00",
+      "updated": "2026-07-17T13:18:31+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -20887,10 +20938,28 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40969"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40972"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40974"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39828"
@@ -20921,7 +20990,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-07-16T12:17:39+00:00",
+      "updated": "2026-07-17T13:18:32+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21073,10 +21142,28 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40969"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40972"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40974"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39829"
@@ -21182,7 +21269,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-07-16T12:17:40+00:00",
+      "updated": "2026-07-17T13:18:34+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21325,10 +21412,28 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40969"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40972"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40974"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39830"
@@ -21437,7 +21542,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-07-16T12:17:41+00:00",
+      "updated": "2026-07-17T13:18:35+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21642,6 +21747,24 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40972"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39832"
         },
         {
@@ -21703,7 +21826,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-07-16T12:17:42+00:00",
+      "updated": "2026-07-17T13:18:36+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22024,10 +22147,28 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40969"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40972"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40974"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39835"
@@ -22069,7 +22210,7 @@
           "url": "https://linux.oracle.com/cve/CVE-2026-39835.html"
         },
         {
-          "url": "https://linux.oracle.com/errata/ELSA-2026-37410.html"
+          "url": "https://linux.oracle.com/errata/ELSA-2026-38504.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39835"
@@ -22085,7 +22226,7 @@
         }
       ],
       "published": "2026-05-22T04:16:24+00:00",
-      "updated": "2026-07-16T12:17:43+00:00",
+      "updated": "2026-07-17T13:18:37+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -24407,6 +24548,24 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41064"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-42508"
         },
         {
@@ -24516,7 +24675,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-07-16T12:17:51+00:00",
+      "updated": "2026-07-17T13:18:42+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -24758,6 +24917,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44486"
         },
         {
@@ -24792,7 +24957,7 @@
         }
       ],
       "published": "2026-06-11T17:16:32+00:00",
-      "updated": "2026-07-16T12:17:54+00:00",
+      "updated": "2026-07-17T13:18:44+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -24937,6 +25102,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44487"
         },
         {
@@ -24965,7 +25136,7 @@
         }
       ],
       "published": "2026-06-11T17:16:32+00:00",
-      "updated": "2026-07-16T12:17:54+00:00",
+      "updated": "2026-07-17T13:18:45+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25173,6 +25344,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44492"
         },
         {
@@ -25198,7 +25375,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-07-16T12:17:55+00:00",
+      "updated": "2026-07-17T13:18:46+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25333,6 +25510,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40262"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41031"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44495"
         },
         {
@@ -25355,7 +25538,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-07-16T12:17:56+00:00",
+      "updated": "2026-07-17T13:18:47+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25486,6 +25669,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40138"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41066"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44496"
         },
         {
@@ -25514,7 +25700,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-07-16T12:17:57+00:00",
+      "updated": "2026-07-17T13:18:48+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25621,6 +25807,15 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40118"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41036"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-46595"
         },
         {
@@ -25658,7 +25853,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-07-16T12:18:01+00:00",
+      "updated": "2026-07-17T13:18:50+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -26076,6 +26271,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:40118"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:40984"
         },
         {
@@ -26145,7 +26343,7 @@
           "url": "https://linux.oracle.com/cve/CVE-2026-4800.html"
         },
         {
-          "url": "https://linux.oracle.com/errata/ELSA-2026-19167.html"
+          "url": "https://linux.oracle.com/errata/ELSA-2026-24331.html"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4800"
@@ -26161,7 +26359,7 @@
         }
       ],
       "published": "2026-03-31T20:16:29+00:00",
-      "updated": "2026-07-16T12:18:03+00:00",
+      "updated": "2026-07-17T13:18:52+00:00",
       "affects": [
         {
           "ref": "pkg:npm/lodash-es@4.17.20",
@@ -27167,6 +27365,44 @@
       ]
     },
     {
+      "id": "GHSA-5qhf-9phg-95m2",
+      "source": {
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
+      },
+      "ratings": [],
+      "description": "## Summary\n\nLoofah::HTML5::Scrub.allowed_uri? does not correctly reject javascript:\nor vbscript: URIs when the scheme is split by a numeric character\nreference that has no trailing semicolon. A browser decodes such\nreferences and resolves the URL to an executable javascript: scheme,\nwhile allowed_uri? reports it safe.\n\nThis is a bypass of the fix for GHSA-46fp-8f5p-pf2m, which handled\nnumeric character references with a trailing ; (&#9;, &#10;, &#13;)\nbut did not cover the forms without semicolons.\n\n## Impact\n\nCallers that validate a user-controlled URL with\nLoofah::HTML5::Scrub.allowed_uri? and then render the approved value\ninto an href or other browser-interpreted URI attribute may be\nvulnerable to cross-site scripting (XSS). This includes applications\nthat call allowed_uri? directly, as well as higher-level features\nbuilt on top of it, such as Action Text 8.2's markdown link validation.\n\n## Credit\n\nResponsibly reported by GitHub user @MoonFuji.\n",
+      "recommendation": "Upgrade loofah to version >= 2.25.2",
+      "advisories": [
+        {
+          "url": "https://github.com/advisories/GHSA-5qhf-9phg-95m2"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-46fp-8f5p-pf2m"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/blob/main/CHANGELOG.md#2252--2026-07-15"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-5qhf-9phg-95m2"
+        },
+        {
+          "url": "https://rubygems.org/gems/loofah/versions/2.25.2"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:gem/loofah@2.25.1",
+          "versions": [
+            {
+              "version": "2.25.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "GHSA-5v8h-3h3q-446p",
       "source": {
         "name": "ruby-advisory-db",
@@ -27425,6 +27661,44 @@
       ]
     },
     {
+      "id": "GHSA-8whx-365g-h9vv",
+      "source": {
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
+      },
+      "ratings": [],
+      "description": "## Summary\n\nLoofah::HTML5::Scrub.allowed_uri? does not correctly reject javascript:\nURIs when the scheme is split or prefixed by the HTML5 named character\nreferences &Tab; (tab) or &NewLine; (line feed).\n\nThis is a bypass of the fix for GHSA-46fp-8f5p-pf2m, which handled\nthe equivalent numeric character references (&#9;, &#10;, &#13;) but\ndid not cover the named forms.\n",
+      "recommendation": "Upgrade loofah to version >= 2.25.2",
+      "advisories": [
+        {
+          "url": "https://github.com/advisories/GHSA-8whx-365g-h9vv"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-46fp-8f5p-pf2m"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/blob/main/CHANGELOG.md#2252--2026-07-15"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-8whx-365g-h9vv"
+        },
+        {
+          "url": "https://rubygems.org/gems/loofah/versions/2.25.2"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:gem/loofah@2.25.1",
+          "versions": [
+            {
+              "version": "2.25.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "GHSA-9cv2-cfxc-v4v2",
       "source": {
         "name": "ruby-advisory-db",
@@ -27462,6 +27736,48 @@
           "versions": [
             {
               "version": "1.13.10",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GHSA-9wjq-cp2p-hrgf",
+      "source": {
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ruby-advisory-db"
+          },
+          "severity": "medium"
+        }
+      ],
+      "description": "## Summary\n\nLoofah's HTML5 sanitizer restricted only the xlink:href attribute on\ncertain SVG elements to local, same-document references. Browsers\nalso accept a plain href attribute as an alternative to the deprecated\nxlink:href per the SVG 2 spec, but Loofah did not apply the same\nrestriction to it, allowing those elements to reference arbitrary\nexternal documents.\n\n## Impact\n\nSVG <use> can load and render external SVG content by reference. If\nthe referenced external SVG is same-origin and contains scripts or\nother dangerous content, it could execute in the context of the\nsanitized document. <feImage> can load external images, which can be\nused for tracking. Modern browsers restrict cross-origin <use>\nfetches, which limits but does not eliminate the risk.\n\nApplications that sanitize user-supplied SVG (directly, or as part\nof HTML) with Loofah's default allowlist are affected.\n\n## Credit\n\nFound by the maintainer, Mike Dalessio, during a security audit.\n",
+      "recommendation": "Upgrade loofah to version >= 2.25.2",
+      "advisories": [
+        {
+          "url": "https://github.com/advisories/GHSA-9wjq-cp2p-hrgf"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/blob/main/CHANGELOG.md#2252--2026-07-15"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-9wjq-cp2p-hrgf"
+        },
+        {
+          "url": "https://rubygems.org/gems/loofah/versions/2.25.2"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:gem/loofah@2.25.1",
+          "versions": [
+            {
+              "version": "2.25.1",
               "status": "affected"
             }
           ]
@@ -27512,6 +27828,50 @@
           "versions": [
             {
               "version": "1.13.10",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GHSA-cj75-f6xr-r4g7",
+      "source": {
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
+      },
+      "ratings": [],
+      "description": "## Summary\n\nThere is a possible cross-site scripting vulnerability in\nrails-html-sanitizer when the sanitizer is configured to allow an\nSVG reference element such as <use>.\nSee related GHSA-9wjq-cp2p-hrgf in Loofah, whose SVG local-reference\nlogic rails-html-sanitizer mirrors.\n",
+      "recommendation": "Upgrade rails-html-sanitizer to version >= 1.7.1",
+      "advisories": [
+        {
+          "url": "https://github.com/advisories/GHSA-cj75-f6xr-r4g7"
+        },
+        {
+          "url": "https://discuss.rubyonrails.org/t/ghsa-cj75-f6xr-r4g7-possible-xss-vulnerability-with-certain-configurations-of-rails-html-sanitizer/91359#post_1"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-9wjq-cp2p-hrgf"
+        },
+        {
+          "url": "https://github.com/rails/rails-html-sanitizer/blob/main/CHANGELOG.md#v171--2026-07-15"
+        },
+        {
+          "url": "https://github.com/rails/rails-html-sanitizer/commit/74dcb8053e6da9921246ce71b06ad9fd65b19586"
+        },
+        {
+          "url": "https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-cj75-f6xr-r4g7"
+        },
+        {
+          "url": "https://rubygems.org/gems/rails-html-sanitizer/versions/1.7.1"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:gem/rails-html-sanitizer@1.5.0",
+          "versions": [
+            {
+              "version": "1.5.0",
               "status": "affected"
             }
           ]
