@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:a91347a0-13cd-492d-aa32-2dbce17df1d5",
+  "serialNumber": "urn:uuid:ad7faf81-c529-4888-a31f-a436828c123e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-07-20T06:11:57+00:00",
+    "timestamp": "2026-07-20T06:51:06+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "d601d8b3-f8b1-433d-970a-bb6f7671b32b",
+      "bom-ref": "0a84a0a5-62de-4a7d-adc7-a09713c81d26",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,52 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "053feb7c-827c-42b9-9293-6dcd517402b8",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "0c1f6752-cf56-4c2a-a725-002c5e8f2251",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "19389856-6f3a-44ab-a666-ecdc437d90dd",
-      "type": "application",
-      "name": "swift/Package.resolved",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "swift"
-        }
-      ]
-    },
-    {
-      "bom-ref": "21067b04-16ae-48c5-aced-dcebac9b616e",
+      "bom-ref": "10afb215-10b3-45cb-a7ac-b118060ff581",
       "type": "application",
       "name": "elixir/mix.lock",
       "properties": [
@@ -93,7 +48,22 @@
       ]
     },
     {
-      "bom-ref": "464cb72f-3294-41a9-9b18-235caac1fe8b",
+      "bom-ref": "176fcdac-2483-4468-88fa-857e15140cae",
+      "type": "application",
+      "name": "swift/Package.resolved",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "swift"
+        }
+      ]
+    },
+    {
+      "bom-ref": "34c32202-8f3b-4406-b159-299542eb573e",
       "type": "application",
       "name": "lockfile-maintenance/package-lock.json",
       "properties": [
@@ -108,7 +78,7 @@
       ]
     },
     {
-      "bom-ref": "58a41434-b65f-4532-980c-4ec986b95b0a",
+      "bom-ref": "44984e9b-b37f-48a9-9a18-4bcc1c3a681d",
       "type": "application",
       "name": "npm/package-lock.json",
       "properties": [
@@ -123,37 +93,7 @@
       ]
     },
     {
-      "bom-ref": "73f3ec23-0e4a-49d2-98ff-8770c786f6b4",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "91e8a7fa-de1a-4a54-b19b-11ade71fdee6",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "acc89b9d-176a-41ae-9f91-f370f17eec5b",
+      "bom-ref": "61cf28b0-aea1-45af-904d-1e866fc58eb6",
       "type": "application",
       "name": "ruby/Gemfile.lock",
       "properties": [
@@ -168,7 +108,22 @@
       ]
     },
     {
-      "bom-ref": "b0686cb9-08c6-403a-b912-7a7ae0de6fa5",
+      "bom-ref": "6f32c3a0-7f59-4b0f-a42e-8adaf89aa39f",
+      "type": "application",
+      "name": "maven/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "901d9e0d-50aa-405d-aba9-ac9fb46aab87",
       "type": "application",
       "name": "php/composer.lock",
       "properties": [
@@ -183,7 +138,7 @@
       ]
     },
     {
-      "bom-ref": "d21f1525-87da-46af-afce-42441943967d",
+      "bom-ref": "b087dd5b-407c-41a0-9570-a5ecfb663ba8",
       "type": "application",
       "name": "nuget/packages.lock.json",
       "properties": [
@@ -198,7 +153,7 @@
       ]
     },
     {
-      "bom-ref": "e83ce21f-0543-4220-9a42-45f61478e9a7",
+      "bom-ref": "e0834fd6-bd51-48e2-95d1-68ee2bd9eba8",
       "type": "application",
       "name": "rust/Cargo.lock",
       "properties": [
@@ -209,6 +164,51 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ea3a2a41-0207-4fb0-b78a-55a5e9a5af49",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fabb003b-9d4e-4b11-9f97-89976a696940",
+      "type": "application",
+      "name": "python/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fea3e57f-b791-4457-9382-405417d65e02",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
         }
       ]
     },
@@ -4675,38 +4675,24 @@
   ],
   "dependencies": [
     {
-      "ref": "053feb7c-827c-42b9-9293-6dcd517402b8",
+      "ref": "0a84a0a5-62de-4a7d-adc7-a09713c81d26",
       "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
+        "10afb215-10b3-45cb-a7ac-b118060ff581",
+        "176fcdac-2483-4468-88fa-857e15140cae",
+        "34c32202-8f3b-4406-b159-299542eb573e",
+        "44984e9b-b37f-48a9-9a18-4bcc1c3a681d",
+        "61cf28b0-aea1-45af-904d-1e866fc58eb6",
+        "6f32c3a0-7f59-4b0f-a42e-8adaf89aa39f",
+        "901d9e0d-50aa-405d-aba9-ac9fb46aab87",
+        "b087dd5b-407c-41a0-9570-a5ecfb663ba8",
+        "e0834fd6-bd51-48e2-95d1-68ee2bd9eba8",
+        "ea3a2a41-0207-4fb0-b78a-55a5e9a5af49",
+        "fabb003b-9d4e-4b11-9f97-89976a696940",
+        "fea3e57f-b791-4457-9382-405417d65e02"
       ]
     },
     {
-      "ref": "0c1f6752-cf56-4c2a-a725-002c5e8f2251",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
-      ]
-    },
-    {
-      "ref": "19389856-6f3a-44ab-a666-ecdc437d90dd",
-      "dependsOn": [
-        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
-        "pkg:swift/github.com/apple/swift-collections@1.0.4",
-        "pkg:swift/github.com/apple/swift-log@1.5.3",
-        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
-        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
-        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
-        "pkg:swift/github.com/apple/swift-nio@2.55.0"
-      ]
-    },
-    {
-      "ref": "21067b04-16ae-48c5-aced-dcebac9b616e",
+      "ref": "10afb215-10b3-45cb-a7ac-b118060ff581",
       "dependsOn": [
         "pkg:hex/mime@2.0.7",
         "pkg:hex/phoenix@1.6.0",
@@ -4718,13 +4704,25 @@
       ]
     },
     {
-      "ref": "464cb72f-3294-41a9-9b18-235caac1fe8b",
+      "ref": "176fcdac-2483-4468-88fa-857e15140cae",
+      "dependsOn": [
+        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
+        "pkg:swift/github.com/apple/swift-collections@1.0.4",
+        "pkg:swift/github.com/apple/swift-log@1.5.3",
+        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
+        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
+        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
+        "pkg:swift/github.com/apple/swift-nio@2.55.0"
+      ]
+    },
+    {
+      "ref": "34c32202-8f3b-4406-b159-299542eb573e",
       "dependsOn": [
         "pkg:npm/debug@4.3.0"
       ]
     },
     {
-      "ref": "58a41434-b65f-4532-980c-4ec986b95b0a",
+      "ref": "44984e9b-b37f-48a9-9a18-4bcc1c3a681d",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4741,7 +4739,51 @@
       ]
     },
     {
-      "ref": "73f3ec23-0e4a-49d2-98ff-8770c786f6b4",
+      "ref": "61cf28b0-aea1-45af-904d-1e866fc58eb6",
+      "dependsOn": [
+        "pkg:gem/actionpack@6.1.4"
+      ]
+    },
+    {
+      "ref": "6f32c3a0-7f59-4b0f-a42e-8adaf89aa39f",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "901d9e0d-50aa-405d-aba9-ac9fb46aab87",
+      "dependsOn": [
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+      ]
+    },
+    {
+      "ref": "b087dd5b-407c-41a0-9570-a5ecfb663ba8",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "e0834fd6-bd51-48e2-95d1-68ee2bd9eba8",
+      "dependsOn": [
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+      ]
+    },
+    {
+      "ref": "ea3a2a41-0207-4fb0-b78a-55a5e9a5af49",
+      "dependsOn": [
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
+      ]
+    },
+    {
+      "ref": "fabb003b-9d4e-4b11-9f97-89976a696940",
       "dependsOn": [
         "pkg:pypi/pillow@9.0.0",
         "pkg:pypi/python-multipart@0.0.5",
@@ -4750,51 +4792,9 @@
       ]
     },
     {
-      "ref": "91e8a7fa-de1a-4a54-b19b-11ade71fdee6",
+      "ref": "fea3e57f-b791-4457-9382-405417d65e02",
       "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
-      ]
-    },
-    {
-      "ref": "acc89b9d-176a-41ae-9f91-f370f17eec5b",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "b0686cb9-08c6-403a-b912-7a7ae0de6fa5",
-      "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
-      ]
-    },
-    {
-      "ref": "d21f1525-87da-46af-afce-42441943967d",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "d601d8b3-f8b1-433d-970a-bb6f7671b32b",
-      "dependsOn": [
-        "053feb7c-827c-42b9-9293-6dcd517402b8",
-        "0c1f6752-cf56-4c2a-a725-002c5e8f2251",
-        "19389856-6f3a-44ab-a666-ecdc437d90dd",
-        "21067b04-16ae-48c5-aced-dcebac9b616e",
-        "464cb72f-3294-41a9-9b18-235caac1fe8b",
-        "58a41434-b65f-4532-980c-4ec986b95b0a",
-        "73f3ec23-0e4a-49d2-98ff-8770c786f6b4",
-        "91e8a7fa-de1a-4a54-b19b-11ade71fdee6",
-        "acc89b9d-176a-41ae-9f91-f370f17eec5b",
-        "b0686cb9-08c6-403a-b912-7a7ae0de6fa5",
-        "d21f1525-87da-46af-afce-42441943967d",
-        "e83ce21f-0543-4220-9a42-45f61478e9a7"
-      ]
-    },
-    {
-      "ref": "e83ce21f-0543-4220-9a42-45f61478e9a7",
-      "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
       ]
     },
     {
