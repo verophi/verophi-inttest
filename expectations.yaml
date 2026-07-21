@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 191
-    severity: {critical: 19, high: 92, medium: 53, low: 15}
+    totalAdvisories: 211
+    severity: {critical: 19, high: 103, medium: 62, low: 15}
     correlated: 47
-    uncorrelated: 144
-    totalImpactScore: 641
+    uncorrelated: 164
+    totalImpactScore: 703
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1436,6 +1436,33 @@ uncorrelatedAdvisories:
           affectedVersion: 0.0.5
           fixVersion: 0.0.30
           addressed: false
+    - id: CVE-2026-54058
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-54059
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-54060
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
     - id: CVE-2026-54904
       severity: high
       dependency: concurrent-ruby@1.3.6
@@ -1444,6 +1471,78 @@ uncorrelatedAdvisories:
         - dependencyName: concurrent-ruby
           affectedVersion: 1.3.6
           fixVersion: 1.3.7
+          addressed: false
+    - id: CVE-2026-55379
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-55380
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-59197
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-59198
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-59199
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-59200
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-59204
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-59205
+      severity: high
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
           addressed: false
     - id: GHSA-c4rq-3m3g-8wgx
       severity: high
@@ -1657,6 +1756,15 @@ uncorrelatedAdvisories:
           affectedVersion: 2.14.1
           fixVersion: 2.25.3
           addressed: false
+    - id: CVE-2026-12590
+      severity: medium
+      dependency: body-parser@1.19.0
+      recommendation: Upgrade body-parser to version 1.20.6, 2.3.0
+      occurrences:
+        - dependencyName: body-parser
+          affectedVersion: 1.19.0
+          fixVersion: 1.20.6
+          addressed: false
     - id: CVE-2026-25645
       severity: medium
       dependency: requests@2.31.0
@@ -1824,6 +1932,24 @@ uncorrelatedAdvisories:
           affectedVersion: 7.4.0
           fixVersion: 7.12.1
           addressed: false
+    - id: CVE-2026-55798
+      severity: medium
+      dependency: Pillow@9.0.0
+      recommendation: Upgrade Pillow to version 12.3.0
+      occurrences:
+        - dependencyName: Pillow
+          affectedVersion: 9.0.0
+          fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-59883
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.12.3
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.12.3
+          addressed: false
     - id: GHSA-5prr-v3j2-97mh
       severity: medium
       dependency: nokogiri@1.13.10
@@ -1833,6 +1959,24 @@ uncorrelatedAdvisories:
           affectedVersion: 1.13.10
           fixVersion: 1.19.4
           addressed: false
+    - id: GHSA-7q8q-rj6j-mhjq
+      severity: medium
+      dependency: axios@0.21.1
+      recommendation: Upgrade axios to version 0.33.0, 1.18.0
+      occurrences:
+        - dependencyName: axios
+          affectedVersion: 0.21.1
+          fixVersion: 0.33.0
+          addressed: false
+    - id: GHSA-94pj-82f3-465w
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.14.2
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.14.2
+          addressed: false
     - id: GHSA-9wjq-cp2p-hrgf
       severity: medium
       dependency: loofah@2.25.1
@@ -1841,6 +1985,33 @@ uncorrelatedAdvisories:
         - dependencyName: loofah
           affectedVersion: 2.25.1
           fixVersion: 2.25.2
+          addressed: false
+    - id: GHSA-f283-ghqc-fg79
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.15.1
+          addressed: false
+    - id: GHSA-h95v-h523-3mw8
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.15.1
+          addressed: false
+    - id: GHSA-mmx7-hfxf-jppx
+      severity: medium
+      dependency: axios@0.21.1
+      recommendation: Upgrade axios to version 1.18.0, 0.33.0
+      occurrences:
+        - dependencyName: axios
+          affectedVersion: 0.21.1
+          fixVersion: 0.33.0
           addressed: false
     - id: GHSA-pxvg-2qj5-37jq
       severity: medium
@@ -1859,6 +2030,15 @@ uncorrelatedAdvisories:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
           fixVersion: 1.19.3
+          addressed: false
+    - id: GHSA-wm3w-8rrp-j577
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.15.1
           addressed: false
     - id: GHSA-wx95-c6cv-8532
       severity: medium
