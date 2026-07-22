@@ -22,12 +22,12 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 211
-    severity: {critical: 19, high: 103, medium: 62, low: 15}
+    totalAdvisories: 212
+    severity: {critical: 17, high: 105, medium: 64, low: 17}
     correlated: 47
-    uncorrelated: 164
-    totalImpactScore: 703
-    reducibleImpactScore: 219
+    uncorrelated: 165
+    totalImpactScore: 701
+    reducibleImpactScore: 211
     matchedRequests: 22
     unmatchedRequests: 16
     unparsedRequests: 1
@@ -60,30 +60,6 @@ changeRequests:
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.0, addressed: true}
             - advisory: {id: CVE-2023-4863, severity: high}
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.1, addressed: true}
-    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
-      status: matched
-      riskTier: {name: minor, risk: 2}
-      hasUnknownRisk: false
-      impactScore: 32
-      mergeEfficiency: 16
-      fixes: {total: 4, critical: 4, high: 0, medium: 0, low: 0}
-      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
-      assessments:
-        - change:
-            dependencyName: org.apache.logging.log4j:log4j-core
-            currentVersion: 2.14.1
-            targetVersion: 2.17.1
-            changeType: {name: minor, risk: 2}
-          impactScore: 32
-          advisoryMatches:
-            - advisory: {id: CVE-2021-44228, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
-            - advisory: {id: CVE-2021-44832, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
-            - advisory: {id: CVE-2021-45046, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
-            - advisory: {id: CVE-2021-45105, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency actionpack to v6.1.7.8'
       status: matched
       riskTier: {name: patch, risk: 1}
@@ -115,6 +91,30 @@ changeRequests:
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.5.1, addressed: true}
             - advisory: {id: CVE-2023-28362, severity: medium}
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.7.4, addressed: true}
+    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
+      status: matched
+      riskTier: {name: minor, risk: 2}
+      hasUnknownRisk: false
+      impactScore: 24
+      mergeEfficiency: 12
+      fixes: {total: 4, critical: 2, high: 2, medium: 0, low: 0}
+      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
+      assessments:
+        - change:
+            dependencyName: org.apache.logging.log4j:log4j-core
+            currentVersion: 2.14.1
+            targetVersion: 2.17.1
+            changeType: {name: minor, risk: 2}
+          impactScore: 24
+          advisoryMatches:
+            - advisory: {id: CVE-2021-44228, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
+            - advisory: {id: CVE-2021-45046, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
+            - advisory: {id: CVE-2021-44832, severity: high}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
+            - advisory: {id: CVE-2021-45105, severity: high}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency pillow to v9.5.0'
       status: matched
       riskTier: {name: minor, risk: 2}
@@ -1941,6 +1941,15 @@ uncorrelatedAdvisories:
           affectedVersion: 9.0.0
           fixVersion: 12.3.0
           addressed: false
+    - id: CVE-2026-59882
+      severity: medium
+      dependency: guzzlehttp/psr7@2.11.0
+      recommendation: Upgrade guzzlehttp/psr7 to version 2.12.3
+      occurrences:
+        - dependencyName: guzzlehttp/psr7
+          affectedVersion: 2.11.0
+          fixVersion: 2.12.3
+          addressed: false
     - id: CVE-2026-59883
       severity: medium
       dependency: guzzlehttp/guzzle@7.4.0
@@ -1985,6 +1994,15 @@ uncorrelatedAdvisories:
         - dependencyName: loofah
           affectedVersion: 2.25.1
           fixVersion: 2.25.2
+          addressed: false
+    - id: GHSA-cj75-f6xr-r4g7
+      severity: medium
+      dependency: rails-html-sanitizer@1.5.0
+      recommendation: Upgrade rails-html-sanitizer to version >= 1.7.1
+      occurrences:
+        - dependencyName: rails-html-sanitizer
+          affectedVersion: 1.5.0
+          fixVersion: 1.7.1
           addressed: false
     - id: GHSA-f283-ghqc-fg79
       severity: medium
@@ -2094,6 +2112,15 @@ uncorrelatedAdvisories:
           affectedVersion: 0.0.5
           fixVersion: 0.0.31
           addressed: false
+    - id: GHSA-5qhf-9phg-95m2
+      severity: low
+      dependency: loofah@2.25.1
+      recommendation: Upgrade loofah to version >= 2.25.2
+      occurrences:
+        - dependencyName: loofah
+          affectedVersion: 2.25.1
+          fixVersion: 2.25.2
+          addressed: false
     - id: GHSA-5v8h-3h3q-446p
       severity: low
       dependency: nokogiri@1.13.10
@@ -2120,6 +2147,15 @@ uncorrelatedAdvisories:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
           fixVersion: 1.19.4
+          addressed: false
+    - id: GHSA-8whx-365g-h9vv
+      severity: low
+      dependency: loofah@2.25.1
+      recommendation: Upgrade loofah to version >= 2.25.2
+      occurrences:
+        - dependencyName: loofah
+          affectedVersion: 2.25.1
+          fixVersion: 2.25.2
           addressed: false
     - id: GHSA-9cv2-cfxc-v4v2
       severity: low
@@ -2220,15 +2256,6 @@ uncorrelatedAdvisories:
           affectedVersion: v0.14.0
           fixVersion: 0.39.0
           addressed: false
-    - id: GHSA-5qhf-9phg-95m2
-      severity: unknown
-      dependency: loofah@2.25.1
-      recommendation: Upgrade loofah to version >= 2.25.2
-      occurrences:
-        - dependencyName: loofah
-          affectedVersion: 2.25.1
-          fixVersion: 2.25.2
-          addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
       dependency: crass@1.0.6
@@ -2255,24 +2282,6 @@ uncorrelatedAdvisories:
         - dependencyName: crass
           affectedVersion: 1.0.6
           fixVersion: 1.0.7
-          addressed: false
-    - id: GHSA-8whx-365g-h9vv
-      severity: unknown
-      dependency: loofah@2.25.1
-      recommendation: Upgrade loofah to version >= 2.25.2
-      occurrences:
-        - dependencyName: loofah
-          affectedVersion: 2.25.1
-          fixVersion: 2.25.2
-          addressed: false
-    - id: GHSA-cj75-f6xr-r4g7
-      severity: unknown
-      dependency: rails-html-sanitizer@1.5.0
-      recommendation: Upgrade rails-html-sanitizer to version >= 1.7.1
-      occurrences:
-        - dependencyName: rails-html-sanitizer
-          affectedVersion: 1.5.0
-          fixVersion: 1.7.1
           addressed: false
     - id: GHSA-g9g8-vgvw-g3vf
       severity: unknown
