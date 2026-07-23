@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:1c711dac-e368-47ee-8c49-4d9604721385",
+  "serialNumber": "urn:uuid:e4520812-d428-4bb0-8024-63f3d100731e",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-07-22T06:32:27+00:00",
+    "timestamp": "2026-07-23T06:33:13+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "9aca11c2-9a56-4cdd-a0c7-abe4b75c0a48",
+      "bom-ref": "8906c8c3-5c84-4d14-86b1-5aa756c64d28",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,22 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "2fb8cc51-ecd5-4abb-b8a0-755eb74f9e6c",
-      "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3ddbbdac-204d-48fb-84e4-955ea18b74a2",
+      "bom-ref": "068ad40f-700d-4154-83c4-e8985e78218f",
       "type": "application",
       "name": "python/requirements.txt",
       "properties": [
@@ -63,112 +48,7 @@
       ]
     },
     {
-      "bom-ref": "40720b21-32d1-4df9-99e7-b88b1296fc7b",
-      "type": "application",
-      "name": "php/composer.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "composer"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4e7dc6f6-a404-4e1b-9c77-bbe41e0aaf64",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8ae3dc97-005a-441a-9fad-e2410f33abb3",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "941cec69-ed4e-4095-bddc-70d03888155c",
-      "type": "application",
-      "name": "swift/Package.resolved",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "swift"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ae95f86e-9f6f-426e-8ac4-f7bfeee61162",
-      "type": "application",
-      "name": "npm/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "bc89c071-1dcc-410d-9f52-0484274e8181",
-      "type": "application",
-      "name": "nuget/packages.lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "nuget"
-        }
-      ]
-    },
-    {
-      "bom-ref": "e0859ffd-e3f1-4f7f-9739-f2f9c86a78c6",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ee06324c-512d-4e76-97d8-93047cb251b7",
+      "bom-ref": "0d9e772f-2939-455f-903d-63e63567f9df",
       "type": "application",
       "name": "dart/pubspec.lock",
       "properties": [
@@ -183,7 +63,97 @@
       ]
     },
     {
-      "bom-ref": "f7fccd4b-dc5e-49df-b54e-f96556a755b9",
+      "bom-ref": "1269dbe4-925e-4f8d-a270-22ffb7d1800b",
+      "type": "application",
+      "name": "ruby/Gemfile.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "bundler"
+        }
+      ]
+    },
+    {
+      "bom-ref": "31e7d82b-7faa-4b81-aba1-2e6f0f619080",
+      "type": "application",
+      "name": "php/composer.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "composer"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4c3289dd-ca8d-4f88-b276-78afef9e5af9",
+      "type": "application",
+      "name": "swift/Package.resolved",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "swift"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4e7c8457-5a14-458b-a046-0f0c554f2a3a",
+      "type": "application",
+      "name": "lockfile-maintenance/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7707a4b7-3762-450f-ac40-7558a585ec99",
+      "type": "application",
+      "name": "nuget/packages.lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7a36faee-4e0e-42b9-b82a-5ac251cca166",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9223a20a-54bf-4693-aba3-9a337865ed5b",
       "type": "application",
       "name": "maven/pom.xml",
       "properties": [
@@ -198,9 +168,9 @@
       ]
     },
     {
-      "bom-ref": "ff9012a2-a72c-441c-9989-e9ee82814bbd",
+      "bom-ref": "cef98c1d-5eb2-4090-828f-945d3185d974",
       "type": "application",
-      "name": "ruby/Gemfile.lock",
+      "name": "rust/Cargo.lock",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +178,37 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d81c8450-e974-4588-b9c0-ed8a7bd9698c",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d9cf9784-afe9-4570-a669-baaaf4f063b9",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
         }
       ]
     },
@@ -4675,13 +4675,7 @@
   ],
   "dependencies": [
     {
-      "ref": "2fb8cc51-ecd5-4abb-b8a0-755eb74f9e6c",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
-      ]
-    },
-    {
-      "ref": "3ddbbdac-204d-48fb-84e4-955ea18b74a2",
+      "ref": "068ad40f-700d-4154-83c4-e8985e78218f",
       "dependsOn": [
         "pkg:pypi/pillow@9.0.0",
         "pkg:pypi/python-multipart@0.0.5",
@@ -4690,31 +4684,32 @@
       ]
     },
     {
-      "ref": "40720b21-32d1-4df9-99e7-b88b1296fc7b",
+      "ref": "0d9e772f-2939-455f-903d-63e63567f9df",
+      "dependsOn": [
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
+      ]
+    },
+    {
+      "ref": "1269dbe4-925e-4f8d-a270-22ffb7d1800b",
+      "dependsOn": [
+        "pkg:gem/actionpack@6.1.4"
+      ]
+    },
+    {
+      "ref": "31e7d82b-7faa-4b81-aba1-2e6f0f619080",
       "dependsOn": [
         "pkg:composer/guzzlehttp/guzzle@7.4.0"
       ]
     },
     {
-      "ref": "4e7dc6f6-a404-4e1b-9c77-bbe41e0aaf64",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
-      ]
-    },
-    {
-      "ref": "8ae3dc97-005a-441a-9fad-e2410f33abb3",
-      "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
-      ]
-    },
-    {
-      "ref": "941cec69-ed4e-4095-bddc-70d03888155c",
+      "ref": "4c3289dd-ca8d-4f88-b276-78afef9e5af9",
       "dependsOn": [
         "pkg:swift/github.com/apple/swift-atomics@1.0.2",
         "pkg:swift/github.com/apple/swift-collections@1.0.4",
@@ -4726,24 +4721,67 @@
       ]
     },
     {
-      "ref": "9aca11c2-9a56-4cdd-a0c7-abe4b75c0a48",
+      "ref": "4e7c8457-5a14-458b-a046-0f0c554f2a3a",
       "dependsOn": [
-        "2fb8cc51-ecd5-4abb-b8a0-755eb74f9e6c",
-        "3ddbbdac-204d-48fb-84e4-955ea18b74a2",
-        "40720b21-32d1-4df9-99e7-b88b1296fc7b",
-        "4e7dc6f6-a404-4e1b-9c77-bbe41e0aaf64",
-        "8ae3dc97-005a-441a-9fad-e2410f33abb3",
-        "941cec69-ed4e-4095-bddc-70d03888155c",
-        "ae95f86e-9f6f-426e-8ac4-f7bfeee61162",
-        "bc89c071-1dcc-410d-9f52-0484274e8181",
-        "e0859ffd-e3f1-4f7f-9739-f2f9c86a78c6",
-        "ee06324c-512d-4e76-97d8-93047cb251b7",
-        "f7fccd4b-dc5e-49df-b54e-f96556a755b9",
-        "ff9012a2-a72c-441c-9989-e9ee82814bbd"
+        "pkg:npm/debug@4.3.0"
       ]
     },
     {
-      "ref": "ae95f86e-9f6f-426e-8ac4-f7bfeee61162",
+      "ref": "7707a4b7-3762-450f-ac40-7558a585ec99",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "7a36faee-4e0e-42b9-b82a-5ac251cca166",
+      "dependsOn": [
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+      ]
+    },
+    {
+      "ref": "8906c8c3-5c84-4d14-86b1-5aa756c64d28",
+      "dependsOn": [
+        "068ad40f-700d-4154-83c4-e8985e78218f",
+        "0d9e772f-2939-455f-903d-63e63567f9df",
+        "1269dbe4-925e-4f8d-a270-22ffb7d1800b",
+        "31e7d82b-7faa-4b81-aba1-2e6f0f619080",
+        "4c3289dd-ca8d-4f88-b276-78afef9e5af9",
+        "4e7c8457-5a14-458b-a046-0f0c554f2a3a",
+        "7707a4b7-3762-450f-ac40-7558a585ec99",
+        "7a36faee-4e0e-42b9-b82a-5ac251cca166",
+        "9223a20a-54bf-4693-aba3-9a337865ed5b",
+        "cef98c1d-5eb2-4090-828f-945d3185d974",
+        "d81c8450-e974-4588-b9c0-ed8a7bd9698c",
+        "d9cf9784-afe9-4570-a669-baaaf4f063b9"
+      ]
+    },
+    {
+      "ref": "9223a20a-54bf-4693-aba3-9a337865ed5b",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "cef98c1d-5eb2-4090-828f-945d3185d974",
+      "dependsOn": [
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+      ]
+    },
+    {
+      "ref": "d81c8450-e974-4588-b9c0-ed8a7bd9698c",
+      "dependsOn": [
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
+      ]
+    },
+    {
+      "ref": "d9cf9784-afe9-4570-a669-baaaf4f063b9",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4757,44 +4795,6 @@
         "pkg:npm/tough-cookie@4.1.2",
         "pkg:npm/ws@7.5.11",
         "pkg:npm/xmldom@0.6.0"
-      ]
-    },
-    {
-      "ref": "bc89c071-1dcc-410d-9f52-0484274e8181",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "e0859ffd-e3f1-4f7f-9739-f2f9c86a78c6",
-      "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
-      ]
-    },
-    {
-      "ref": "ee06324c-512d-4e76-97d8-93047cb251b7",
-      "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
-      ]
-    },
-    {
-      "ref": "f7fccd4b-dc5e-49df-b54e-f96556a755b9",
-      "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
-      ]
-    },
-    {
-      "ref": "ff9012a2-a72c-441c-9989-e9ee82814bbd",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
       ]
     },
     {
@@ -7734,7 +7734,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "medium"
+          "severity": "critical"
         },
         {
           "source": {
@@ -8266,7 +8266,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "medium"
+          "severity": "critical"
         },
         {
           "source": {
@@ -9938,7 +9938,7 @@
         200
       ],
       "description": "Guzzle, an extensible PHP HTTP client. `Authorization` and `Cookie` headers on requests are sensitive information. In affected versions on making a request which responds with a redirect to a URI with a different port, if we choose to follow it, we should remove the `Authorization` and `Cookie` headers from the request, before containing. Previously, we would only consider a change in host or scheme. Affected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5. Note that a partial fix was implemented in Guzzle 7.4.2, where a change in host would trigger removal of the curl-added Authorization header, however this earlier fix did not cover change in scheme or change in port. An alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.5, 6.5.8",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.8, 7.4.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31091"
@@ -20811,6 +20811,15 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42644"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42852"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:43038"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39821"
         },
         {
@@ -20869,7 +20878,7 @@
         }
       ],
       "published": "2026-05-22T16:16:20+00:00",
-      "updated": "2026-07-21T12:18:16+00:00",
+      "updated": "2026-07-22T12:17:43+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -21132,6 +21141,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39828"
         },
         {
@@ -21160,7 +21172,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-07-21T12:18:18+00:00",
+      "updated": "2026-07-22T12:17:44+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21339,6 +21351,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39829"
         },
         {
@@ -21442,7 +21457,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-07-21T12:18:19+00:00",
+      "updated": "2026-07-22T12:17:45+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21944,6 +21959,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39832"
         },
         {
@@ -22005,7 +22023,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-07-21T12:18:22+00:00",
+      "updated": "2026-07-22T12:17:47+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22353,6 +22371,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39835"
         },
         {
@@ -22408,7 +22429,7 @@
         }
       ],
       "published": "2026-05-22T04:16:24+00:00",
-      "updated": "2026-07-21T12:18:22+00:00",
+      "updated": "2026-07-22T12:17:48+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22966,7 +22987,7 @@
         }
       ],
       "published": "2026-05-07T04:16:33+00:00",
-      "updated": "2026-07-20T12:19:10+00:00",
+      "updated": "2026-07-22T12:17:52+00:00",
       "affects": [
         {
           "ref": "pkg:npm/xmldom@0.6.0",
@@ -24748,6 +24769,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-42508"
         },
         {
@@ -24857,7 +24881,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-07-21T12:18:37+00:00",
+      "updated": "2026-07-22T12:17:55+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -24916,6 +24940,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42142"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:43038"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-42561"
         },
         {
@@ -24938,7 +24965,7 @@
         }
       ],
       "published": "2026-05-13T21:16:47+00:00",
-      "updated": "2026-07-21T12:18:37+00:00",
+      "updated": "2026-07-22T12:17:56+00:00",
       "affects": [
         {
           "ref": "pkg:pypi/python-multipart@0.0.5",
@@ -25111,6 +25138,27 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:41066"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41928"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:41951"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42078"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42085"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42142"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42146"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44486"
         },
         {
@@ -25145,7 +25193,7 @@
         }
       ],
       "published": "2026-06-11T17:16:32+00:00",
-      "updated": "2026-07-20T12:19:25+00:00",
+      "updated": "2026-07-22T12:18:01+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25323,6 +25371,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44487"
         },
         {
@@ -25351,7 +25402,7 @@
         }
       ],
       "published": "2026-06-11T17:16:32+00:00",
-      "updated": "2026-07-21T12:18:42+00:00",
+      "updated": "2026-07-22T12:18:02+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25589,6 +25640,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44492"
         },
         {
@@ -25614,7 +25668,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-07-21T12:18:43+00:00",
+      "updated": "2026-07-22T12:18:03+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25779,6 +25833,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42146"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44495"
         },
         {
@@ -25801,7 +25858,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-07-21T12:18:44+00:00",
+      "updated": "2026-07-22T12:18:04+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25950,6 +26007,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:42142"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44496"
         },
         {
@@ -25978,7 +26038,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-07-21T12:18:45+00:00",
+      "updated": "2026-07-22T12:18:05+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -26094,6 +26154,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:41036"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-46595"
         },
         {
@@ -26131,7 +26194,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-07-20T12:19:34+00:00",
+      "updated": "2026-07-22T12:18:09+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
