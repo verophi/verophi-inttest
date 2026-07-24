@@ -23,11 +23,11 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 212
-    severity: {critical: 19, high: 103, medium: 64, low: 17}
+    severity: {critical: 17, high: 105, medium: 64, low: 17}
     correlated: 47
     uncorrelated: 165
-    totalImpactScore: 709
-    reducibleImpactScore: 219
+    totalImpactScore: 701
+    reducibleImpactScore: 211
     matchedRequests: 22
     unmatchedRequests: 16
     unparsedRequests: 1
@@ -60,30 +60,6 @@ changeRequests:
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.0, addressed: true}
             - advisory: {id: CVE-2023-4863, severity: high}
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.1, addressed: true}
-    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
-      status: matched
-      riskTier: {name: minor, risk: 2}
-      hasUnknownRisk: false
-      impactScore: 32
-      mergeEfficiency: 16
-      fixes: {total: 4, critical: 4, high: 0, medium: 0, low: 0}
-      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
-      assessments:
-        - change:
-            dependencyName: org.apache.logging.log4j:log4j-core
-            currentVersion: 2.14.1
-            targetVersion: 2.17.1
-            changeType: {name: minor, risk: 2}
-          impactScore: 32
-          advisoryMatches:
-            - advisory: {id: CVE-2021-44228, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
-            - advisory: {id: CVE-2021-44832, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
-            - advisory: {id: CVE-2021-45046, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
-            - advisory: {id: CVE-2021-45105, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency actionpack to v6.1.7.8'
       status: matched
       riskTier: {name: patch, risk: 1}
@@ -115,6 +91,30 @@ changeRequests:
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.5.1, addressed: true}
             - advisory: {id: CVE-2023-28362, severity: medium}
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.7.4, addressed: true}
+    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
+      status: matched
+      riskTier: {name: minor, risk: 2}
+      hasUnknownRisk: false
+      impactScore: 24
+      mergeEfficiency: 12
+      fixes: {total: 4, critical: 2, high: 2, medium: 0, low: 0}
+      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
+      assessments:
+        - change:
+            dependencyName: org.apache.logging.log4j:log4j-core
+            currentVersion: 2.14.1
+            targetVersion: 2.17.1
+            changeType: {name: minor, risk: 2}
+          impactScore: 24
+          advisoryMatches:
+            - advisory: {id: CVE-2021-44228, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
+            - advisory: {id: CVE-2021-45046, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
+            - advisory: {id: CVE-2021-44832, severity: high}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
+            - advisory: {id: CVE-2021-45105, severity: high}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency pillow to v9.5.0'
       status: matched
       riskTier: {name: minor, risk: 2}
