@@ -23,10 +23,10 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 212
-    severity: {critical: 19, high: 103, medium: 64, low: 17}
+    severity: {critical: 19, high: 104, medium: 64, low: 17}
     correlated: 47
     uncorrelated: 165
-    totalImpactScore: 709
+    totalImpactScore: 713
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1490,6 +1490,15 @@ uncorrelatedAdvisories:
           affectedVersion: 9.0.0
           fixVersion: 12.3.0
           addressed: false
+    - id: CVE-2026-56852
+      severity: high
+      dependency: golang.org/x/text@v0.14.0
+      recommendation: Upgrade golang.org/x/text to version 0.39.0
+      occurrences:
+        - dependencyName: golang.org/x/text
+          affectedVersion: v0.14.0
+          fixVersion: 0.39.0
+          addressed: false
     - id: CVE-2026-59197
       severity: high
       dependency: Pillow@9.0.0
@@ -2246,15 +2255,6 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/net
           affectedVersion: v0.16.0
           fixVersion: 0.56.0
-          addressed: false
-    - id: CVE-2026-56852
-      severity: unknown
-      dependency: golang.org/x/text@v0.14.0
-      recommendation: Upgrade golang.org/x/text to version 0.39.0
-      occurrences:
-        - dependencyName: golang.org/x/text
-          affectedVersion: v0.14.0
-          fixVersion: 0.39.0
           addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
