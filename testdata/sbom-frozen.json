@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:9b6ff05c-fa4c-430b-97f0-9d6e2ad80332",
+  "serialNumber": "urn:uuid:465d3057-400c-43d5-8dde-2de04fe79a46",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-08-04T06:31:06+00:00",
+    "timestamp": "2026-08-05T06:31:47+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "7d4209e6-43c8-4bcd-96ca-744388c4c330",
+      "bom-ref": "b3fcdd45-638d-4f21-a7ac-fb525acdccd5",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,112 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "14401220-d5a3-41ea-9c9e-faa5c2e445a7",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1beb24d4-58d5-49fc-9ae3-88bbabcefa3e",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "29fd121c-454f-4c16-b8cd-cc241e0c1c36",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "2bcfed40-e9d4-4b40-9d6d-ba6ac50b3b6e",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "41557c0d-3a02-4b11-9081-02398a29f566",
-      "type": "application",
-      "name": "ruby/Gemfile.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4a3ff473-371f-45c3-a1a4-e64e4174e486",
-      "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4f5afbf7-02e1-49bb-9a85-f3f53f0f4f01",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d60b264a-8215-47f8-ac6e-5a86fd1a2726",
+      "bom-ref": "0f7105ee-09d6-451c-9fb0-fe4abf83c1bc",
       "type": "application",
       "name": "nuget/packages.lock.json",
       "properties": [
@@ -153,7 +48,52 @@
       ]
     },
     {
-      "bom-ref": "e229e2b8-8e79-4ae5-80b5-fb8951006bce",
+      "bom-ref": "2cb48809-b0f1-4b30-9634-170f8686d9b2",
+      "type": "application",
+      "name": "python/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5dc47af6-7810-421b-8292-c83082b4527e",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8a3ba9a4-e29a-4bb6-ae96-60053f15cf40",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8d790ce2-bb30-46cc-a18f-4f09a8c691a3",
       "type": "application",
       "name": "swift/Package.resolved",
       "properties": [
@@ -168,9 +108,9 @@
       ]
     },
     {
-      "bom-ref": "efe833ef-e83c-4bf9-8049-e556a5137070",
+      "bom-ref": "9d722f7e-c100-4a1e-8163-b5a3dbbe13e7",
       "type": "application",
-      "name": "dart/pubspec.lock",
+      "name": "lockfile-maintenance/package-lock.json",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -178,12 +118,42 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "pub"
+          "value": "npm"
         }
       ]
     },
     {
-      "bom-ref": "f04e8d03-d6a0-4261-96da-f5134453fe87",
+      "bom-ref": "b827b747-112a-41fd-b5f8-81b18f68a367",
+      "type": "application",
+      "name": "maven/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c77d08f6-730a-4a02-9141-1348d95596e8",
+      "type": "application",
+      "name": "ruby/Gemfile.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "bundler"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e7ab8d98-87c8-4fb0-8673-f22050055536",
       "type": "application",
       "name": "php/composer.lock",
       "properties": [
@@ -198,9 +168,9 @@
       ]
     },
     {
-      "bom-ref": "f1c30ce0-0a58-4e0c-9d6a-004197dc3e2a",
+      "bom-ref": "f97716ab-340a-4aaf-9b63-cb412864a04c",
       "type": "application",
-      "name": "npm/package-lock.json",
+      "name": "go/go.mod",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +178,37 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "npm"
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fb0a1124-2d55-42de-abef-12d775e94571",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fb9afe00-2825-4dde-aa58-410586cb69a9",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
         }
       ]
     },
@@ -4675,7 +4675,23 @@
   ],
   "dependencies": [
     {
-      "ref": "14401220-d5a3-41ea-9c9e-faa5c2e445a7",
+      "ref": "0f7105ee-09d6-451c-9fb0-fe4abf83c1bc",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "2cb48809-b0f1-4b30-9634-170f8686d9b2",
+      "dependsOn": [
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
+      ]
+    },
+    {
+      "ref": "5dc47af6-7810-421b-8292-c83082b4527e",
       "dependsOn": [
         "pkg:hex/mime@2.0.7",
         "pkg:hex/phoenix@1.6.0",
@@ -4687,101 +4703,7 @@
       ]
     },
     {
-      "ref": "1beb24d4-58d5-49fc-9ae3-88bbabcefa3e",
-      "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
-      ]
-    },
-    {
-      "ref": "29fd121c-454f-4c16-b8cd-cc241e0c1c36",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
-      ]
-    },
-    {
-      "ref": "2bcfed40-e9d4-4b40-9d6d-ba6ac50b3b6e",
-      "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
-      ]
-    },
-    {
-      "ref": "41557c0d-3a02-4b11-9081-02398a29f566",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "4a3ff473-371f-45c3-a1a4-e64e4174e486",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
-      ]
-    },
-    {
-      "ref": "4f5afbf7-02e1-49bb-9a85-f3f53f0f4f01",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "7d4209e6-43c8-4bcd-96ca-744388c4c330",
-      "dependsOn": [
-        "14401220-d5a3-41ea-9c9e-faa5c2e445a7",
-        "1beb24d4-58d5-49fc-9ae3-88bbabcefa3e",
-        "29fd121c-454f-4c16-b8cd-cc241e0c1c36",
-        "2bcfed40-e9d4-4b40-9d6d-ba6ac50b3b6e",
-        "41557c0d-3a02-4b11-9081-02398a29f566",
-        "4a3ff473-371f-45c3-a1a4-e64e4174e486",
-        "4f5afbf7-02e1-49bb-9a85-f3f53f0f4f01",
-        "d60b264a-8215-47f8-ac6e-5a86fd1a2726",
-        "e229e2b8-8e79-4ae5-80b5-fb8951006bce",
-        "efe833ef-e83c-4bf9-8049-e556a5137070",
-        "f04e8d03-d6a0-4261-96da-f5134453fe87",
-        "f1c30ce0-0a58-4e0c-9d6a-004197dc3e2a"
-      ]
-    },
-    {
-      "ref": "d60b264a-8215-47f8-ac6e-5a86fd1a2726",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "e229e2b8-8e79-4ae5-80b5-fb8951006bce",
-      "dependsOn": [
-        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
-        "pkg:swift/github.com/apple/swift-collections@1.0.4",
-        "pkg:swift/github.com/apple/swift-log@1.5.3",
-        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
-        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
-        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
-        "pkg:swift/github.com/apple/swift-nio@2.55.0"
-      ]
-    },
-    {
-      "ref": "efe833ef-e83c-4bf9-8049-e556a5137070",
-      "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
-      ]
-    },
-    {
-      "ref": "f04e8d03-d6a0-4261-96da-f5134453fe87",
-      "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
-      ]
-    },
-    {
-      "ref": "f1c30ce0-0a58-4e0c-9d6a-004197dc3e2a",
+      "ref": "8a3ba9a4-e29a-4bb6-ae96-60053f15cf40",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4795,6 +4717,84 @@
         "pkg:npm/tough-cookie@4.1.2",
         "pkg:npm/ws@7.5.11",
         "pkg:npm/xmldom@0.6.0"
+      ]
+    },
+    {
+      "ref": "8d790ce2-bb30-46cc-a18f-4f09a8c691a3",
+      "dependsOn": [
+        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
+        "pkg:swift/github.com/apple/swift-collections@1.0.4",
+        "pkg:swift/github.com/apple/swift-log@1.5.3",
+        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
+        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
+        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
+        "pkg:swift/github.com/apple/swift-nio@2.55.0"
+      ]
+    },
+    {
+      "ref": "9d722f7e-c100-4a1e-8163-b5a3dbbe13e7",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "b3fcdd45-638d-4f21-a7ac-fb525acdccd5",
+      "dependsOn": [
+        "0f7105ee-09d6-451c-9fb0-fe4abf83c1bc",
+        "2cb48809-b0f1-4b30-9634-170f8686d9b2",
+        "5dc47af6-7810-421b-8292-c83082b4527e",
+        "8a3ba9a4-e29a-4bb6-ae96-60053f15cf40",
+        "8d790ce2-bb30-46cc-a18f-4f09a8c691a3",
+        "9d722f7e-c100-4a1e-8163-b5a3dbbe13e7",
+        "b827b747-112a-41fd-b5f8-81b18f68a367",
+        "c77d08f6-730a-4a02-9141-1348d95596e8",
+        "e7ab8d98-87c8-4fb0-8673-f22050055536",
+        "f97716ab-340a-4aaf-9b63-cb412864a04c",
+        "fb0a1124-2d55-42de-abef-12d775e94571",
+        "fb9afe00-2825-4dde-aa58-410586cb69a9"
+      ]
+    },
+    {
+      "ref": "b827b747-112a-41fd-b5f8-81b18f68a367",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "c77d08f6-730a-4a02-9141-1348d95596e8",
+      "dependsOn": [
+        "pkg:gem/actionpack@6.1.4"
+      ]
+    },
+    {
+      "ref": "e7ab8d98-87c8-4fb0-8673-f22050055536",
+      "dependsOn": [
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+      ]
+    },
+    {
+      "ref": "f97716ab-340a-4aaf-9b63-cb412864a04c",
+      "dependsOn": [
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+      ]
+    },
+    {
+      "ref": "fb0a1124-2d55-42de-abef-12d775e94571",
+      "dependsOn": [
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+      ]
+    },
+    {
+      "ref": "fb9afe00-2825-4dde-aa58-410586cb69a9",
+      "dependsOn": [
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
       ]
     },
     {
@@ -16027,7 +16027,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/06/04/6"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:12519"
+          "url": "https://access.redhat.com/errata/RHSA-2025:13604"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-47081"
@@ -16042,10 +16042,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47081"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2025-12519.html"
+          "url": "https://errata.almalinux.org/10/ALSA-2025-13604.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2025:12519"
+          "url": "https://errata.rockylinux.org/RLSA-2025:13604"
         },
         {
           "url": "https://github.com/psf/requests"
@@ -16870,19 +16870,10 @@
           "url": "https://bugzilla.redhat.com/2431740"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2425946"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2430538"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2431036"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2431740"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2433645"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2453496"
         },
         {
           "url": "https://cert-portal.siemens.com/productcert/html/ssa-253495.html"
@@ -16891,22 +16882,13 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13465"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15284"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4800"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-23745"
+          "url": "https://errata.almalinux.org/10/ALSA-2026-2438.html"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-23950"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24842"
-        },
-        {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-2452.html"
-        },
-        {
-          "url": "https://errata.rockylinux.org/RLSA-2026:18868"
+          "url": "https://errata.rockylinux.org/RLSA-2026:24331"
         },
         {
           "url": "https://github.com/lodash/lodash"
@@ -17022,7 +17004,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2025-15284"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:18868"
+          "url": "https://access.redhat.com/errata/RHSA-2026:18480"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2025-15284"
@@ -17073,10 +17055,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24842"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-18868.html"
+          "url": "https://errata.almalinux.org/10/ALSA-2026-18480.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:18868"
+          "url": "https://errata.rockylinux.org/RLSA-2026:18480"
         },
         {
           "url": "https://github.com/ljharb/qs"
@@ -17201,7 +17183,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2025-3833.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2025:7416"
+          "url": "https://errata.rockylinux.org/RLSA-2025:7484"
         },
         {
           "url": "https://github.com/golang/go/issues/71931"
@@ -17804,7 +17786,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2025-47913"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:0470"
+          "url": "https://access.redhat.com/errata/RHSA-2026:0545"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2025-47913"
@@ -17819,10 +17801,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47913"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-0470.html"
+          "url": "https://errata.almalinux.org/10/ALSA-2026-0545.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:0470"
+          "url": "https://errata.rockylinux.org/RLSA-2026:0545"
         },
         {
           "url": "https://github.com/advisories/GHSA-56w8-48fp-6mgv"
@@ -19179,37 +19161,37 @@
           "url": "https://avd.aquasec.com/nvd/cve-2026-25681"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:37123"
+          "url": "https://access.redhat.com/errata/RHSA-2026:34357"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2026-25681"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480680"
+          "url": "https://bugzilla.redhat.com/2466505"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480681"
+          "url": "https://bugzilla.redhat.com/2466507"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480685"
+          "url": "https://bugzilla.redhat.com/2467822"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480688"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2480757"
+          "url": "https://bugzilla.redhat.com/2480756"
         },
         {
           "url": "https://bugzilla.redhat.com/2480761"
         },
         {
-          "url": "https://bugzilla.redhat.com/2493620"
+          "url": "https://bugzilla.redhat.com/2484207"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
@@ -19236,6 +19218,9 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
+        },
+        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -19248,10 +19233,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
+          "url": "https://errata.almalinux.org/10/ALSA-2026-34357.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
         },
         {
           "url": "https://go.dev/cl/781703"
@@ -19382,6 +19367,9 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
         },
         {
@@ -19406,6 +19394,9 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
+        },
+        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -19421,7 +19412,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
         },
         {
           "url": "https://go.dev/cl/781685"
@@ -20264,7 +20255,7 @@
         }
       ],
       "published": "2026-05-07T20:16:42+00:00",
-      "updated": "2026-07-24T13:18:01+00:00",
+      "updated": "2026-08-04T13:18:16+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -20859,22 +20850,25 @@
           "url": "https://bugzilla.redhat.com/2480756"
         },
         {
+          "url": "https://bugzilla.redhat.com/2484207"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480756"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2498152"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2484207"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27145"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39821"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822"
+          "url": "https://errata.almalinux.org/10/ALSA-2026-46395.html"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-37435.html"
-        },
-        {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37435"
+          "url": "https://errata.rockylinux.org/RLSA-2026:46395"
         },
         {
           "url": "https://github.com/golang/go/issues/78760"
@@ -20911,7 +20905,7 @@
         }
       ],
       "published": "2026-05-22T16:16:20+00:00",
-      "updated": "2026-08-03T13:18:10+00:00",
+      "updated": "2026-08-04T13:18:25+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -20978,7 +20972,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -21052,7 +21046,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -21223,7 +21217,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-03T13:18:12+00:00",
+      "updated": "2026-08-04T13:18:27+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21426,6 +21420,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:48151"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:49944"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39829"
         },
         {
@@ -21435,25 +21432,19 @@
           "url": "https://bugzilla.redhat.com/2480681"
         },
         {
+          "url": "https://bugzilla.redhat.com/2480684"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2480685"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2480688"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2480757"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2480761"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2493620"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
@@ -21480,6 +21471,9 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
+        },
+        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -21492,10 +21486,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
+          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
         },
         {
           "url": "https://go.dev/cl/781641"
@@ -21529,7 +21523,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-03T13:18:14+00:00",
+      "updated": "2026-08-04T13:18:28+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21717,19 +21711,13 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:48151"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:49944"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39830"
         },
         {
-          "url": "https://bugzilla.redhat.com/2445356"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2456333"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2456338"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2456339"
+          "url": "https://bugzilla.redhat.com/2480680"
         },
         {
           "url": "https://bugzilla.redhat.com/2480681"
@@ -21738,16 +21726,10 @@
           "url": "https://bugzilla.redhat.com/2480684"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2445356"
+          "url": "https://bugzilla.redhat.com/2480685"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2456333"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2456338"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2456339"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
@@ -21756,16 +21738,25 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480688"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32281"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480757"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480761"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2493620"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
@@ -21774,10 +21765,22 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-29455.html"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:29455"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
+        },
+        {
+          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
         },
         {
           "url": "https://github.com/golang/crypto/commit/4e7a7384ecbc8d519f6f4c11b36fa9d761fc8946"
@@ -21823,7 +21826,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-03T13:18:16+00:00",
+      "updated": "2026-08-04T13:18:29+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21936,7 +21939,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -22058,10 +22061,19 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:43692"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:49944"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39832"
         },
         {
           "url": "https://bugzilla.redhat.com/2480680"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2480681"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2480684"
         },
         {
           "url": "https://bugzilla.redhat.com/2480685"
@@ -22070,7 +22082,37 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480688"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480757"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480761"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2493620"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
@@ -22079,10 +22121,16 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-37410.html"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37410"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
+        },
+        {
+          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
         },
         {
           "url": "https://github.com/golang/crypto/commit/e3d1254f1e7e60baa086142c46174bf6d8d0fe50"
@@ -22119,7 +22167,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-03T13:18:17+00:00",
+      "updated": "2026-08-04T13:18:30+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22235,7 +22283,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -22333,7 +22381,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -22494,13 +22542,49 @@
           "url": "https://bugzilla.redhat.com/2480680"
         },
         {
+          "url": "https://bugzilla.redhat.com/2480681"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2480684"
+        },
+        {
           "url": "https://bugzilla.redhat.com/2480685"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480688"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480757"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480761"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2493620"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
@@ -22509,10 +22593,16 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-37410.html"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37410"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
+        },
+        {
+          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
         },
         {
           "url": "https://go.dev/cl/781660"
@@ -22543,7 +22633,7 @@
         }
       ],
       "published": "2026-05-22T04:16:24+00:00",
-      "updated": "2026-08-03T13:18:18+00:00",
+      "updated": "2026-08-04T13:18:31+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -23363,7 +23453,7 @@
         }
       ],
       "published": "2026-04-24T18:16:29+00:00",
-      "updated": "2026-08-03T13:18:24+00:00",
+      "updated": "2026-08-04T13:18:36+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -23840,7 +23930,7 @@
         }
       ],
       "published": "2026-04-24T18:16:30+00:00",
-      "updated": "2026-08-03T13:18:25+00:00",
+      "updated": "2026-08-04T13:18:37+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -24096,7 +24186,7 @@
         }
       ],
       "published": "2026-04-24T18:16:31+00:00",
-      "updated": "2026-08-03T13:18:25+00:00",
+      "updated": "2026-08-04T13:18:38+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -24324,9 +24414,6 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:26232"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:26234"
-        },
-        {
           "url": "https://access.redhat.com/errata/RHSA-2026:33574"
         },
         {
@@ -24355,7 +24442,7 @@
         }
       ],
       "published": "2026-04-24T18:16:31+00:00",
-      "updated": "2026-07-31T13:18:34+00:00",
+      "updated": "2026-08-04T13:18:38+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -24895,6 +24982,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:47737"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:49944"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-42508"
         },
         {
@@ -24925,6 +25015,9 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
         },
         {
@@ -24949,6 +25042,9 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
+        },
+        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -24964,7 +25060,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
         },
         {
           "url": "https://github.com/golang/crypto/commit/f717e29698a271c548239ed56bf5dd9516d6f7e8"
@@ -25004,7 +25100,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-08-03T13:18:29+00:00",
+      "updated": "2026-08-04T13:18:42+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -26359,7 +26455,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-08-03T13:18:41+00:00",
+      "updated": "2026-08-04T13:18:49+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -26383,7 +26479,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -26457,7 +26553,7 @@
           "source": {
             "name": "amazon"
           },
-          "severity": "high"
+          "severity": "medium"
         },
         {
           "source": {
@@ -26851,7 +26947,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4800"
         },
         {
-          "url": "https://errata.almalinux.org/9/ALSA-2026-19167.html"
+          "url": "https://errata.almalinux.org/10/ALSA-2026-10713.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2026:24331"
@@ -26888,7 +26984,7 @@
         }
       ],
       "published": "2026-03-31T20:16:29+00:00",
-      "updated": "2026-08-03T13:18:44+00:00",
+      "updated": "2026-08-04T13:18:52+00:00",
       "affects": [
         {
           "ref": "pkg:npm/lodash-es@4.17.20",
@@ -27283,6 +27379,12 @@
         },
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "bitnami"
           },
           "score": 8.3,
@@ -27313,6 +27415,12 @@
           "severity": "high",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "rocky"
+          },
+          "severity": "high"
         }
       ],
       "cwes": [
@@ -27337,7 +27445,22 @@
           "url": "https://bugzilla.redhat.com/2500057"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2500043"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2500057"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54058"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59197"
+        },
+        {
           "url": "https://errata.almalinux.org/8/ALSA-2026-48021.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2026:48021"
         },
         {
           "url": "https://github.com/python-pillow/Pillow"
@@ -28628,6 +28751,12 @@
         },
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "bitnami"
           },
           "score": 8.2,
@@ -28658,6 +28787,12 @@
           "severity": "high",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
+        },
+        {
+          "source": {
+            "name": "rocky"
+          },
+          "severity": "high"
         }
       ],
       "cwes": [
@@ -28683,7 +28818,22 @@
           "url": "https://bugzilla.redhat.com/2500057"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2500043"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2500057"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-54058"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-59197"
+        },
+        {
           "url": "https://errata.almalinux.org/8/ALSA-2026-48021.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2026:48021"
         },
         {
           "url": "https://github.com/python-pillow/Pillow"
@@ -28734,6 +28884,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
         {
           "source": {
             "name": "bitnami"
@@ -28828,6 +28984,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "bitnami"
           },
           "score": 7.5,
@@ -28915,6 +29077,12 @@
       "ratings": [
         {
           "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
+        {
+          "source": {
             "name": "bitnami"
           },
           "score": 7.5,
@@ -28997,6 +29165,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
         {
           "source": {
             "name": "bitnami"
@@ -29090,6 +29264,12 @@
         "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
       },
       "ratings": [
+        {
+          "source": {
+            "name": "amazon"
+          },
+          "severity": "high"
+        },
         {
           "source": {
             "name": "bitnami"
@@ -29322,6 +29502,254 @@
       ]
     },
     {
+      "id": "CVE-2026-67339",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "cwes": [
+        200
+      ],
+      "description": "guzzlehttp/guzzle versions before 7.14.2 fail to properly isolate Proxy-Authorization headers from origin servers in cURL handlers. Attackers can capture proxy credentials through origin server access logs when requests are redirected, bypassed, or sent through SOCKS proxies that Guzzle misclassifies as direct connections.",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.14.2",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-67339"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/commit/9e4580d4b9981e903dc6323fe37f50a96e85b05e"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/pull/3876"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/releases/tag/7.14.2"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-94pj-82f3-465w"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67339"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/guzzlehttp-guzzle-before-proxy-authorization-header-disclosure"
+        }
+      ],
+      "published": "2026-08-01T13:17:04+00:00",
+      "updated": "2026-08-03T19:16:52+00:00",
+      "affects": [
+        {
+          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
+          "versions": [
+            {
+              "version": "7.4.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-67353",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes": [
+        770
+      ],
+      "description": "guzzlehttp/guzzle versions before 7.15.1 contain a denial of service vulnerability in the CookieJar that accepts unlimited Set-Cookie header fields with no size restrictions. Attackers can return many large cookies from a malicious server, causing Guzzle to store excessive data in memory and generate oversized Cookie headers that fail in handlers or destination servers.",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.15.1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-67353"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/commit/7b68220d6543f6f80fe62e633361fc9d4ead14d4"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/pull/3901"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/releases/tag/7.15.1"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-f283-ghqc-fg79"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67353"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/guzzlehttp-guzzle-before-unbounded-cookie-denial-of-service"
+        }
+      ],
+      "published": "2026-08-01T13:17:06+00:00",
+      "updated": "2026-08-03T19:16:53+00:00",
+      "affects": [
+        {
+          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
+          "versions": [
+            {
+              "version": "7.4.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-67354",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.9,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes": [
+        201
+      ],
+      "description": "guzzlehttp/guzzle versions before 7.15.1 contain an information disclosure vulnerability in RedirectMiddleware. When the optional allow_redirects.referer setting is enabled, the middleware copies the URI fragment (the portion after '#') from the referring request into the generated Referer header when following a same-scheme redirect (e.g., HTTPS to HTTPS). An attacker who controls the redirect destination can read this fragment from the incoming Referer header, potentially disclosing one-time login secrets, access tokens, state values, or other sensitive client data to a server never meant to receive it. The referer setting is disabled by default. Fixed in 7.15.1, which strips the fragment before generating the Referer value.",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.15.1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-67354"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/commit/7b68220d6543f6f80fe62e633361fc9d4ead14d4"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/pull/3901"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/releases/tag/7.15.1"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-h95v-h523-3mw8"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67354"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/guzzlehttp-guzzle-before-uri-fragment-disclosure-via-referer"
+        }
+      ],
+      "published": "2026-08-01T13:17:06+00:00",
+      "updated": "2026-08-03T19:16:53+00:00",
+      "affects": [
+        {
+          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
+          "versions": [
+            {
+              "version": "7.4.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-67355",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.9,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "cwes": [
+        201
+      ],
+      "description": "guzzlehttp/guzzle versions before 7.15.1 fail to preserve host-only cookie scope, storing the request host in the Domain field instead of marking cookies as host-only. Attackers controlling child hosts can receive host-only cookies intended only for parent hosts, potentially disclosing session identifiers and authorization tokens when the same cookie jar is reused across trust boundaries.",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.15.1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-67355"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/commit/7b68220d6543f6f80fe62e633361fc9d4ead14d4"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/pull/3901"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/releases/tag/7.15.1"
+        },
+        {
+          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-wm3w-8rrp-j577"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67355"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/guzzlehttp-guzzle-before-host-only-cookie-scope"
+        }
+      ],
+      "published": "2026-08-01T13:17:06+00:00",
+      "updated": "2026-08-03T20:17:27+00:00",
+      "affects": [
+        {
+          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
+          "versions": [
+            {
+              "version": "7.4.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-69245",
       "source": {
         "name": "ghsa",
@@ -29375,7 +29803,7 @@
         }
       ],
       "published": "2026-08-03T21:16:42+00:00",
-      "updated": "2026-08-03T21:16:42+00:00",
+      "updated": "2026-08-04T16:16:28+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -29443,7 +29871,7 @@
         }
       ],
       "published": "2026-08-03T21:16:42+00:00",
-      "updated": "2026-08-03T21:16:42+00:00",
+      "updated": "2026-08-04T15:16:42+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -30042,59 +30470,6 @@
       ]
     },
     {
-      "id": "GHSA-94pj-82f3-465w",
-      "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ghsa"
-          },
-          "score": 5.3,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
-        }
-      ],
-      "description": "### Impact\n\nIn affected versions, the built-in cURL handlers (`CurlHandler` and `CurlMultiHandler`) put every first-class request header in cURL's origin header list (`CURLOPT_HTTPHEADER`). These handlers are the default when the PHP cURL extension is available. They move `Proxy-Authorization` to the proxy-only list (`CURLOPT_PROXYHEADER`) only when Guzzle predicts an HTTP or HTTPS proxy. A \"first-class\" header is part of the normal request message and can be set on a PSR-7 request, through client `headers` defaults, the `headers` request option, or middleware. It does not include a literal line supplied through raw `CURLOPT_HTTPHEADER`, `CURLOPT_PROXYHEADER`, or `stream_context.http.header` controls.\n\nBecause that migration follows Guzzle's prediction rather than the route libcurl actually takes, the credential stays in the origin list and is sent to the origin server when a request is:\n\n- direct, including `proxy` set to `''` to disable proxying.\n- bypassed by a `no`, `no_proxy`, or `NO_PROXY` match.\n- sent through a SOCKS proxy, which does not use the HTTP proxy header channel.\n- redirected from a safely proxied hop into any of those routes: redirect middleware re-evaluates the proxy per hop but, unlike `Authorization` and `Cookie`, does not strip `Proxy-Authorization` cross-origin.\n\nOn installations whose libcurl is older than 7.37.0, or whose PHP cURL extension lacks `CURLOPT_PROXYHEADER`, `CURLOPT_HEADEROPT`, and `CURLHEADER_SEPARATE`, no proxy-only channel is available, so cURL left the header in the origin list for every route. The stream handler also serialized first-class values before selecting a proxy. PHP removes only the first `Proxy-Authorization` line from CONNECT, so another first-class value or a URL-userinfo Basic line could reach the tunneled origin. A later raw `stream_context.http.proxy` override could instead reroute either credential directly to the origin.\n\nThe disclosed value is a private credential meant only for the proxy. RFC 9110 defines `Proxy-Authorization` as credentials for the next inbound proxy, and an origin is never an intended recipient. The flaw can silently give a working proxy credential to an unrelated third party. In the worst case, an attacker controls the origin and records the credential through access logs, tracing systems, or application logs. If it remains valid, the attacker can abuse a paid or access-controlled proxy, impersonate the proxy principal, or reach destinations the proxy is trusted to reach. A strong remote exploit is possible when an application sends a request to an attacker-controlled HTTP URL through a proxy with a default `Proxy-Authorization` header, then follows the attacker's redirect to an HTTPS or no-proxy destination that Guzzle reaches directly.\n\nUsing a first-class `Proxy-Authorization` header is a legitimate, documented configuration, so affected applications are not misusing the library. Guzzle does not create this field, so applications that never configure one are unaffected by the first-class-header flaw. Proxy URL userinfo is not affected on its own, but the stream handler could expose its Basic line when combined with a first-class field or a later raw `stream_context.http.proxy` override. `CURLOPT_PROXYUSERPWD` is unaffected. Literal lines supplied through raw `CURLOPT_HTTPHEADER`, `CURLOPT_PROXYHEADER`, or `stream_context.http.header` remain caller-controlled and outside the first-class-header guarantee.\n\n### Patches\n\nThe issue is fixed in `7.14.2`. The cURL handlers keep first-class `Proxy-Authorization` values out of the origin header list. When proxy header separation is available, they pass the values through `CURLOPT_PROXYHEADER` with `CURLHEADER_SEPARATE`. An empty value uses cURL's semicolon form to suppress credentials from proxy URL userinfo. On older builds, Guzzle drops the field for direct, bypassed, and SOCKS routes, but fails before network I/O if the request might use an HTTP or HTTPS proxy.\n\nThe stream handler removes the field from origin headers before choosing a route. If it selects a proxy, it accepts one value, including empty, writes a validated proxy header, and gives that value precedence over proxy URL userinfo. Multiple values, line breaks, and raw proxy overrides that could reroute generated credentials fail before connection. Direct and bypassed requests drop the field. Versions before `7.14.2` are affected by these origin-bound credential paths.\n\n### Workarounds\n\nIf you cannot upgrade immediately, remove first-class `Proxy-Authorization` fields from requests, client defaults, and middleware. Supply proxy credentials instead through proxy URL userinfo, for example `http://user:pass@proxy.example:8080`, or use `CURLOPT_PROXYUSERPWD` with the cURL handlers. Do not combine proxy URL userinfo with a first-class field or a raw `stream_context.http.proxy` override. If a first-class field is unavoidable, use libcurl 7.37.0 or newer with `CURLOPT_PROXYHEADER`, `CURLOPT_HEADEROPT`, and `CURLHEADER_SEPARATE`, and ensure the field is never present on a client that can issue direct, bypassed, or SOCKS requests or follow redirects into those routes. A newer libcurl is necessary but does not fix Guzzle's route-dependent migration by itself, and disabling redirects reduces but does not eliminate exposure.\n\n### References\n\n* https://www.rfc-editor.org/rfc/rfc9110.html#section-11.7.2\n* https://curl.se/libcurl/c/CURLOPT_PROXYHEADER.html\n* https://curl.se/libcurl/c/CURLOPT_HEADEROPT.html\n* https://curl.se/libcurl/c/CURLOPT_HTTPHEADER.html",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.14.2",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-94pj-82f3-465w"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/commit/9e4580d4b9981e903dc6323fe37f50a96e85b05e"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/pull/3876"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/releases/tag/7.14.2"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-94pj-82f3-465w"
-        }
-      ],
-      "published": "2026-07-20T21:46:02+00:00",
-      "updated": "2026-07-20T21:46:02+00:00",
-      "affects": [
-        {
-          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
-          "versions": [
-            {
-              "version": "7.4.0",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "GHSA-9cv2-cfxc-v4v2",
       "source": {
         "name": "ruby-advisory-db",
@@ -30313,59 +30688,6 @@
       ]
     },
     {
-      "id": "GHSA-f283-ghqc-fg79",
-      "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ghsa"
-          },
-          "score": 5.3,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
-        }
-      ],
-      "description": "### Impact\n\nIn affected versions, Guzzle's built-in `CookieJar` accepts any number of `Set-Cookie` header fields from one response, with no limit on the size of each field. When a later request matches the stored cookies, Guzzle places every match into one generated `Cookie` header without limiting the number of cookies or the total header length.\n\nA malicious or compromised server can therefore return many large cookies, causing Guzzle to store attacker-controlled data in memory and copy it into later request headers. This can increase memory use and processing time. It can also make later requests fail when the generated header exceeds a limit in a handler, HTTP implementation, proxy, or destination server. A server on one sibling host, such as `attacker.example.com`, can also set parent-domain cookies that are later selected for another sibling, such as `service.example.com`. The denial can therefore affect a different service that uses the same jar.\n\nAn application is affected when it enables the built-in cookie support, receives an attacker-controlled response, and retains or reuses the jar. The issue affects both built-in handlers because Guzzle manages these cookies itself instead of using libcurl's native cookie engine. cURL addressed a similar denial-of-service issue in CVE-2022-32205 by limiting the cookies it accepts and sends, but those native limits do not protect Guzzle's separate jar. Applications that do not use cookies, use separate jars for untrusted origins, or use a third-party `CookieJarInterface` with suitable limits are not affected by this behavior. The demonstrated direct impact is limited to availability. The patch does not impose a lifetime limit on a jar built up over an unlimited number of responses or populated directly by application code.\n\n### Patches\n\nThe issue is patched in `7.15.1` and later. Starting in that release, the built-in `CookieJar` ignores a `Set-Cookie` field value longer than 8,190 bytes and applies at most 50 successful cookie insertions or replacements from one response. When generating a request, it emits at most 150 matching `name=value` pairs and limits the complete `Cookie: ` header line to 8,190 bytes, including the field name and following space.\n\nThese limits follow the same practical shape as cURL's response to CVE-2022-32205. Both bound cookies accepted from one response, cookies added to one request, and generated header size. Guzzle's 8,190-byte incoming field limit is more generous than cURL's current 5,000-byte cookie-line limit. Neither approach adds a global jar quota or an eviction policy. The 8,190-byte incoming boundary is inclusive. Invalid, unrelated, identical, oversized, and deletion fields do not consume the 50-cookie limit. For outgoing requests, Guzzle preserves its existing matching and iteration order. It stops after 150 pairs or before the first matching cookie that would exceed the line limit. The output limits also apply to directly imported cookie state, but that state is not limited when it is added to the jar. Explicit caller-supplied `Cookie` headers and third-party jar implementations remain the caller's responsibility. Versions before `7.15.1` are affected.\n\n### Workarounds\n\nIf you cannot upgrade immediately, do not enable a shared built-in cookie jar for requests to untrusted origins. Use separate jars per host or trust boundary, disable cookie handling for untrusted requests, and discard or clear a jar after receiving an untrusted response before it is reused. Applications that must accept cookies from untrusted peers can provide a custom `CookieJarInterface` implementation that enforces suitable limits.\n\nGuzzle does not use libcurl's cookie engine for cookies stored in a `CookieJar`. The cURL handler sends the `Cookie` header that Guzzle's cookie middleware has already built, so libcurl's cookie limits do not apply. Upgrading libcurl therefore does not fix this issue.\n\n### References\n\n* https://curl.se/docs/CVE-2022-32205.html\n* https://www.rfc-editor.org/rfc/rfc10025.html#section-5.7\n* https://www.rfc-editor.org/rfc/rfc10025.html#section-5.8.3\n* https://www.rfc-editor.org/rfc/rfc10025.html#section-6.1",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.15.1",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-f283-ghqc-fg79"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/commit/7b68220d6543f6f80fe62e633361fc9d4ead14d4"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/pull/3901"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/releases/tag/7.15.1"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-f283-ghqc-fg79"
-        }
-      ],
-      "published": "2026-07-20T23:27:02+00:00",
-      "updated": "2026-07-20T23:27:02+00:00",
-      "affects": [
-        {
-          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
-          "versions": [
-            {
-              "version": "7.4.0",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "GHSA-g9g8-vgvw-g3vf",
       "source": {
         "name": "ruby-advisory-db",
@@ -30394,59 +30716,6 @@
           "versions": [
             {
               "version": "1.13.10",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "GHSA-h95v-h523-3mw8",
-      "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ghsa"
-          },
-          "score": 5.9,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
-      "description": "### Impact\n\nWhen the optional `referer` redirect setting is enabled, affected versions of `RedirectMiddleware` can copy the fragment from the referring request URI into a generated `Referer` header. A URI fragment is the part after `#`. It is handled locally by the client and is not part of the HTTP request target, so the server handling the original request does not receive it. A generated `Referer` tells the redirect destination which URI led to the request. Guzzle correctly removes user information from that value, but retains the fragment when it follows a redirect to the same scheme, such as HTTPS to HTTPS. For example, an initial URI ending in `#secret` is sent without the fragment, but the redirect destination can receive a `Referer` ending in `#secret`. This behavior affects both the cURL and stream handlers.\n\nAn attacker who controls the redirect destination can read the fragment from the incoming header, including through request logs or application code. If the fragment contains a one-time login secret, access token, state value, or other private client data, it is disclosed to a server that was never meant to receive it. Exploitation requires the application to enable `allow_redirects.referer`, make a request to a URI with a sensitive fragment, and follow a same-scheme redirect to a less-trusted destination.\n\nThe `referer` setting is disabled by default. Applications that leave it disabled, do not put sensitive data in URI fragments, do not follow redirects, or only redirect within the same trust boundary are not affected. Guzzle already omits the generated header when the scheme changes. This issue is limited to the fragment's inclusion. Reducing the path and query on cross-origin redirects is a separate privacy policy question.\n\n### Patches\n\nThe issue is patched in `7.15.1` and later. Starting in that release, Guzzle removes both user information and the fragment before generating a redirect `Referer` value. Other redirect behavior does not change. Guzzle retains the referring path and query, and continues to omit the header when the scheme changes. Versions before `7.15.1` are affected when the optional `referer` setting is enabled.\n\n### Workarounds\n\nIf you cannot upgrade immediately, leave automatic Referer generation disabled. It is off by default. If redirect options are configured explicitly, ensure that `referer` is `false`:\n\n```php\n$client->request('GET', $uri, [\n    'allow_redirects' => ['referer' => false],\n]);\n```\n\nAlternatively, disable automatic redirects and follow trusted destinations manually, or remove the fragment from the request URI before sending a request that may redirect. Do not rely on the fact that fragments are absent from the initial HTTP request target, because the affected middleware can reintroduce them in the generated header.\n\n### References\n\n* https://www.rfc-editor.org/rfc/rfc9110.html#section-10.1.3\n* https://www.rfc-editor.org/rfc/rfc3986.html#section-3.5\n* https://www.rfc-editor.org/rfc/rfc9700.html#section-4.2.3",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.15.1",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-h95v-h523-3mw8"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/commit/7b68220d6543f6f80fe62e633361fc9d4ead14d4"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/pull/3901"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/releases/tag/7.15.1"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-h95v-h523-3mw8"
-        }
-      ],
-      "published": "2026-07-20T23:28:36+00:00",
-      "updated": "2026-07-20T23:28:36+00:00",
-      "affects": [
-        {
-          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
-          "versions": [
-            {
-              "version": "7.4.0",
               "status": "affected"
             }
           ]
@@ -31000,59 +31269,6 @@
           "versions": [
             {
               "version": "1.13.10",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "GHSA-wm3w-8rrp-j577",
-      "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Acomposer"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ghsa"
-          },
-          "score": 5.9,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
-      "description": "### Impact\n\nIn affected versions, `CookieJar` does not preserve whether a response cookie was set without a `Domain` attribute or with an empty one. A cookie without `Domain` is host-only and must be returned only to the exact host that set it. Under current cookie processing rules, an empty `Domain` value is also host-only. Guzzle instead stores the request host in the cookie's `Domain` field and later applies ordinary domain matching, as though the server had supplied a valid domain. For example, a host-only `sid=secret` cookie set by `example.com` can subsequently be sent to `child.example.com`. `FileCookieJar` and `SessionCookieJar` also persist the request host without recording the host-only state, so reloading a jar preserves the widened scope.\n\nAn attacker who controls or can observe a child host can therefore receive cookies that were intended only for its parent host. Depending on the cookie, this can disclose session identifiers, authorization tokens, or other sensitive state. Exploitation requires the application to enable Guzzle's cookie support, reuse the same built-in cookie jar, receive a host-only cookie from a parent host, and later make a matching request to a less-trusted child host. The cookie's other restrictions still apply. Its path must match, a `Secure` cookie is sent only over a secure connection, and an expired cookie is not sent.\n\nApplications that do not use Guzzle's cookie support are not affected. Applications are also not affected by this disclosure if they use a separate jar for every host or trust boundary, never request a less-trusted subdomain with the same jar, or only store cookies carrying a valid, non-empty `Domain` attribute. The incorrect behavior occurs between an otherwise valid parent host and its subdomains.\n\n### Patches\n\nThe issue is patched in `7.15.1` and later. Starting in that release, Guzzle records whether a response cookie is host-only and matches it only against the exact host. The host-only flag is part of cookie identity for replacement and response-driven deletion. Cookies carrying a valid, non-empty `Domain` attribute retain their existing domain-matching behavior. A host-only cookie can coexist with an explicit-domain cookie having the same name, domain string, and path.\n\nThe built-in persistent jars now write a boolean `HostOnly` marker for every stored cookie record. They reject records where that marker is missing or is not a boolean, and validate all records before changing the live jar. Persisted cookie records written by an older version are therefore rejected rather than silently interpreted with an unsafe scope. Loading non-empty file or session data written without this marker throws a `RuntimeException` until the data is deleted, regenerated, or correctly annotated. Versions before `7.15.1` are affected.\n\n### Workarounds\n\nIf you cannot upgrade immediately, do not reuse one `CookieJar` instance across parent and child hosts with different trust levels. Use a separate cookie jar for each host or trust boundary, disable cookie handling for requests to less-trusted hosts, or avoid making those requests through a client configured with a shared jar. In particular, avoid `new Client(['cookies' => true])` for a client that may contact both a trusted parent host and less-trusted subdomains, because that option creates one jar for the whole client.\n\nWhen upgrading, delete or rotate existing `FileCookieJar` and `SessionCookieJar` data that contains cookie records written without a `HostOnly` marker. Records may instead be annotated manually only when the original presence or absence of the cookie's `Domain` attribute is known. The stored domain string is not sufficient to infer it safely.\n\n### References\n\n* https://www.rfc-editor.org/rfc/rfc10025.html#section-4.1.2.3\n* https://www.rfc-editor.org/rfc/rfc10025.html#section-5.7\n* https://www.rfc-editor.org/rfc/rfc10025.html#section-5.8.3",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.15.1",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-wm3w-8rrp-j577"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/commit/7b68220d6543f6f80fe62e633361fc9d4ead14d4"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/pull/3901"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/releases/tag/7.15.1"
-        },
-        {
-          "url": "https://github.com/guzzle/guzzle/security/advisories/GHSA-wm3w-8rrp-j577"
-        }
-      ],
-      "published": "2026-07-20T23:27:49+00:00",
-      "updated": "2026-07-20T23:27:49+00:00",
-      "affects": [
-        {
-          "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
-          "versions": [
-            {
-              "version": "7.4.0",
               "status": "affected"
             }
           ]
