@@ -23,10 +23,10 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 214
-    severity: {critical: 19, high: 105, medium: 65, low: 17}
+    severity: {critical: 19, high: 103, medium: 67, low: 17}
     correlated: 47
     uncorrelated: 167
-    totalImpactScore: 719
+    totalImpactScore: 715
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1107,15 +1107,6 @@ uncorrelatedAdvisories:
           affectedVersion: 0.6.0
           fixVersion: ""
           addressed: false
-    - id: CVE-2026-39827
-      severity: high
-      dependency: golang.org/x/crypto@v0.16.0
-      recommendation: Upgrade golang.org/x/crypto to version 0.52.0
-      occurrences:
-        - dependencyName: golang.org/x/crypto
-          affectedVersion: v0.16.0
-          fixVersion: 0.52.0
-          addressed: false
     - id: CVE-2026-39828
       severity: high
       dependency: golang.org/x/crypto@v0.16.0
@@ -1401,15 +1392,6 @@ uncorrelatedAdvisories:
           fixVersion: 0.52.0
           addressed: false
     - id: CVE-2026-46597
-      severity: high
-      dependency: golang.org/x/crypto@v0.16.0
-      recommendation: Upgrade golang.org/x/crypto to version 0.52.0
-      occurrences:
-        - dependencyName: golang.org/x/crypto
-          affectedVersion: v0.16.0
-          fixVersion: 0.52.0
-          addressed: false
-    - id: CVE-2026-46598
       severity: high
       dependency: golang.org/x/crypto@v0.16.0
       recommendation: Upgrade golang.org/x/crypto to version 0.52.0
@@ -1860,6 +1842,15 @@ uncorrelatedAdvisories:
           affectedVersion: 2.14.1
           fixVersion: 2.25.4
           addressed: false
+    - id: CVE-2026-39827
+      severity: medium
+      dependency: golang.org/x/crypto@v0.16.0
+      recommendation: Upgrade golang.org/x/crypto to version 0.52.0
+      occurrences:
+        - dependencyName: golang.org/x/crypto
+          affectedVersion: v0.16.0
+          fixVersion: 0.52.0
+          addressed: false
     - id: CVE-2026-40347
       severity: medium
       dependency: python-multipart@0.0.5
@@ -1895,6 +1886,15 @@ uncorrelatedAdvisories:
         - dependencyName: axios
           affectedVersion: 0.21.1
           fixVersion: 0.31.1
+          addressed: false
+    - id: CVE-2026-46598
+      severity: medium
+      dependency: golang.org/x/crypto@v0.16.0
+      recommendation: Upgrade golang.org/x/crypto to version 0.52.0
+      occurrences:
+        - dependencyName: golang.org/x/crypto
+          affectedVersion: v0.16.0
+          fixVersion: 0.52.0
           addressed: false
     - id: CVE-2026-53537
       severity: medium
@@ -1977,6 +1977,42 @@ uncorrelatedAdvisories:
           affectedVersion: 7.4.0
           fixVersion: 7.12.3
           addressed: false
+    - id: CVE-2026-67339
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.14.2
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.14.2
+          addressed: false
+    - id: CVE-2026-67353
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.15.1
+          addressed: false
+    - id: CVE-2026-67354
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.15.1
+          addressed: false
+    - id: CVE-2026-67355
+      severity: medium
+      dependency: guzzlehttp/guzzle@7.4.0
+      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
+      occurrences:
+        - dependencyName: guzzlehttp/guzzle
+          affectedVersion: 7.4.0
+          fixVersion: 7.15.1
+          addressed: false
     - id: CVE-2026-69245
       severity: medium
       dependency: guzzlehttp/guzzle@7.4.0
@@ -2004,15 +2040,6 @@ uncorrelatedAdvisories:
           affectedVersion: 0.21.1
           fixVersion: 0.33.0
           addressed: false
-    - id: GHSA-94pj-82f3-465w
-      severity: medium
-      dependency: guzzlehttp/guzzle@7.4.0
-      recommendation: Upgrade guzzlehttp/guzzle to version 7.14.2
-      occurrences:
-        - dependencyName: guzzlehttp/guzzle
-          affectedVersion: 7.4.0
-          fixVersion: 7.14.2
-          addressed: false
     - id: GHSA-9wjq-cp2p-hrgf
       severity: medium
       dependency: loofah@2.25.1
@@ -2030,24 +2057,6 @@ uncorrelatedAdvisories:
         - dependencyName: rails-html-sanitizer
           affectedVersion: 1.5.0
           fixVersion: 1.7.1
-          addressed: false
-    - id: GHSA-f283-ghqc-fg79
-      severity: medium
-      dependency: guzzlehttp/guzzle@7.4.0
-      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
-      occurrences:
-        - dependencyName: guzzlehttp/guzzle
-          affectedVersion: 7.4.0
-          fixVersion: 7.15.1
-          addressed: false
-    - id: GHSA-h95v-h523-3mw8
-      severity: medium
-      dependency: guzzlehttp/guzzle@7.4.0
-      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
-      occurrences:
-        - dependencyName: guzzlehttp/guzzle
-          affectedVersion: 7.4.0
-          fixVersion: 7.15.1
           addressed: false
     - id: GHSA-mmx7-hfxf-jppx
       severity: medium
@@ -2075,15 +2084,6 @@ uncorrelatedAdvisories:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
           fixVersion: 1.19.3
-          addressed: false
-    - id: GHSA-wm3w-8rrp-j577
-      severity: medium
-      dependency: guzzlehttp/guzzle@7.4.0
-      recommendation: Upgrade guzzlehttp/guzzle to version 7.15.1
-      occurrences:
-        - dependencyName: guzzlehttp/guzzle
-          affectedVersion: 7.4.0
-          fixVersion: 7.15.1
           addressed: false
     - id: GHSA-wx95-c6cv-8532
       severity: medium
