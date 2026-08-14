@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 216
-    severity: {critical: 18, high: 105, medium: 68, low: 17}
+    totalAdvisories: 218
+    severity: {critical: 18, high: 105, medium: 69, low: 17}
     correlated: 47
-    uncorrelated: 169
-    totalImpactScore: 717
+    uncorrelated: 171
+    totalImpactScore: 719
     reducibleImpactScore: 211
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1905,6 +1905,15 @@ uncorrelatedAdvisories:
           affectedVersion: v0.16.0
           fixVersion: 0.52.0
           addressed: false
+    - id: CVE-2026-49844
+      severity: medium
+      dependency: log4j-api@2.14.1
+      recommendation: Upgrade org.apache.logging.log4j:log4j-api to version 2.25.5, 2.26.1
+      occurrences:
+        - dependencyName: log4j-api
+          affectedVersion: 2.14.1
+          fixVersion: 2.25.5
+          addressed: false
     - id: CVE-2026-53537
       severity: medium
       dependency: python-multipart@0.0.5
@@ -2040,6 +2049,15 @@ uncorrelatedAdvisories:
           affectedVersion: 2.25.1
           fixVersion: 2.25.2
           addressed: false
+    - id: CVE-2026-73648
+      severity: medium
+      dependency: rails-html-sanitizer@1.5.0
+      recommendation: Upgrade rails-html-sanitizer to version 1.7.1
+      occurrences:
+        - dependencyName: rails-html-sanitizer
+          affectedVersion: 1.5.0
+          fixVersion: 1.7.1
+          addressed: false
     - id: GHSA-5prr-v3j2-97mh
       severity: medium
       dependency: nokogiri@1.13.10
@@ -2066,15 +2084,6 @@ uncorrelatedAdvisories:
         - dependencyName: loofah
           affectedVersion: 2.25.1
           fixVersion: 2.25.2
-          addressed: false
-    - id: GHSA-cj75-f6xr-r4g7
-      severity: medium
-      dependency: rails-html-sanitizer@1.5.0
-      recommendation: Upgrade rails-html-sanitizer to version >= 1.7.1
-      occurrences:
-        - dependencyName: rails-html-sanitizer
-          affectedVersion: 1.5.0
-          fixVersion: 1.7.1
           addressed: false
     - id: GHSA-mmx7-hfxf-jppx
       severity: medium
@@ -2318,6 +2327,15 @@ uncorrelatedAdvisories:
         - dependencyName: loofah
           affectedVersion: 2.25.1
           fixVersion: 2.25.2
+          addressed: false
+    - id: GHSA-cj75-f6xr-r4g7
+      severity: unknown
+      dependency: rails-html-sanitizer@1.5.0
+      recommendation: Upgrade rails-html-sanitizer to version >= 1.7.1
+      occurrences:
+        - dependencyName: rails-html-sanitizer
+          affectedVersion: 1.5.0
+          fixVersion: 1.7.1
           addressed: false
     - id: GHSA-g9g8-vgvw-g3vf
       severity: unknown
