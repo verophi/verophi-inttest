@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 218
-    severity: {critical: 20, high: 103, medium: 69, low: 17}
+    totalAdvisories: 215
+    severity: {critical: 20, high: 103, medium: 68, low: 17}
     correlated: 47
-    uncorrelated: 171
-    totalImpactScore: 727
+    uncorrelated: 168
+    totalImpactScore: 725
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -2043,7 +2043,7 @@ uncorrelatedAdvisories:
     - id: CVE-2026-73490
       severity: medium
       dependency: loofah@2.25.1
-      recommendation: Upgrade loofah to version 2.25.2
+      recommendation: Upgrade loofah to version >= 2.25.2
       occurrences:
         - dependencyName: loofah
           affectedVersion: 2.25.1
@@ -2052,7 +2052,7 @@ uncorrelatedAdvisories:
     - id: CVE-2026-73648
       severity: medium
       dependency: rails-html-sanitizer@1.5.0
-      recommendation: Upgrade rails-html-sanitizer to version 1.7.1
+      recommendation: Upgrade rails-html-sanitizer to version >= 1.7.1
       occurrences:
         - dependencyName: rails-html-sanitizer
           affectedVersion: 1.5.0
@@ -2075,15 +2075,6 @@ uncorrelatedAdvisories:
         - dependencyName: axios
           affectedVersion: 0.21.1
           fixVersion: 0.33.0
-          addressed: false
-    - id: GHSA-9wjq-cp2p-hrgf
-      severity: medium
-      dependency: loofah@2.25.1
-      recommendation: Upgrade loofah to version >= 2.25.2
-      occurrences:
-        - dependencyName: loofah
-          affectedVersion: 2.25.1
-          fixVersion: 2.25.2
           addressed: false
     - id: GHSA-mmx7-hfxf-jppx
       severity: medium
@@ -2169,7 +2160,7 @@ uncorrelatedAdvisories:
     - id: CVE-2026-73491
       severity: low
       dependency: loofah@2.25.1
-      recommendation: Upgrade loofah to version 2.25.2
+      recommendation: Upgrade loofah to version >= 2.25.2
       occurrences:
         - dependencyName: loofah
           affectedVersion: 2.25.1
@@ -2318,24 +2309,6 @@ uncorrelatedAdvisories:
         - dependencyName: crass
           affectedVersion: 1.0.6
           fixVersion: 1.0.7
-          addressed: false
-    - id: GHSA-8whx-365g-h9vv
-      severity: unknown
-      dependency: loofah@2.25.1
-      recommendation: Upgrade loofah to version >= 2.25.2
-      occurrences:
-        - dependencyName: loofah
-          affectedVersion: 2.25.1
-          fixVersion: 2.25.2
-          addressed: false
-    - id: GHSA-cj75-f6xr-r4g7
-      severity: unknown
-      dependency: rails-html-sanitizer@1.5.0
-      recommendation: Upgrade rails-html-sanitizer to version >= 1.7.1
-      occurrences:
-        - dependencyName: rails-html-sanitizer
-          affectedVersion: 1.5.0
-          fixVersion: 1.7.1
           addressed: false
     - id: GHSA-g9g8-vgvw-g3vf
       severity: unknown
