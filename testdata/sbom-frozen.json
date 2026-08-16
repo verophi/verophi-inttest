@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:85a95e97-8877-47fb-9223-2da53acd1b55",
+  "serialNumber": "urn:uuid:76d9b093-0391-4144-8165-0b3153c5048b",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-08-15T04:34:57+00:00",
+    "timestamp": "2026-08-16T04:39:39+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "7bdc6c09-6436-417b-a8c8-821802cbbbec",
+      "bom-ref": "b58b70d6-a57c-45ca-8c7c-1d5e0538ed68",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,82 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "15d4d75f-1a79-4ebb-b4c2-f50d8181b252",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "45bd9d1f-1c16-4dbe-bebf-3639da8ff773",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "46ed9127-23b3-447b-928e-575d4d65bbbf",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "581dca5d-c478-47e3-a1c3-9638ad0b6007",
-      "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "6f1fde0e-b708-4e9c-806a-8577a18e8646",
-      "type": "application",
-      "name": "ruby/Gemfile.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7c0066b3-0230-482b-bdea-e79f9bf70c7e",
+      "bom-ref": "26d650c1-5f3e-475c-b11b-4cd851214148",
       "type": "application",
       "name": "nuget/packages.lock.json",
       "properties": [
@@ -123,9 +48,9 @@
       ]
     },
     {
-      "bom-ref": "7cb3c5c7-0edd-468c-85eb-0bf94b3d32d1",
+      "bom-ref": "33197143-65c9-46de-9a87-e972ab325c4d",
       "type": "application",
-      "name": "rust/Cargo.lock",
+      "name": "go/go.mod",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -133,42 +58,12 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
+          "value": "gomod"
         }
       ]
     },
     {
-      "bom-ref": "84191752-0781-49f5-b822-750a683dbb4a",
-      "type": "application",
-      "name": "npm/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8793bf0e-a276-4154-a740-0ee187996391",
-      "type": "application",
-      "name": "php/composer.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "composer"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9f92ffc4-550d-4da4-89ce-a43a133600c3",
+      "bom-ref": "38abcc48-4cf7-4d1c-ba66-3616b0b14a68",
       "type": "application",
       "name": "maven/pom.xml",
       "properties": [
@@ -183,7 +78,7 @@
       ]
     },
     {
-      "bom-ref": "b05692a2-3841-4377-9bf8-84f4032e79ad",
+      "bom-ref": "5326c15e-503d-44ad-8c9f-98bc081845ee",
       "type": "application",
       "name": "swift/Package.resolved",
       "properties": [
@@ -198,9 +93,9 @@
       ]
     },
     {
-      "bom-ref": "fe1dfc29-b147-4e54-95a9-9c68b4101138",
+      "bom-ref": "540120e3-4831-404e-b8c7-c428c55e5778",
       "type": "application",
-      "name": "go/go.mod",
+      "name": "elixir/mix.lock",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +103,112 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "62f3939d-7058-4f1d-b625-2348cff15740",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6597cd8a-9e12-420f-b479-cbe816e97152",
+      "type": "application",
+      "name": "python/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "95ab51a3-6660-45e4-95e5-30e810048f26",
+      "type": "application",
+      "name": "ruby/Gemfile.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "bundler"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9842c4f0-dd9f-43f9-8c81-71a746797ef7",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a7f7b06b-b6d7-4827-b44f-4320d357c31e",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c515e920-12ea-47c1-9ca0-9cc329aede6b",
+      "type": "application",
+      "name": "lockfile-maintenance/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d072b3ab-5138-4e65-8e63-7098598c5397",
+      "type": "application",
+      "name": "php/composer.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "composer"
         }
       ]
     },
@@ -4675,16 +4675,50 @@
   ],
   "dependencies": [
     {
-      "ref": "15d4d75f-1a79-4ebb-b4c2-f50d8181b252",
+      "ref": "26d650c1-5f3e-475c-b11b-4cd851214148",
       "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
       ]
     },
     {
-      "ref": "45bd9d1f-1c16-4dbe-bebf-3639da8ff773",
+      "ref": "33197143-65c9-46de-9a87-e972ab325c4d",
+      "dependsOn": [
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+      ]
+    },
+    {
+      "ref": "38abcc48-4cf7-4d1c-ba66-3616b0b14a68",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "5326c15e-503d-44ad-8c9f-98bc081845ee",
+      "dependsOn": [
+        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
+        "pkg:swift/github.com/apple/swift-collections@1.0.4",
+        "pkg:swift/github.com/apple/swift-log@1.5.3",
+        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
+        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
+        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
+        "pkg:swift/github.com/apple/swift-nio@2.55.0"
+      ]
+    },
+    {
+      "ref": "540120e3-4831-404e-b8c7-c428c55e5778",
+      "dependsOn": [
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
+      ]
+    },
+    {
+      "ref": "62f3939d-7058-4f1d-b625-2348cff15740",
       "dependsOn": [
         "pkg:pub/collection@1.19.1",
         "pkg:pub/dio@4.0.0",
@@ -4697,61 +4731,28 @@
       ]
     },
     {
-      "ref": "46ed9127-23b3-447b-928e-575d4d65bbbf",
+      "ref": "6597cd8a-9e12-420f-b479-cbe816e97152",
       "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
       ]
     },
     {
-      "ref": "581dca5d-c478-47e3-a1c3-9638ad0b6007",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
-      ]
-    },
-    {
-      "ref": "6f1fde0e-b708-4e9c-806a-8577a18e8646",
+      "ref": "95ab51a3-6660-45e4-95e5-30e810048f26",
       "dependsOn": [
         "pkg:gem/actionpack@6.1.4"
       ]
     },
     {
-      "ref": "7bdc6c09-6436-417b-a8c8-821802cbbbec",
-      "dependsOn": [
-        "15d4d75f-1a79-4ebb-b4c2-f50d8181b252",
-        "45bd9d1f-1c16-4dbe-bebf-3639da8ff773",
-        "46ed9127-23b3-447b-928e-575d4d65bbbf",
-        "581dca5d-c478-47e3-a1c3-9638ad0b6007",
-        "6f1fde0e-b708-4e9c-806a-8577a18e8646",
-        "7c0066b3-0230-482b-bdea-e79f9bf70c7e",
-        "7cb3c5c7-0edd-468c-85eb-0bf94b3d32d1",
-        "84191752-0781-49f5-b822-750a683dbb4a",
-        "8793bf0e-a276-4154-a740-0ee187996391",
-        "9f92ffc4-550d-4da4-89ce-a43a133600c3",
-        "b05692a2-3841-4377-9bf8-84f4032e79ad",
-        "fe1dfc29-b147-4e54-95a9-9c68b4101138"
-      ]
-    },
-    {
-      "ref": "7c0066b3-0230-482b-bdea-e79f9bf70c7e",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "7cb3c5c7-0edd-468c-85eb-0bf94b3d32d1",
+      "ref": "9842c4f0-dd9f-43f9-8c81-71a746797ef7",
       "dependsOn": [
         "pkg:cargo/vero-test-fixtures-rust@0.1.0"
       ]
     },
     {
-      "ref": "84191752-0781-49f5-b822-750a683dbb4a",
+      "ref": "a7f7b06b-b6d7-4827-b44f-4320d357c31e",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4768,33 +4769,32 @@
       ]
     },
     {
-      "ref": "8793bf0e-a276-4154-a740-0ee187996391",
+      "ref": "b58b70d6-a57c-45ca-8c7c-1d5e0538ed68",
+      "dependsOn": [
+        "26d650c1-5f3e-475c-b11b-4cd851214148",
+        "33197143-65c9-46de-9a87-e972ab325c4d",
+        "38abcc48-4cf7-4d1c-ba66-3616b0b14a68",
+        "5326c15e-503d-44ad-8c9f-98bc081845ee",
+        "540120e3-4831-404e-b8c7-c428c55e5778",
+        "62f3939d-7058-4f1d-b625-2348cff15740",
+        "6597cd8a-9e12-420f-b479-cbe816e97152",
+        "95ab51a3-6660-45e4-95e5-30e810048f26",
+        "9842c4f0-dd9f-43f9-8c81-71a746797ef7",
+        "a7f7b06b-b6d7-4827-b44f-4320d357c31e",
+        "c515e920-12ea-47c1-9ca0-9cc329aede6b",
+        "d072b3ab-5138-4e65-8e63-7098598c5397"
+      ]
+    },
+    {
+      "ref": "c515e920-12ea-47c1-9ca0-9cc329aede6b",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "d072b3ab-5138-4e65-8e63-7098598c5397",
       "dependsOn": [
         "pkg:composer/guzzlehttp/guzzle@7.4.0"
-      ]
-    },
-    {
-      "ref": "9f92ffc4-550d-4da4-89ce-a43a133600c3",
-      "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
-      ]
-    },
-    {
-      "ref": "b05692a2-3841-4377-9bf8-84f4032e79ad",
-      "dependsOn": [
-        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
-        "pkg:swift/github.com/apple/swift-collections@1.0.4",
-        "pkg:swift/github.com/apple/swift-log@1.5.3",
-        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
-        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
-        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
-        "pkg:swift/github.com/apple/swift-nio@2.55.0"
-      ]
-    },
-    {
-      "ref": "fe1dfc29-b147-4e54-95a9-9c68b4101138",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
       ]
     },
     {
@@ -9588,7 +9588,7 @@
         565
       ],
       "description": "Guzzle is a PHP HTTP client. Guzzle prior to versions 6.5.6 and 7.4.3 contains a vulnerability with the cookie middleware. The vulnerability is that it is not checked if the cookie domain equals the domain of the server which sets the cookie via the Set-Cookie header, allowing a malicious server to set cookies for unrelated domains. The cookie middleware is disabled by default, so most library consumers will not be affected by this issue. Only those who manually add the cookie middleware to the handler stack or construct the client with ['cookies' => true] are affected. Moreover, those who do not use the same Guzzle client to call multiple domains and have disabled redirect forwarding are not affected by this vulnerability. Guzzle versions 6.5.6 and 7.4.3 contain a patch for this issue. As a workaround, turn off the cookie middleware.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.3, 6.5.6",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.6, 7.4.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-29248"
@@ -9774,7 +9774,7 @@
         212
       ],
       "description": "Guzzle is an open source PHP HTTP client. In affected versions `Authorization` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, we should not forward the `Authorization` header on. This is much the same as to how we don't forward on the header if the host changes. Prior to this fix, `https` to `http` downgrades did not result in the `Authorization` header being removed, only changes to the host. Affected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4. Users unable to upgrade may consider an alternative approach which would be to use their own redirect middleware. Alternately users may simply disable redirects all together if redirects are not expected or required.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.4, 6.5.7",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.7, 7.4.4",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31043"
@@ -30391,8 +30391,8 @@
     {
       "id": "CVE-2026-73490",
       "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
       },
       "ratings": [
         {
@@ -30403,19 +30403,40 @@
           "severity": "medium",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 4.7,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N"
+        },
+        {
+          "source": {
+            "name": "ruby-advisory-db"
+          },
+          "severity": "medium"
         }
       ],
       "cwes": [
         79
       ],
       "description": "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. Prior to 2.25.2, Loofah's HTML5 sanitizer applies its local-reference restriction only to the xlink:href attribute on SVG use and feImage elements, while browsers also accept the plain href attribute. A crafted sanitized SVG can therefore reference an arbitrary same-origin external document; use may render external SVG content containing scripts or other dangerous content, and feImage may load external images for tracking. Applications that sanitize user-supplied SVG with Loofah's default allowlist are affected. This issue is fixed in version 2.25.2.",
-      "recommendation": "Upgrade loofah to version 2.25.2",
+      "recommendation": "Upgrade loofah to version >= 2.25.2",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2026-73490"
         },
         {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-73490"
+        },
+        {
           "url": "https://github.com/flavorjones/loofah"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/blob/main/CHANGELOG.md#2252--2026-07-15"
         },
         {
           "url": "https://github.com/flavorjones/loofah/commit/20867b9be689521887364b74822c41ef830523c9"
@@ -30428,6 +30449,15 @@
         },
         {
           "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-9wjq-cp2p-hrgf"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73490"
+        },
+        {
+          "url": "https://rubygems.org/gems/loofah/versions/2.25.2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-73490"
         }
       ],
       "published": "2026-08-12T21:17:42+00:00",
@@ -30447,8 +30477,8 @@
     {
       "id": "CVE-2026-73491",
       "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
       },
       "ratings": [
         {
@@ -30459,19 +30489,40 @@
           "severity": "low",
           "method": "CVSSv4",
           "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 3.7,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N"
         }
       ],
       "cwes": [
         184
       ],
       "description": "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri. From 2.25.0 until 2.25.2, Loofah::HTML5::Scrub.allowed_uri? does not reject javascript: URIs whose scheme is split or prefixed with the HTML5 named whitespace character references &Tab; or &NewLine;. CGI.unescapeHTML leaves those references intact, so allowed_uri? reports the URL safe even though a browser decodes and strips the tab or line feed and executes the resulting javascript: URL. This issue affects only callers that pass HTML-encoded strings directly to allowed_uri?; Loofah's default sanitize() path is not affected. This issue is fixed in version 2.25.2.",
-      "recommendation": "Upgrade loofah to version 2.25.2",
+      "recommendation": "Upgrade loofah to version >= 2.25.2",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2026-73491"
         },
         {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-73491"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-46fp-8f5p-pf2m"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-8whx-365g-h9vv"
+        },
+        {
           "url": "https://github.com/flavorjones/loofah"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/blob/main/CHANGELOG.md#2252--2026-07-15"
         },
         {
           "url": "https://github.com/flavorjones/loofah/commit/5e91af861e3cdab47b91dd0b81f3afdfd13a5e19"
@@ -30484,6 +30535,15 @@
         },
         {
           "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-8whx-365g-h9vv"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73491"
+        },
+        {
+          "url": "https://rubygems.org/gems/loofah/versions/2.25.2"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-73491"
         }
       ],
       "published": "2026-08-12T21:17:42+00:00",
@@ -30503,8 +30563,8 @@
     {
       "id": "CVE-2026-73648",
       "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
       },
       "ratings": [
         {
@@ -30515,19 +30575,43 @@
           "severity": "medium",
           "method": "CVSSv4",
           "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.4,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
         }
       ],
       "cwes": [
         79
       ],
       "description": "rails-html-sanitizer is responsible for sanitizing HTML fragments in Rails applications. From 1.0.3 until 1.7.1, Rails::HTML::PermitScrubber restricted SVG reference elements in SVG_ALLOW_LOCAL_HREF only when they used xlink:href, even though browsers also accept the plain href attribute. Applications with non-default allowed tags that included SVG use or feImage elements could therefore permit external references; a same-origin external SVG referenced by use could execute scripts in the sanitized document's context, while feImage could load external images for tracking. Applications using the default allowed tags are not affected. This issue is fixed in version 1.7.1.",
-      "recommendation": "Upgrade rails-html-sanitizer to version 1.7.1",
+      "recommendation": "Upgrade rails-html-sanitizer to version >= 1.7.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2026-73648"
         },
         {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-73648"
+        },
+        {
+          "url": "https://discuss.rubyonrails.org/t/ghsa-cj75-f6xr-r4g7-possible-xss-vulnerability-with-certain-configurations-of-rails-html-sanitizer/91359#post_1"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-cj75-f6xr-r4g7"
+        },
+        {
+          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-9wjq-cp2p-hrgf"
+        },
+        {
           "url": "https://github.com/rails/rails-html-sanitizer"
+        },
+        {
+          "url": "https://github.com/rails/rails-html-sanitizer/blob/main/CHANGELOG.md#v171--2026-07-15"
         },
         {
           "url": "https://github.com/rails/rails-html-sanitizer/commit/74dcb8053e6da9921246ce71b06ad9fd65b19586"
@@ -30540,6 +30624,15 @@
         },
         {
           "url": "https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-cj75-f6xr-r4g7"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73648"
+        },
+        {
+          "url": "https://rubygems.org/gems/rails-html-sanitizer/versions/1.7.1"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-73648"
         }
       ],
       "published": "2026-08-13T18:18:20+00:00",
@@ -31083,44 +31176,6 @@
       ]
     },
     {
-      "id": "GHSA-8whx-365g-h9vv",
-      "source": {
-        "name": "ruby-advisory-db",
-        "url": "https://github.com/rubysec/ruby-advisory-db"
-      },
-      "ratings": [],
-      "description": "## Summary\n\nLoofah::HTML5::Scrub.allowed_uri? does not correctly reject javascript:\nURIs when the scheme is split or prefixed by the HTML5 named character\nreferences &Tab; (tab) or &NewLine; (line feed).\n\nThis is a bypass of the fix for GHSA-46fp-8f5p-pf2m, which handled\nthe equivalent numeric character references (&#9;, &#10;, &#13;) but\ndid not cover the named forms.\n",
-      "recommendation": "Upgrade loofah to version >= 2.25.2",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-8whx-365g-h9vv"
-        },
-        {
-          "url": "https://github.com/advisories/GHSA-46fp-8f5p-pf2m"
-        },
-        {
-          "url": "https://github.com/flavorjones/loofah/blob/main/CHANGELOG.md#2252--2026-07-15"
-        },
-        {
-          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-8whx-365g-h9vv"
-        },
-        {
-          "url": "https://rubygems.org/gems/loofah/versions/2.25.2"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:gem/loofah@2.25.1",
-          "versions": [
-            {
-              "version": "2.25.1",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "GHSA-9cv2-cfxc-v4v2",
       "source": {
         "name": "ruby-advisory-db",
@@ -31158,48 +31213,6 @@
           "versions": [
             {
               "version": "1.13.10",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "GHSA-9wjq-cp2p-hrgf",
-      "source": {
-        "name": "ruby-advisory-db",
-        "url": "https://github.com/rubysec/ruby-advisory-db"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ruby-advisory-db"
-          },
-          "severity": "medium"
-        }
-      ],
-      "description": "## Summary\n\nLoofah's HTML5 sanitizer restricted only the xlink:href attribute on\ncertain SVG elements to local, same-document references. Browsers\nalso accept a plain href attribute as an alternative to the deprecated\nxlink:href per the SVG 2 spec, but Loofah did not apply the same\nrestriction to it, allowing those elements to reference arbitrary\nexternal documents.\n\n## Impact\n\nSVG <use> can load and render external SVG content by reference. If\nthe referenced external SVG is same-origin and contains scripts or\nother dangerous content, it could execute in the context of the\nsanitized document. <feImage> can load external images, which can be\nused for tracking. Modern browsers restrict cross-origin <use>\nfetches, which limits but does not eliminate the risk.\n\nApplications that sanitize user-supplied SVG (directly, or as part\nof HTML) with Loofah's default allowlist are affected.\n\n## Credit\n\nFound by the maintainer, Mike Dalessio, during a security audit.\n",
-      "recommendation": "Upgrade loofah to version >= 2.25.2",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-9wjq-cp2p-hrgf"
-        },
-        {
-          "url": "https://github.com/flavorjones/loofah/blob/main/CHANGELOG.md#2252--2026-07-15"
-        },
-        {
-          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-9wjq-cp2p-hrgf"
-        },
-        {
-          "url": "https://rubygems.org/gems/loofah/versions/2.25.2"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:gem/loofah@2.25.1",
-          "versions": [
-            {
-              "version": "2.25.1",
               "status": "affected"
             }
           ]
@@ -31250,50 +31263,6 @@
           "versions": [
             {
               "version": "1.13.10",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "GHSA-cj75-f6xr-r4g7",
-      "source": {
-        "name": "ruby-advisory-db",
-        "url": "https://github.com/rubysec/ruby-advisory-db"
-      },
-      "ratings": [],
-      "description": "## Summary\n\nThere is a possible cross-site scripting vulnerability in\nrails-html-sanitizer when the sanitizer is configured to allow an\nSVG reference element such as <use>.\nSee related GHSA-9wjq-cp2p-hrgf in Loofah, whose SVG local-reference\nlogic rails-html-sanitizer mirrors.\n",
-      "recommendation": "Upgrade rails-html-sanitizer to version >= 1.7.1",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-cj75-f6xr-r4g7"
-        },
-        {
-          "url": "https://discuss.rubyonrails.org/t/ghsa-cj75-f6xr-r4g7-possible-xss-vulnerability-with-certain-configurations-of-rails-html-sanitizer/91359#post_1"
-        },
-        {
-          "url": "https://github.com/flavorjones/loofah/security/advisories/GHSA-9wjq-cp2p-hrgf"
-        },
-        {
-          "url": "https://github.com/rails/rails-html-sanitizer/blob/main/CHANGELOG.md#v171--2026-07-15"
-        },
-        {
-          "url": "https://github.com/rails/rails-html-sanitizer/commit/74dcb8053e6da9921246ce71b06ad9fd65b19586"
-        },
-        {
-          "url": "https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-cj75-f6xr-r4g7"
-        },
-        {
-          "url": "https://rubygems.org/gems/rails-html-sanitizer/versions/1.7.1"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:gem/rails-html-sanitizer@1.5.0",
-          "versions": [
-            {
-              "version": "1.5.0",
               "status": "affected"
             }
           ]
