@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:6c814a18-ce98-4fa7-a818-ff5e7220b75d",
+  "serialNumber": "urn:uuid:f95bbce1-334c-45dc-9017-8e218d593459",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-08-28T16:26:48+00:00",
+    "timestamp": "2026-08-29T10:55:39+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "51be9bc6-f943-48c1-b3ff-11eb54616ac6",
+      "bom-ref": "a0aa64eb-60c3-4f47-a673-369f30a40949",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,37 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "0c7c3792-a5fa-4ea2-b4a3-022a8f522748",
-      "type": "application",
-      "name": "ruby/Gemfile.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
-        }
-      ]
-    },
-    {
-      "bom-ref": "16d7fb61-55bd-4096-b6e2-89ddf8d27afa",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3cd944c7-a0fe-4b19-a021-8c18090671a5",
+      "bom-ref": "0ed775b3-49da-4fc1-b2b8-7092a5520f68",
       "type": "application",
       "name": "swift/Package.resolved",
       "properties": [
@@ -78,97 +48,7 @@
       ]
     },
     {
-      "bom-ref": "407d3a41-0822-4814-8d44-1f25f8ddb8a5",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "64ab348f-5a37-4062-89d8-47838ed4a3f5",
-      "type": "application",
-      "name": "npm/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "74ce1fd9-12c3-4f80-bd5c-ce254285bffc",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "86710387-da27-4e5a-ab2b-60fa84a46626",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a999cd92-322a-4bbe-934d-7f24ed786e8a",
-      "type": "application",
-      "name": "php/composer.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "composer"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ba88f46d-da35-4260-aff8-6cf7d1f6b235",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "c21d209a-09d5-4ac9-9530-870720bf8bdb",
+      "bom-ref": "0fd6e5e5-5403-4081-8d96-1c4a62376dfc",
       "type": "application",
       "name": "nuget/packages.lock.json",
       "properties": [
@@ -183,7 +63,37 @@
       ]
     },
     {
-      "bom-ref": "cf6e9721-c58f-42c6-849a-64270e9c4c9e",
+      "bom-ref": "258aa1af-c959-4851-984d-34c7e81473b3",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "51f7e92f-b576-4eb6-b5e5-fd1c67d72dae",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6f73db03-66f4-4e55-9446-13b97c0a0f4c",
       "type": "application",
       "name": "python/requirements.txt",
       "properties": [
@@ -198,7 +108,52 @@
       ]
     },
     {
-      "bom-ref": "e92aa67b-4d4c-4398-893d-b9dff34fd7ef",
+      "bom-ref": "76bf39e3-0757-42f5-9f80-9d648f5ec07c",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "77d715b2-1efc-4015-b156-4e0c0796e3e4",
+      "type": "application",
+      "name": "maven/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a22d548d-ad6e-4dda-afcf-36cc644c53a4",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "aab5405f-25b8-4539-a8ea-29a373c95a31",
       "type": "application",
       "name": "lockfile-maintenance/package-lock.json",
       "properties": [
@@ -209,6 +164,51 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "af8b894c-bd9b-4227-be7a-1b235b883e06",
+      "type": "application",
+      "name": "php/composer.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "composer"
+        }
+      ]
+    },
+    {
+      "bom-ref": "db47a9bf-b0c0-40d9-9b55-fa122f45933f",
+      "type": "application",
+      "name": "ruby/Gemfile.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "bundler"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fac2ba85-5212-4506-924d-be462a72229d",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
         }
       ]
     },
@@ -4675,26 +4675,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0c7c3792-a5fa-4ea2-b4a3-022a8f522748",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "16d7fb61-55bd-4096-b6e2-89ddf8d27afa",
-      "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
-      ]
-    },
-    {
-      "ref": "3cd944c7-a0fe-4b19-a021-8c18090671a5",
+      "ref": "0ed775b3-49da-4fc1-b2b8-7092a5520f68",
       "dependsOn": [
         "pkg:swift/github.com/apple/swift-atomics@1.0.2",
         "pkg:swift/github.com/apple/swift-collections@1.0.4",
@@ -4706,30 +4687,14 @@
       ]
     },
     {
-      "ref": "407d3a41-0822-4814-8d44-1f25f8ddb8a5",
+      "ref": "0fd6e5e5-5403-4081-8d96-1c4a62376dfc",
       "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
       ]
     },
     {
-      "ref": "51be9bc6-f943-48c1-b3ff-11eb54616ac6",
-      "dependsOn": [
-        "0c7c3792-a5fa-4ea2-b4a3-022a8f522748",
-        "16d7fb61-55bd-4096-b6e2-89ddf8d27afa",
-        "3cd944c7-a0fe-4b19-a021-8c18090671a5",
-        "407d3a41-0822-4814-8d44-1f25f8ddb8a5",
-        "64ab348f-5a37-4062-89d8-47838ed4a3f5",
-        "74ce1fd9-12c3-4f80-bd5c-ce254285bffc",
-        "86710387-da27-4e5a-ab2b-60fa84a46626",
-        "a999cd92-322a-4bbe-934d-7f24ed786e8a",
-        "ba88f46d-da35-4260-aff8-6cf7d1f6b235",
-        "c21d209a-09d5-4ac9-9530-870720bf8bdb",
-        "cf6e9721-c58f-42c6-849a-64270e9c4c9e",
-        "e92aa67b-4d4c-4398-893d-b9dff34fd7ef"
-      ]
-    },
-    {
-      "ref": "64ab348f-5a37-4062-89d8-47838ed4a3f5",
+      "ref": "258aa1af-c959-4851-984d-34c7e81473b3",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4746,7 +4711,22 @@
       ]
     },
     {
-      "ref": "74ce1fd9-12c3-4f80-bd5c-ce254285bffc",
+      "ref": "51f7e92f-b576-4eb6-b5e5-fd1c67d72dae",
+      "dependsOn": [
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+      ]
+    },
+    {
+      "ref": "6f73db03-66f4-4e55-9446-13b97c0a0f4c",
+      "dependsOn": [
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
+      ]
+    },
+    {
+      "ref": "76bf39e3-0757-42f5-9f80-9d648f5ec07c",
       "dependsOn": [
         "pkg:hex/mime@2.0.7",
         "pkg:hex/phoenix@1.6.0",
@@ -4758,43 +4738,63 @@
       ]
     },
     {
-      "ref": "86710387-da27-4e5a-ab2b-60fa84a46626",
+      "ref": "77d715b2-1efc-4015-b156-4e0c0796e3e4",
       "dependsOn": [
         "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
       ]
     },
     {
-      "ref": "a999cd92-322a-4bbe-934d-7f24ed786e8a",
+      "ref": "a0aa64eb-60c3-4f47-a673-369f30a40949",
+      "dependsOn": [
+        "0ed775b3-49da-4fc1-b2b8-7092a5520f68",
+        "0fd6e5e5-5403-4081-8d96-1c4a62376dfc",
+        "258aa1af-c959-4851-984d-34c7e81473b3",
+        "51f7e92f-b576-4eb6-b5e5-fd1c67d72dae",
+        "6f73db03-66f4-4e55-9446-13b97c0a0f4c",
+        "76bf39e3-0757-42f5-9f80-9d648f5ec07c",
+        "77d715b2-1efc-4015-b156-4e0c0796e3e4",
+        "a22d548d-ad6e-4dda-afcf-36cc644c53a4",
+        "aab5405f-25b8-4539-a8ea-29a373c95a31",
+        "af8b894c-bd9b-4227-be7a-1b235b883e06",
+        "db47a9bf-b0c0-40d9-9b55-fa122f45933f",
+        "fac2ba85-5212-4506-924d-be462a72229d"
+      ]
+    },
+    {
+      "ref": "a22d548d-ad6e-4dda-afcf-36cc644c53a4",
+      "dependsOn": [
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
+      ]
+    },
+    {
+      "ref": "aab5405f-25b8-4539-a8ea-29a373c95a31",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "af8b894c-bd9b-4227-be7a-1b235b883e06",
       "dependsOn": [
         "pkg:composer/guzzlehttp/guzzle@7.4.0"
       ]
     },
     {
-      "ref": "ba88f46d-da35-4260-aff8-6cf7d1f6b235",
+      "ref": "db47a9bf-b0c0-40d9-9b55-fa122f45933f",
       "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+        "pkg:gem/actionpack@6.1.4"
       ]
     },
     {
-      "ref": "c21d209a-09d5-4ac9-9530-870720bf8bdb",
+      "ref": "fac2ba85-5212-4506-924d-be462a72229d",
       "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "cf6e9721-c58f-42c6-849a-64270e9c4c9e",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "e92aa67b-4d4c-4398-893d-b9dff34fd7ef",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
       ]
     },
     {
@@ -16063,7 +16063,7 @@
           "url": "http://www.openwall.com/lists/oss-security/2025/06/04/6"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:13604"
+          "url": "https://access.redhat.com/errata/RHSA-2025:12519"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2024-47081"
@@ -16081,10 +16081,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47081"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2025-13604.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2025-12519.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2025:13604"
+          "url": "https://errata.rockylinux.org/RLSA-2025:12519"
         },
         {
           "url": "https://github.com/psf/requests"
@@ -16912,10 +16912,19 @@
           "url": "https://bugzilla.redhat.com/2431740"
         },
         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2425946"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2430538"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2431036"
+        },
+        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2431740"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2453496"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2433645"
         },
         {
           "url": "https://cert-portal.siemens.com/productcert/html/ssa-253495.html"
@@ -16927,13 +16936,22 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13465"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4800"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-15284"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-2438.html"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-23745"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:24331"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-23950"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24842"
+        },
+        {
+          "url": "https://errata.almalinux.org/9/ALSA-2026-2452.html"
+        },
+        {
+          "url": "https://errata.rockylinux.org/RLSA-2026:18868"
         },
         {
           "url": "https://github.com/lodash/lodash"
@@ -17049,7 +17067,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2025-15284"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:18480"
+          "url": "https://access.redhat.com/errata/RHSA-2026:18868"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2025-15284"
@@ -17103,10 +17121,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-24842"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-18480.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-18868.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:18480"
+          "url": "https://errata.rockylinux.org/RLSA-2026:18868"
         },
         {
           "url": "https://github.com/ljharb/qs"
@@ -17216,7 +17234,7 @@
           "url": "https://access.redhat.com/errata/RHSA-2025:3833"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2025:7484"
+          "url": "https://access.redhat.com/errata/RHSA-2025:7416"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2025-22869"
@@ -17237,7 +17255,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2025-3833.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2025:7484"
+          "url": "https://errata.rockylinux.org/RLSA-2025:7416"
         },
         {
           "url": "https://github.com/golang/go/issues/71931"
@@ -17840,7 +17858,7 @@
           "url": "https://avd.aquasec.com/nvd/cve-2025-47913"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:0545"
+          "url": "https://access.redhat.com/errata/RHSA-2026:0470"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2025-47913"
@@ -17858,10 +17876,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-47913"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-0545.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-0470.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:0545"
+          "url": "https://errata.rockylinux.org/RLSA-2026:0470"
         },
         {
           "url": "https://github.com/advisories/GHSA-56w8-48fp-6mgv"
@@ -19233,40 +19251,37 @@
           "url": "https://avd.aquasec.com/nvd/cve-2026-25681"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:34357"
-        },
-        {
-          "url": "https://access.redhat.com/errata/RHSA-2026:37072"
+          "url": "https://access.redhat.com/errata/RHSA-2026:37123"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2026-25681"
         },
         {
-          "url": "https://bugzilla.redhat.com/2466505"
+          "url": "https://bugzilla.redhat.com/2480680"
         },
         {
-          "url": "https://bugzilla.redhat.com/2466507"
+          "url": "https://bugzilla.redhat.com/2480681"
         },
         {
-          "url": "https://bugzilla.redhat.com/2467822"
+          "url": "https://bugzilla.redhat.com/2480685"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480756"
+          "url": "https://bugzilla.redhat.com/2480688"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2480757"
         },
         {
           "url": "https://bugzilla.redhat.com/2480761"
         },
         {
-          "url": "https://bugzilla.redhat.com/2484207"
+          "url": "https://bugzilla.redhat.com/2493620"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
@@ -19296,9 +19311,6 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
-        },
-        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -19311,10 +19323,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-34357.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
         },
         {
           "url": "https://go.dev/cl/781703"
@@ -19412,9 +19424,6 @@
           "url": "https://avd.aquasec.com/nvd/cve-2026-27136"
         },
         {
-          "url": "https://access.redhat.com/errata/RHSA-2026:37072"
-        },
-        {
           "url": "https://access.redhat.com/errata/RHSA-2026:37123"
         },
         {
@@ -19448,9 +19457,6 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
         },
         {
@@ -19478,9 +19484,6 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
-        },
-        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -19496,7 +19499,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
         },
         {
           "url": "https://go.dev/cl/781685"
@@ -20353,6 +20356,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57845"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-33814"
         },
         {
@@ -20425,7 +20431,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42501"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:22120"
+          "url": "https://errata.rockylinux.org/RLSA-2026:22121"
         },
         {
           "url": "https://github.com/golang/go/issues/78476"
@@ -20480,7 +20486,7 @@
         }
       ],
       "published": "2026-05-07T20:16:42+00:00",
-      "updated": "2026-08-27T13:17:33+00:00",
+      "updated": "2026-08-28T16:17:39+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -21198,13 +21204,13 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:60387"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39821"
         },
         {
           "url": "https://bugzilla.redhat.com/2480756"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2484207"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480756"
@@ -21222,10 +21228,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39822"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-46395.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-37435.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37436"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37435"
         },
         {
           "url": "https://github.com/golang/go/issues/78760"
@@ -21265,7 +21271,7 @@
         }
       ],
       "published": "2026-05-22T16:16:20+00:00",
-      "updated": "2026-08-27T13:17:48+00:00",
+      "updated": "2026-08-28T16:17:48+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -21573,6 +21579,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59467"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39828"
         },
         {
@@ -21601,7 +21610,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-26T13:18:37+00:00",
+      "updated": "2026-08-28T16:17:50+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21846,6 +21855,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59593"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39829"
         },
         {
@@ -21855,19 +21867,25 @@
           "url": "https://bugzilla.redhat.com/2480681"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480684"
+          "url": "https://bugzilla.redhat.com/2480685"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480685"
+          "url": "https://bugzilla.redhat.com/2480688"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2480757"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2480761"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2493620"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
@@ -21897,9 +21915,6 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
-        },
-        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -21912,10 +21927,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
         },
         {
           "url": "https://go.dev/cl/781641"
@@ -21949,7 +21964,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-26T13:18:39+00:00",
+      "updated": "2026-08-28T16:17:51+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22164,10 +22179,22 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59467"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39830"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480680"
+          "url": "https://bugzilla.redhat.com/2445356"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2456333"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2456338"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/2456339"
         },
         {
           "url": "https://bugzilla.redhat.com/2480681"
@@ -22176,10 +22203,16 @@
           "url": "https://bugzilla.redhat.com/2480684"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480685"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2445356"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2456333"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2456338"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2456339"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
@@ -22188,28 +22221,19 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480688"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480757"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480761"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2493620"
-        },
-        {
           "url": "https://creativecommons.org/licenses/by/4.0/"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25679"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136"
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32280"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32281"
+        },
+        {
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-32283"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
@@ -22218,22 +22242,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-29455.html"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
-        },
-        {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
-        },
-        {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
+          "url": "https://errata.rockylinux.org/RLSA-2026:29455"
         },
         {
           "url": "https://github.com/golang/crypto/commit/4e7a7384ecbc8d519f6f4c11b36fa9d761fc8946"
@@ -22279,7 +22291,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-26T13:18:40+00:00",
+      "updated": "2026-08-28T16:17:54+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22535,52 +22547,16 @@
           "url": "https://bugzilla.redhat.com/2480680"
         },
         {
-          "url": "https://bugzilla.redhat.com/2480681"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2480684"
-        },
-        {
           "url": "https://bugzilla.redhat.com/2480685"
         },
         {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480688"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480757"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480761"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2493620"
-        },
-        {
           "url": "https://creativecommons.org/licenses/by/4.0/"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
@@ -22589,16 +22565,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-37410.html"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
-        },
-        {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
-        },
-        {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37410"
         },
         {
           "url": "https://github.com/golang/crypto/commit/e3d1254f1e7e60baa086142c46174bf6d8d0fe50"
@@ -23040,16 +23010,13 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59593"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39835"
         },
         {
           "url": "https://bugzilla.redhat.com/2480680"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2480681"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/2480684"
         },
         {
           "url": "https://bugzilla.redhat.com/2480685"
@@ -23058,40 +23025,10 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480680"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480688"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480757"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480761"
-        },
-        {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2493620"
-        },
-        {
           "url": "https://creativecommons.org/licenses/by/4.0/"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-25681"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-27136"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
-        },
-        {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
         },
         {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
@@ -23100,16 +23037,10 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39835"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42508"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-37410.html"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-57231"
-        },
-        {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-36199.html"
-        },
-        {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37410"
         },
         {
           "url": "https://go.dev/cl/781660"
@@ -23140,7 +23071,7 @@
         }
       ],
       "published": "2026-05-22T04:16:24+00:00",
-      "updated": "2026-08-26T13:18:42+00:00",
+      "updated": "2026-08-28T16:17:55+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -23502,6 +23433,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:26234"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-41672"
         },
         {
@@ -23539,7 +23473,7 @@
         }
       ],
       "published": "2026-05-07T04:16:33+00:00",
-      "updated": "2026-08-19T12:18:10+00:00",
+      "updated": "2026-08-28T16:17:57+00:00",
       "affects": [
         {
           "ref": "pkg:npm/xmldom@0.6.0",
@@ -23589,6 +23523,9 @@
         },
         {
           "url": "https://access.redhat.com/errata/RHSA-2026:26234"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
         },
         {
           "url": "https://access.redhat.com/security/cve/CVE-2026-41673"
@@ -23646,7 +23583,7 @@
         }
       ],
       "published": "2026-05-07T04:16:33+00:00",
-      "updated": "2026-07-15T02:21:19+00:00",
+      "updated": "2026-08-28T16:17:57+00:00",
       "affects": [
         {
           "ref": "pkg:npm/xmldom@0.6.0",
@@ -23788,6 +23725,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:26234"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-41675"
         },
         {
@@ -23819,7 +23759,7 @@
         }
       ],
       "published": "2026-05-07T04:16:33+00:00",
-      "updated": "2026-08-19T12:18:10+00:00",
+      "updated": "2026-08-28T16:17:58+00:00",
       "affects": [
         {
           "ref": "pkg:npm/xmldom@0.6.0",
@@ -25576,6 +25516,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59467"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-42508"
         },
         {
@@ -25606,9 +25549,6 @@
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480681"
         },
         {
-          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480684"
-        },
-        {
           "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2480685"
         },
         {
@@ -25636,9 +25576,6 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39829"
         },
         {
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39830"
-        },
-        {
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-39832"
         },
         {
@@ -25654,7 +25591,7 @@
           "url": "https://errata.almalinux.org/9/ALSA-2026-37123.html"
         },
         {
-          "url": "https://errata.rockylinux.org/RLSA-2026:37072"
+          "url": "https://errata.rockylinux.org/RLSA-2026:37123"
         },
         {
           "url": "https://github.com/golang/crypto/commit/f717e29698a271c548239ed56bf5dd9516d6f7e8"
@@ -25694,7 +25631,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-08-26T13:19:00+00:00",
+      "updated": "2026-08-28T16:18:00+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -26005,6 +25942,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57191"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44486"
         },
         {
@@ -26039,7 +25979,7 @@
         }
       ],
       "published": "2026-06-11T17:16:32+00:00",
-      "updated": "2026-08-26T13:19:04+00:00",
+      "updated": "2026-08-28T16:18:03+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -26238,6 +26178,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57191"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44487"
         },
         {
@@ -26266,7 +26209,7 @@
         }
       ],
       "published": "2026-06-11T17:16:32+00:00",
-      "updated": "2026-08-26T13:19:05+00:00",
+      "updated": "2026-08-28T16:18:03+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -26525,6 +26468,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57191"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44492"
         },
         {
@@ -26550,7 +26496,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-08-26T13:19:06+00:00",
+      "updated": "2026-08-28T16:18:05+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -26748,6 +26694,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57191"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44495"
         },
         {
@@ -26770,7 +26719,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-08-26T13:19:07+00:00",
+      "updated": "2026-08-28T16:18:06+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -26937,6 +26886,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59360"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-44496"
         },
         {
@@ -26965,7 +26917,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-08-26T13:19:08+00:00",
+      "updated": "2026-08-28T16:18:07+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -27105,6 +27057,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59558"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-46595"
         },
         {
@@ -27142,7 +27097,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-08-26T13:19:11+00:00",
+      "updated": "2026-08-28T16:18:09+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -27692,7 +27647,7 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4800"
         },
         {
-          "url": "https://errata.almalinux.org/10/ALSA-2026-10713.html"
+          "url": "https://errata.almalinux.org/9/ALSA-2026-19167.html"
         },
         {
           "url": "https://errata.rockylinux.org/RLSA-2026:24331"
@@ -29654,6 +29609,46 @@
           "versions": [
             {
               "version": "v0.14.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-56854",
+      "source": {
+        "name": "govulndb",
+        "url": "https://pkg.go.dev/vuln/"
+      },
+      "ratings": [],
+      "cwes": [
+        863
+      ],
+      "description": "The source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-2026-46595. Permissions returned by the PasswordCallback, KeyboardInteractiveCallback, NoClientAuthCallback, and GSSAPIWithMICConfig.AllowLogin callbacks were not validated against the client's remote address, so a source-address restriction set by those callbacks was silently ignored. The check is now applied to the Permissions returned by any authentication callback.",
+      "recommendation": "Upgrade golang.org/x/crypto to version 0.55.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-56854"
+        },
+        {
+          "url": "https://go.dev/cl/797040"
+        },
+        {
+          "url": "https://go.dev/issue/80213"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-6303"
+        }
+      ],
+      "published": "2026-08-28T16:18:17+00:00",
+      "updated": "2026-08-28T22:16:52+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
+          "versions": [
+            {
+              "version": "v0.16.0",
               "status": "affected"
             }
           ]

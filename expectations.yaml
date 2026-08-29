@@ -22,10 +22,10 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 215
+    totalAdvisories: 216
     severity: {critical: 20, high: 103, medium: 68, low: 17}
     correlated: 47
-    uncorrelated: 168
+    uncorrelated: 169
     totalImpactScore: 725
     reducibleImpactScore: 219
     matchedRequests: 22
@@ -2282,6 +2282,15 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/sys
           affectedVersion: v0.15.0
           fixVersion: 0.44.0
+          addressed: false
+    - id: CVE-2026-56854
+      severity: unknown
+      dependency: golang.org/x/crypto@v0.16.0
+      recommendation: Upgrade golang.org/x/crypto to version 0.55.0
+      occurrences:
+        - dependencyName: golang.org/x/crypto
+          affectedVersion: v0.16.0
+          fixVersion: 0.55.0
           addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
