@@ -23,11 +23,11 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 216
-    severity: {critical: 18, high: 105, medium: 68, low: 17}
+    severity: {critical: 21, high: 103, medium: 68, low: 17}
     correlated: 47
     uncorrelated: 169
-    totalImpactScore: 717
-    reducibleImpactScore: 211
+    totalImpactScore: 733
+    reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
     unparsedRequests: 1
@@ -60,6 +60,30 @@ changeRequests:
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.0, addressed: true}
             - advisory: {id: CVE-2023-4863, severity: high}
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.1, addressed: true}
+    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
+      status: matched
+      riskTier: {name: minor, risk: 2}
+      hasUnknownRisk: false
+      impactScore: 32
+      mergeEfficiency: 16
+      fixes: {total: 4, critical: 4, high: 0, medium: 0, low: 0}
+      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
+      assessments:
+        - change:
+            dependencyName: org.apache.logging.log4j:log4j-core
+            currentVersion: 2.14.1
+            targetVersion: 2.17.1
+            changeType: {name: minor, risk: 2}
+          impactScore: 32
+          advisoryMatches:
+            - advisory: {id: CVE-2021-44228, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
+            - advisory: {id: CVE-2021-44832, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
+            - advisory: {id: CVE-2021-45046, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
+            - advisory: {id: CVE-2021-45105, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency actionpack to v6.1.7.8'
       status: matched
       riskTier: {name: patch, risk: 1}
@@ -91,30 +115,6 @@ changeRequests:
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.5.1, addressed: true}
             - advisory: {id: CVE-2023-28362, severity: medium}
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.7.4, addressed: true}
-    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
-      status: matched
-      riskTier: {name: minor, risk: 2}
-      hasUnknownRisk: false
-      impactScore: 24
-      mergeEfficiency: 12
-      fixes: {total: 4, critical: 2, high: 2, medium: 0, low: 0}
-      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
-      assessments:
-        - change:
-            dependencyName: org.apache.logging.log4j:log4j-core
-            currentVersion: 2.14.1
-            targetVersion: 2.17.1
-            changeType: {name: minor, risk: 2}
-          impactScore: 24
-          advisoryMatches:
-            - advisory: {id: CVE-2021-44228, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
-            - advisory: {id: CVE-2021-45046, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
-            - advisory: {id: CVE-2021-44832, severity: high}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
-            - advisory: {id: CVE-2021-45105, severity: high}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency pillow to v9.5.0'
       status: matched
       riskTier: {name: minor, risk: 2}
@@ -871,6 +871,15 @@ uncorrelatedAdvisories:
         - dependencyName: concurrent-ruby
           affectedVersion: 1.3.6
           fixVersion: 1.3.7
+          addressed: false
+    - id: CVE-2026-56854
+      severity: critical
+      dependency: golang.org/x/crypto@v0.16.0
+      recommendation: Upgrade golang.org/x/crypto to version 0.55.0
+      occurrences:
+        - dependencyName: golang.org/x/crypto
+          affectedVersion: v0.16.0
+          fixVersion: 0.55.0
           addressed: false
     - id: GHSA-353f-x4gh-cqq8
       severity: critical
@@ -1995,6 +2004,15 @@ uncorrelatedAdvisories:
           affectedVersion: 7.4.0
           fixVersion: 7.12.3
           addressed: false
+    - id: CVE-2026-67316
+      severity: medium
+      dependency: axios@0.21.1
+      recommendation: Upgrade axios to version 1.18.0, 0.33.0
+      occurrences:
+        - dependencyName: axios
+          affectedVersion: 0.21.1
+          fixVersion: 0.33.0
+          addressed: false
     - id: CVE-2026-67339
       severity: medium
       dependency: guzzlehttp/guzzle@7.4.0
@@ -2071,15 +2089,6 @@ uncorrelatedAdvisories:
       severity: medium
       dependency: axios@0.21.1
       recommendation: Upgrade axios to version 0.33.0, 1.18.0
-      occurrences:
-        - dependencyName: axios
-          affectedVersion: 0.21.1
-          fixVersion: 0.33.0
-          addressed: false
-    - id: GHSA-mmx7-hfxf-jppx
-      severity: medium
-      dependency: axios@0.21.1
-      recommendation: Upgrade axios to version 1.18.0, 0.33.0
       occurrences:
         - dependencyName: axios
           affectedVersion: 0.21.1
@@ -2282,15 +2291,6 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/sys
           affectedVersion: v0.15.0
           fixVersion: 0.44.0
-          addressed: false
-    - id: CVE-2026-56854
-      severity: unknown
-      dependency: golang.org/x/crypto@v0.16.0
-      recommendation: Upgrade golang.org/x/crypto to version 0.55.0
-      occurrences:
-        - dependencyName: golang.org/x/crypto
-          affectedVersion: v0.16.0
-          fixVersion: 0.55.0
           addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
