@@ -23,10 +23,10 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 216
-    severity: {critical: 21, high: 103, medium: 68, low: 17}
+    severity: {critical: 21, high: 104, medium: 67, low: 17}
     correlated: 47
     uncorrelated: 169
-    totalImpactScore: 733
+    totalImpactScore: 735
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1553,6 +1553,15 @@ uncorrelatedAdvisories:
           affectedVersion: 9.0.0
           fixVersion: 12.3.0
           addressed: false
+    - id: CVE-2026-67316
+      severity: high
+      dependency: axios@0.21.1
+      recommendation: Upgrade axios to version 1.18.0, 0.33.0
+      occurrences:
+        - dependencyName: axios
+          affectedVersion: 0.21.1
+          fixVersion: 0.33.0
+          addressed: false
     - id: CVE-2026-69246
       severity: high
       dependency: guzzlehttp/guzzle@7.4.0
@@ -2004,10 +2013,10 @@ uncorrelatedAdvisories:
           affectedVersion: 7.4.0
           fixVersion: 7.12.3
           addressed: false
-    - id: CVE-2026-67316
+    - id: CVE-2026-67319
       severity: medium
       dependency: axios@0.21.1
-      recommendation: Upgrade axios to version 1.18.0, 0.33.0
+      recommendation: Upgrade axios to version 0.33.0, 1.18.0
       occurrences:
         - dependencyName: axios
           affectedVersion: 0.21.1
@@ -2084,15 +2093,6 @@ uncorrelatedAdvisories:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
           fixVersion: 1.19.4
-          addressed: false
-    - id: GHSA-7q8q-rj6j-mhjq
-      severity: medium
-      dependency: axios@0.21.1
-      recommendation: Upgrade axios to version 0.33.0, 1.18.0
-      occurrences:
-        - dependencyName: axios
-          affectedVersion: 0.21.1
-          fixVersion: 0.33.0
           addressed: false
     - id: GHSA-pxvg-2qj5-37jq
       severity: medium

