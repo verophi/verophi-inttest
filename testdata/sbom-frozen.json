@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:404b4271-e750-441e-bccd-61cb27a0ff56",
+  "serialNumber": "urn:uuid:d210c4be-aba9-442e-8c68-5040dd6130de",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-09-02T08:36:04+00:00",
+    "timestamp": "2026-09-03T08:44:41+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "c5dc9dfa-ffb2-453d-bd8d-cef7f56ad897",
+      "bom-ref": "96a20718-010b-414c-a9bf-f0615f7177ac",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,37 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "0bc4b033-ac52-43ef-82b5-c85630471d23",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "0bdcec58-24d1-470f-9333-434bda562889",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1d5f054f-dc52-44bd-a4cd-f090f4e0d56d",
+      "bom-ref": "055fe896-aee9-48c6-81ee-51c238d341ce",
       "type": "application",
       "name": "dart/pubspec.lock",
       "properties": [
@@ -78,82 +48,7 @@
       ]
     },
     {
-      "bom-ref": "247336a2-beb8-4f88-ac58-6aadd5067c79",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3ca5b1f4-964c-457d-8175-c06f0de90aaa",
-      "type": "application",
-      "name": "nuget/packages.lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "nuget"
-        }
-      ]
-    },
-    {
-      "bom-ref": "6a414b24-8c93-4ec4-b6ad-9872e139bba6",
-      "type": "application",
-      "name": "swift/Package.resolved",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "swift"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9c0c46fe-7803-408a-a5ce-22ac8a9bb980",
-      "type": "application",
-      "name": "npm/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a48281aa-d4c9-49d0-acb3-68eb4d50913f",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "b494c5ce-300b-47f5-b56e-0c27a9a44b1f",
+      "bom-ref": "05ece5eb-0c39-4ab4-9814-422634a9623a",
       "type": "application",
       "name": "ruby/Gemfile.lock",
       "properties": [
@@ -168,7 +63,67 @@
       ]
     },
     {
-      "bom-ref": "bfaeba8f-9a2f-48b3-a4a4-3e4ff884ae4a",
+      "bom-ref": "11c675ff-751f-4d85-ae86-c51516cb64cc",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "11e31b4e-e08a-4b7e-8f65-57f7be6d0618",
+      "type": "application",
+      "name": "swift/Package.resolved",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "swift"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1655e692-863a-4b39-b996-fbe94d0baec7",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4198eed7-96d9-40ed-9b0d-7996b98d4641",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "47328cbd-6ea4-4150-88e5-8239cc91f4e5",
       "type": "application",
       "name": "python/requirements.txt",
       "properties": [
@@ -183,7 +138,37 @@
       ]
     },
     {
-      "bom-ref": "ebccafca-e5ff-403f-96da-e55e1ed31480",
+      "bom-ref": "679bfd07-42be-44a4-80ec-139b2e51c611",
+      "type": "application",
+      "name": "nuget/packages.lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "924be91e-5fd4-4ce4-9b39-68564f921820",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "abdf36b1-1c6c-422e-98c4-4656b7679d88",
       "type": "application",
       "name": "lockfile-maintenance/package-lock.json",
       "properties": [
@@ -198,7 +183,22 @@
       ]
     },
     {
-      "bom-ref": "f07084ac-7f1a-4366-b16a-653b294a99fa",
+      "bom-ref": "fc0abf7f-c8ee-4007-9dd9-59be8ff0cc22",
+      "type": "application",
+      "name": "maven/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fc8143fc-3c87-4cef-a4de-9442680d0b0a",
       "type": "application",
       "name": "php/composer.lock",
       "properties": [
@@ -4675,19 +4675,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0bc4b033-ac52-43ef-82b5-c85630471d23",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
-      ]
-    },
-    {
-      "ref": "0bdcec58-24d1-470f-9333-434bda562889",
-      "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
-      ]
-    },
-    {
-      "ref": "1d5f054f-dc52-44bd-a4cd-f090f4e0d56d",
+      "ref": "055fe896-aee9-48c6-81ee-51c238d341ce",
       "dependsOn": [
         "pkg:pub/collection@1.19.1",
         "pkg:pub/dio@4.0.0",
@@ -4700,20 +4688,19 @@
       ]
     },
     {
-      "ref": "247336a2-beb8-4f88-ac58-6aadd5067c79",
+      "ref": "05ece5eb-0c39-4ab4-9814-422634a9623a",
       "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+        "pkg:gem/actionpack@6.1.4"
       ]
     },
     {
-      "ref": "3ca5b1f4-964c-457d-8175-c06f0de90aaa",
+      "ref": "11c675ff-751f-4d85-ae86-c51516cb64cc",
       "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
       ]
     },
     {
-      "ref": "6a414b24-8c93-4ec4-b6ad-9872e139bba6",
+      "ref": "11e31b4e-e08a-4b7e-8f65-57f7be6d0618",
       "dependsOn": [
         "pkg:swift/github.com/apple/swift-atomics@1.0.2",
         "pkg:swift/github.com/apple/swift-collections@1.0.4",
@@ -4725,7 +4712,41 @@
       ]
     },
     {
-      "ref": "9c0c46fe-7803-408a-a5ce-22ac8a9bb980",
+      "ref": "1655e692-863a-4b39-b996-fbe94d0baec7",
+      "dependsOn": [
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+      ]
+    },
+    {
+      "ref": "4198eed7-96d9-40ed-9b0d-7996b98d4641",
+      "dependsOn": [
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
+      ]
+    },
+    {
+      "ref": "47328cbd-6ea4-4150-88e5-8239cc91f4e5",
+      "dependsOn": [
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
+      ]
+    },
+    {
+      "ref": "679bfd07-42be-44a4-80ec-139b2e51c611",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "924be91e-5fd4-4ce4-9b39-68564f921820",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4742,57 +4763,36 @@
       ]
     },
     {
-      "ref": "a48281aa-d4c9-49d0-acb3-68eb4d50913f",
+      "ref": "96a20718-010b-414c-a9bf-f0615f7177ac",
       "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
+        "055fe896-aee9-48c6-81ee-51c238d341ce",
+        "05ece5eb-0c39-4ab4-9814-422634a9623a",
+        "11c675ff-751f-4d85-ae86-c51516cb64cc",
+        "11e31b4e-e08a-4b7e-8f65-57f7be6d0618",
+        "1655e692-863a-4b39-b996-fbe94d0baec7",
+        "4198eed7-96d9-40ed-9b0d-7996b98d4641",
+        "47328cbd-6ea4-4150-88e5-8239cc91f4e5",
+        "679bfd07-42be-44a4-80ec-139b2e51c611",
+        "924be91e-5fd4-4ce4-9b39-68564f921820",
+        "abdf36b1-1c6c-422e-98c4-4656b7679d88",
+        "fc0abf7f-c8ee-4007-9dd9-59be8ff0cc22",
+        "fc8143fc-3c87-4cef-a4de-9442680d0b0a"
       ]
     },
     {
-      "ref": "b494c5ce-300b-47f5-b56e-0c27a9a44b1f",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "bfaeba8f-9a2f-48b3-a4a4-3e4ff884ae4a",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "c5dc9dfa-ffb2-453d-bd8d-cef7f56ad897",
-      "dependsOn": [
-        "0bc4b033-ac52-43ef-82b5-c85630471d23",
-        "0bdcec58-24d1-470f-9333-434bda562889",
-        "1d5f054f-dc52-44bd-a4cd-f090f4e0d56d",
-        "247336a2-beb8-4f88-ac58-6aadd5067c79",
-        "3ca5b1f4-964c-457d-8175-c06f0de90aaa",
-        "6a414b24-8c93-4ec4-b6ad-9872e139bba6",
-        "9c0c46fe-7803-408a-a5ce-22ac8a9bb980",
-        "a48281aa-d4c9-49d0-acb3-68eb4d50913f",
-        "b494c5ce-300b-47f5-b56e-0c27a9a44b1f",
-        "bfaeba8f-9a2f-48b3-a4a4-3e4ff884ae4a",
-        "ebccafca-e5ff-403f-96da-e55e1ed31480",
-        "f07084ac-7f1a-4366-b16a-653b294a99fa"
-      ]
-    },
-    {
-      "ref": "ebccafca-e5ff-403f-96da-e55e1ed31480",
+      "ref": "abdf36b1-1c6c-422e-98c4-4656b7679d88",
       "dependsOn": [
         "pkg:npm/debug@4.3.0"
       ]
     },
     {
-      "ref": "f07084ac-7f1a-4366-b16a-653b294a99fa",
+      "ref": "fc0abf7f-c8ee-4007-9dd9-59be8ff0cc22",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "fc8143fc-3c87-4cef-a4de-9442680d0b0a",
       "dependsOn": [
         "pkg:composer/guzzlehttp/guzzle@7.4.0"
       ]
@@ -20362,6 +20362,15 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:60442"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60446"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60447"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60454"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60477"
         },
         {
@@ -20504,7 +20513,7 @@
         }
       ],
       "published": "2026-05-07T20:16:42+00:00",
-      "updated": "2026-09-01T13:18:52+00:00",
+      "updated": "2026-09-02T13:17:27+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -21634,7 +21643,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-28T16:17:50+00:00",
+      "updated": "2026-09-02T13:17:38+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -21879,6 +21888,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59593"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60446"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60454"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60477"
         },
         {
@@ -21994,7 +22009,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-01T13:19:05+00:00",
+      "updated": "2026-09-02T13:17:39+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22324,7 +22339,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-01T13:19:11+00:00",
+      "updated": "2026-09-02T13:17:41+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22647,7 +22662,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-08-31T13:18:12+00:00",
+      "updated": "2026-09-02T13:17:42+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -23049,6 +23064,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:60520"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:62260"
+        },
+        {
           "url": "https://access.redhat.com/security/cve/CVE-2026-39835"
         },
         {
@@ -23107,7 +23125,7 @@
         }
       ],
       "published": "2026-05-22T04:16:24+00:00",
-      "updated": "2026-08-28T16:17:55+00:00",
+      "updated": "2026-09-02T13:17:43+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -25670,7 +25688,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-09-01T13:19:28+00:00",
+      "updated": "2026-09-02T13:17:49+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -27139,7 +27157,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-08-31T13:18:18+00:00",
+      "updated": "2026-09-02T13:17:56+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -29723,6 +29741,46 @@
       ]
     },
     {
+      "id": "CVE-2026-56855",
+      "source": {
+        "name": "govulndb",
+        "url": "https://pkg.go.dev/vuln/"
+      },
+      "ratings": [],
+      "description": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.",
+      "recommendation": "Upgrade golang.org/x/crypto to version 0.56.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-56855"
+        },
+        {
+          "url": "https://go.dev/cl/826524"
+        },
+        {
+          "url": "https://go.dev/issue/81317"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/1y3fb2np35U"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-6355"
+        }
+      ],
+      "published": "2026-09-02T20:17:36+00:00",
+      "updated": "2026-09-02T20:17:36+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
+          "versions": [
+            {
+              "version": "v0.16.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-59197",
       "source": {
         "name": "ghsa",
@@ -31397,6 +31455,395 @@
       ]
     },
     {
+      "id": "CVE-2026-78662",
+      "source": {
+        "name": "govulndb",
+        "url": "https://pkg.go.dev/vuln/"
+      },
+      "ratings": [],
+      "description": "Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.",
+      "recommendation": "Upgrade golang.org/x/crypto to version 0.56.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-78662"
+        },
+        {
+          "url": "https://go.dev/cl/826504"
+        },
+        {
+          "url": "https://go.dev/issue/81316"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/1y3fb2np35U"
+        },
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-6354"
+        }
+      ],
+      "published": "2026-09-02T20:17:37+00:00",
+      "updated": "2026-09-02T20:17:37+00:00",
+      "affects": [
+        {
+          "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
+          "versions": [
+            {
+              "version": "v0.16.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-79770",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        1333
+      ],
+      "description": "Nokogiri versions before 1.19.3 contain regular expression denial of service vulnerabilities in the CSS selector tokenizer affecting string-literal and identifier tokenization. Attackers can inject adversarial CSS selectors into methods like Node#css, Node#at_css, and Searchable#search to cause exponential regex backtracking and denial of service.",
+      "recommendation": "Upgrade nokogiri to version 1.19.3",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-79770"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-79770"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-c4rq-3m3g-8wgx"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79770"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-79770"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/nokogiri-before-redos-via-css-selector-tokenizer"
+        }
+      ],
+      "published": "2026-08-25T16:17:28+00:00",
+      "updated": "2026-09-01T14:56:03+00:00",
+      "affects": [
+        {
+          "ref": "pkg:gem/nokogiri@1.13.10",
+          "versions": [
+            {
+              "version": "1.13.10",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-79771",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "cwes": [
+        401
+      ],
+      "description": "Nokogiri versions before 1.19.3 contain a memory leak in the XSLT Stylesheet transform method when processing Ruby strings containing null bytes. Attackers can exploit this by passing attacker-controlled input with null bytes to transform parameters, causing heap allocations to leak and enabling denial of service against long-running processes.",
+      "recommendation": "Upgrade nokogiri to version 1.19.3",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-79771"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-79771"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-v2fc-qm4h-8hqv"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79771"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-79771"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/nokogiri-before-memory-leak-via-xslt-transform"
+        }
+      ],
+      "published": "2026-08-25T16:17:28+00:00",
+      "updated": "2026-09-01T14:55:10+00:00",
+      "affects": [
+        {
+          "ref": "pkg:gem/nokogiri@1.13.10",
+          "versions": [
+            {
+              "version": "1.13.10",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-79772",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes": [
+        252
+      ],
+      "description": "Nokogiri versions before 1.19.1 fail to check the return value from xmlC14NExecute in the canonicalize method, returning an empty string on failure instead of raising an exception. Attackers can exploit this to bypass signature validation in downstream SAML libraries by providing invalid canonicalized XML that is incorrectly accepted as valid.",
+      "recommendation": "Upgrade nokogiri to version 1.19.1",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-79772"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-79772"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-wx95-c6cv-8532"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79772"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-79772"
+        },
+        {
+          "url": "https://www.vulncheck.com/advisories/nokogiri-before-unchecked-return-value-canonicalize"
+        }
+      ],
+      "published": "2026-08-25T16:17:28+00:00",
+      "updated": "2026-09-01T14:54:24+00:00",
+      "affects": [
+        {
+          "ref": "pkg:gem/nokogiri@1.13.10",
+          "versions": [
+            {
+              "version": "1.13.10",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-82417",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 6.3,
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "cwes": [
+        248,
+        703
+      ],
+      "description": "### Summary\n\n\n\n`qs.stringify` throws a `TypeError` when it serializes an object whose own `constructor` property has a truthy, non-callable `isBuffer` member. `utils.isBuffer` duck-types buffers by calling `obj.constructor.isBuffer(obj)` after checking only that the property is truthy, so a value such as `{ constructor: { isBuffer: \"x\" } }` makes the call throw `TypeError: obj.constructor.isBuffer is not a function`.\n\n\n\n### Details\n\n\n\n`lib/stringify.js:127` calls `utils.isBuffer` on every non-primitive value it serializes. `utils.isBuffer` (`lib/utils.js:332`) reads `obj.constructor.isBuffer` and invokes it without verifying that it is a function. `constructor` and `isBuffer` are ordinary property names, so any object carrying them as own properties reaches the unchecked call.\n\n\n\nSuch an object can be built from untrusted input. `qs.parse(\"x[constructor][isBuffer]=y\", { plainObjects: true })` or `{ allowPrototypes: true }` keeps the `constructor` key as an own property (the default parse options drop it), and `JSON.parse(\"{\\\"a\\\":{\\\"constructor\\\":{\\\"isBuffer\\\":\\\"x\\\"}}}\")` produces the same shape with no qs option involved. Express 4 with its default `query parser` setting and body-parser with `extended: true` both call `qs.parse` with `allowPrototypes: true`, so on those stacks `req.query` and `req.body` can carry the shape directly.\n\n\n\n#### PoC\n\n\n\n```js\n\n\n\nvar qs = require(\"qs\");\n\n\n\nqs.stringify(qs.parse(\"x[constructor][isBuffer]=y\", { plainObjects: true }));\n\n\n\nqs.stringify(JSON.parse(\"{\\\"a\\\":{\\\"constructor\\\":{\\\"isBuffer\\\":\\\"x\\\"}}}\"));\n\n\n\n// TypeError: obj.constructor.isBuffer is not a function\n\n\n\n//     at Object.isBuffer (lib/utils.js:332:78)\n\n\n\n//     at stringify (lib/stringify.js:127:45)\n\n\n\n```\n\n\n\n#### Fix\n\n\n\n`lib/utils.js`, applied in e83d321 on `main` and released as v6.16.0:\n\n\n\n```diff\n\n\n\n- return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));\n\n\n\n+ return !!(obj.constructor && typeof obj.constructor.isBuffer === \"function\" && obj.constructor.isBuffer(obj));\n\n\n\n```\n\n\n\nReal `Buffer`, `safer-buffer`, and browserify `buffer` polyfill instances serialize exactly as before; only the throw is removed.\n\n\n\n### Affected versions\n\n\n\n`>=2.2.5 <6.16.0`, fixed in v6.16.0.\n\n\n\nThe unguarded duck-type was introduced in 3768a75 and first shipped in v2.2.5 (September 2014). v2.2.4 and earlier used `Buffer.isBuffer` and are not affected. Every release from v2.2.5 through v6.15.3 contains the unguarded call.\n\n\n\n### Impact\n\n\n\nAn unauthenticated request can make any code path that re-serializes attacker-influenced data with `qs.stringify` (for example, rebuilding a query string from `req.query` for a redirect or an upstream request, or serializing a parsed JSON body) throw synchronously. In a typical Node.js HTTP framework the throw is caught by the framework error boundary and the affected request returns a 500; the process survives and other requests are unaffected. Where the call runs outside an error boundary, such as an `async` Express 4 handler (where the throw becomes an unhandled promise rejection) or a background job, the process exits, so the impact in that case depends on the application error handling rather than on qs.",
+      "recommendation": "Upgrade qs to version 6.16.0",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-82417"
+        },
+        {
+          "url": "https://github.com/ljharb/qs"
+        },
+        {
+          "url": "https://github.com/ljharb/qs/commit/e83d321ffafb38cf210683ac31714fce6ce1c6c6"
+        },
+        {
+          "url": "https://github.com/ljharb/qs/security/advisories/GHSA-4mjr-xmp4-gh2g"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82417"
+        }
+      ],
+      "published": "2026-08-30T00:16:34+00:00",
+      "updated": "2026-08-31T18:17:21+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/qs@6.7.0",
+          "versions": [
+            {
+              "version": "6.7.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83610",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 6.3,
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes": [
+        116
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.15 and 0.9.12, and in xmldom version 0.6.0 and earlier, Document.createEntityReference(name) accepts an invalid name and the ENTITY_REFERENCE_NODE serializer emits the resulting nodeName directly in &name; form. Directly serializing the node or fragment with XMLSerializer.serializeToString() and requireWellFormed: true can therefore break the entity-reference boundary and produce attacker-controlled XML markup when reparsed. The parser does not ordinarily create these nodes, and element-child insertion is rejected, so exploitation requires an application to create and directly serialize an EntityReference. This issue is fixed in @xmldom/xmldom versions 0.8.15 and 0.9.12; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83610"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83610"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/4664386e4f4d99d17b416a151dbe8323e245284b"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/6c3fb5ffeafe7901ec928ce9010988dd716c94a0"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1071"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1072"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.15"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.12"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-6gmq-8vp8-gcm6"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83610"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83610"
+        }
+      ],
+      "published": "2026-09-01T15:17:39+00:00",
+      "updated": "2026-09-01T15:17:39+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "GHSA-353f-x4gh-cqq8",
       "source": {
         "name": "ruby-advisory-db",
@@ -31913,15 +32360,6 @@
       "ratings": [
         {
           "source": {
-            "name": "ghsa"
-          },
-          "score": 7.5,
-          "severity": "high",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        },
-        {
-          "source": {
             "name": "ruby-advisory-db"
           },
           "severity": "high"
@@ -31934,14 +32372,9 @@
           "url": "https://github.com/advisories/GHSA-c4rq-3m3g-8wgx"
         },
         {
-          "url": "https://github.com/sparklemotion/nokogiri"
-        },
-        {
           "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-c4rq-3m3g-8wgx"
         }
       ],
-      "published": "2026-05-06T18:24:18+00:00",
-      "updated": "2026-05-06T18:24:18+00:00",
       "affects": [
         {
           "ref": "pkg:gem/nokogiri@1.13.10",
@@ -32310,15 +32743,6 @@
       "ratings": [
         {
           "source": {
-            "name": "ghsa"
-          },
-          "score": 5.3,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
-        },
-        {
-          "source": {
             "name": "ruby-advisory-db"
           },
           "severity": "medium"
@@ -32331,14 +32755,9 @@
           "url": "https://github.com/advisories/GHSA-v2fc-qm4h-8hqv"
         },
         {
-          "url": "https://github.com/sparklemotion/nokogiri"
-        },
-        {
           "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-v2fc-qm4h-8hqv"
         }
       ],
-      "published": "2026-05-06T18:27:38+00:00",
-      "updated": "2026-05-06T18:27:38+00:00",
       "affects": [
         {
           "ref": "pkg:gem/nokogiri@1.13.10",
@@ -32527,15 +32946,6 @@
       "ratings": [
         {
           "source": {
-            "name": "ghsa"
-          },
-          "score": 5.3,
-          "severity": "medium",
-          "method": "CVSSv31",
-          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
-        },
-        {
-          "source": {
             "name": "ruby-advisory-db"
           },
           "severity": "medium"
@@ -32548,14 +32958,9 @@
           "url": "https://github.com/advisories/GHSA-wx95-c6cv-8532"
         },
         {
-          "url": "https://github.com/sparklemotion/nokogiri"
-        },
-        {
           "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-wx95-c6cv-8532"
         }
       ],
-      "published": "2026-02-18T21:57:38+00:00",
-      "updated": "2026-02-18T21:57:38+00:00",
       "affects": [
         {
           "ref": "pkg:gem/nokogiri@1.13.10",
