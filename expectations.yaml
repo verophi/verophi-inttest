@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 216
-    severity: {critical: 21, high: 104, medium: 67, low: 17}
+    totalAdvisories: 223
+    severity: {critical: 21, high: 105, medium: 71, low: 17}
     correlated: 47
-    uncorrelated: 169
-    totalImpactScore: 735
+    uncorrelated: 176
+    totalImpactScore: 747
     reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1571,6 +1571,15 @@ uncorrelatedAdvisories:
           affectedVersion: 7.4.0
           fixVersion: 7.15.2
           addressed: false
+    - id: CVE-2026-79770
+      severity: high
+      dependency: nokogiri@1.13.10
+      recommendation: Upgrade nokogiri to version 1.19.3
+      occurrences:
+        - dependencyName: nokogiri
+          affectedVersion: 1.13.10
+          fixVersion: 1.19.3
+          addressed: false
     - id: GHSA-c4rq-3m3g-8wgx
       severity: high
       dependency: nokogiri@1.13.10
@@ -2085,6 +2094,41 @@ uncorrelatedAdvisories:
           affectedVersion: 1.5.0
           fixVersion: 1.7.1
           addressed: false
+    - id: CVE-2026-79771
+      severity: medium
+      dependency: nokogiri@1.13.10
+      recommendation: Upgrade nokogiri to version 1.19.3
+      occurrences:
+        - dependencyName: nokogiri
+          affectedVersion: 1.13.10
+          fixVersion: 1.19.3
+          addressed: false
+    - id: CVE-2026-79772
+      severity: medium
+      dependency: nokogiri@1.13.10
+      recommendation: Upgrade nokogiri to version 1.19.1
+      occurrences:
+        - dependencyName: nokogiri
+          affectedVersion: 1.13.10
+          fixVersion: 1.19.1
+          addressed: false
+    - id: CVE-2026-82417
+      severity: medium
+      dependency: qs@6.7.0
+      recommendation: Upgrade qs to version 6.16.0
+      occurrences:
+        - dependencyName: qs
+          affectedVersion: 6.7.0
+          fixVersion: 6.16.0
+          addressed: false
+    - id: CVE-2026-83610
+      severity: medium
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
     - id: GHSA-5prr-v3j2-97mh
       severity: medium
       dependency: nokogiri@1.13.10
@@ -2291,6 +2335,24 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/sys
           affectedVersion: v0.15.0
           fixVersion: 0.44.0
+          addressed: false
+    - id: CVE-2026-56855
+      severity: unknown
+      dependency: golang.org/x/crypto@v0.16.0
+      recommendation: Upgrade golang.org/x/crypto to version 0.56.0
+      occurrences:
+        - dependencyName: golang.org/x/crypto
+          affectedVersion: v0.16.0
+          fixVersion: 0.56.0
+          addressed: false
+    - id: CVE-2026-78662
+      severity: unknown
+      dependency: golang.org/x/crypto@v0.16.0
+      recommendation: Upgrade golang.org/x/crypto to version 0.56.0
+      occurrences:
+        - dependencyName: golang.org/x/crypto
+          affectedVersion: v0.16.0
+          fixVersion: 0.56.0
           addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
