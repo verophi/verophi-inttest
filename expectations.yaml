@@ -22,12 +22,12 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 223
-    severity: {critical: 21, high: 105, medium: 71, low: 17}
-    correlated: 47
+    totalAdvisories: 225
+    severity: {critical: 21, high: 108, medium: 70, low: 17}
+    correlated: 49
     uncorrelated: 176
-    totalImpactScore: 747
-    reducibleImpactScore: 219
+    totalImpactScore: 757
+    reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
     unparsedRequests: 1
@@ -199,6 +199,27 @@ changeRequests:
           advisoryMatches:
             - advisory: {id: CVE-2022-25883, severity: high}
               occurrence: {affectedVersion: 7.3.7, fixVersion: 7.5.2, addressed: true}
+    - title: 'chore(deps): update dependency phoenix to v1.7.0'
+      status: matched
+      riskTier: {name: minor, risk: 2}
+      hasUnknownRisk: false
+      impactScore: 12
+      mergeEfficiency: 6
+      fixes: {total: 3, critical: 0, high: 3, medium: 0, low: 0}
+      assessments:
+        - change:
+            dependencyName: phoenix
+            currentVersion: 1.6.0
+            targetVersion: 1.7.0
+            changeType: {name: minor, risk: 2}
+          impactScore: 12
+          advisoryMatches:
+            - advisory: {id: CVE-2022-42975, severity: high}
+              occurrence: {affectedVersion: 1.6.0, fixVersion: 1.6.14, addressed: true}
+            - advisory: {id: CVE-2026-56811, severity: high}
+              occurrence: {affectedVersion: 1.6.0, fixVersion: 1.6.17, addressed: true}
+            - advisory: {id: CVE-2026-56812, severity: high}
+              occurrence: {affectedVersion: 1.6.0, fixVersion: 1.6.17, addressed: true}
     - title: 'fix(deps): update module golang.org/x/net to v0.33.0'
       status: matched
       riskTier: {name: minor, risk: 2}
@@ -403,23 +424,6 @@ changeRequests:
           advisoryMatches:
             - advisory: {id: CVE-2024-21907, severity: high}
               occurrence: {affectedVersion: 12.0.3, fixVersion: 13.0.1, addressed: true}
-    - title: 'chore(deps): update dependency phoenix to v1.7.0'
-      status: matched
-      riskTier: {name: minor, risk: 2}
-      hasUnknownRisk: false
-      impactScore: 4
-      mergeEfficiency: 2
-      fixes: {total: 1, critical: 0, high: 1, medium: 0, low: 0}
-      assessments:
-        - change:
-            dependencyName: phoenix
-            currentVersion: 1.6.0
-            targetVersion: 1.7.0
-            changeType: {name: minor, risk: 2}
-          impactScore: 4
-          advisoryMatches:
-            - advisory: {id: CVE-2022-42975, severity: high}
-              occurrence: {affectedVersion: 1.6.0, fixVersion: 1.6.14, addressed: true}
     - title: 'chore(deps): update dependency system.text.json to 7.0.4'
       status: matched
       riskTier: {name: major, risk: 3}
@@ -1580,6 +1584,15 @@ uncorrelatedAdvisories:
           affectedVersion: 1.13.10
           fixVersion: 1.19.3
           addressed: false
+    - id: CVE-2026-82417
+      severity: high
+      dependency: qs@6.7.0
+      recommendation: Upgrade qs to version 6.16.0
+      occurrences:
+        - dependencyName: qs
+          affectedVersion: 6.7.0
+          fixVersion: 6.16.0
+          addressed: false
     - id: GHSA-c4rq-3m3g-8wgx
       severity: high
       dependency: nokogiri@1.13.10
@@ -2111,15 +2124,6 @@ uncorrelatedAdvisories:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
           fixVersion: 1.19.1
-          addressed: false
-    - id: CVE-2026-82417
-      severity: medium
-      dependency: qs@6.7.0
-      recommendation: Upgrade qs to version 6.16.0
-      occurrences:
-        - dependencyName: qs
-          affectedVersion: 6.7.0
-          fixVersion: 6.16.0
           addressed: false
     - id: CVE-2026-83610
       severity: medium

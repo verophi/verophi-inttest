@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:d210c4be-aba9-442e-8c68-5040dd6130de",
+  "serialNumber": "urn:uuid:4237f1ae-b9cc-417b-a421-04c5c6d995fc",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-09-03T08:44:41+00:00",
+    "timestamp": "2026-09-04T08:40:00+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "96a20718-010b-414c-a9bf-f0615f7177ac",
+      "bom-ref": "ae78f9e9-4606-488d-a4df-a779f9ba56e1",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,67 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "055fe896-aee9-48c6-81ee-51c238d341ce",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "05ece5eb-0c39-4ab4-9814-422634a9623a",
-      "type": "application",
-      "name": "ruby/Gemfile.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
-        }
-      ]
-    },
-    {
-      "bom-ref": "11c675ff-751f-4d85-ae86-c51516cb64cc",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "11e31b4e-e08a-4b7e-8f65-57f7be6d0618",
-      "type": "application",
-      "name": "swift/Package.resolved",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "swift"
-        }
-      ]
-    },
-    {
-      "bom-ref": "1655e692-863a-4b39-b996-fbe94d0baec7",
+      "bom-ref": "054fdeb9-94da-49d0-9a90-d1d7fc7b4cd2",
       "type": "application",
       "name": "rust/Cargo.lock",
       "properties": [
@@ -108,9 +48,9 @@
       ]
     },
     {
-      "bom-ref": "4198eed7-96d9-40ed-9b0d-7996b98d4641",
+      "bom-ref": "18ce52f7-9c07-4957-9347-823e6d7a0442",
       "type": "application",
-      "name": "elixir/mix.lock",
+      "name": "php/composer.lock",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -118,42 +58,12 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "hex"
+          "value": "composer"
         }
       ]
     },
     {
-      "bom-ref": "47328cbd-6ea4-4150-88e5-8239cc91f4e5",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "679bfd07-42be-44a4-80ec-139b2e51c611",
-      "type": "application",
-      "name": "nuget/packages.lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "nuget"
-        }
-      ]
-    },
-    {
-      "bom-ref": "924be91e-5fd4-4ce4-9b39-68564f921820",
+      "bom-ref": "25486ea1-9712-4b9a-a2c8-0f6e4a63cc1f",
       "type": "application",
       "name": "npm/package-lock.json",
       "properties": [
@@ -168,22 +78,7 @@
       ]
     },
     {
-      "bom-ref": "abdf36b1-1c6c-422e-98c4-4656b7679d88",
-      "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "fc0abf7f-c8ee-4007-9dd9-59be8ff0cc22",
+      "bom-ref": "3b1ce5b4-cced-4d68-b032-347fd883d8fe",
       "type": "application",
       "name": "maven/pom.xml",
       "properties": [
@@ -198,9 +93,9 @@
       ]
     },
     {
-      "bom-ref": "fc8143fc-3c87-4cef-a4de-9442680d0b0a",
+      "bom-ref": "5fb92e11-025c-4600-b9c3-146d3c9a75ed",
       "type": "application",
-      "name": "php/composer.lock",
+      "name": "swift/Package.resolved",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +103,112 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "composer"
+          "value": "swift"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7e032bdd-5cda-49f6-a074-59082fcaa5fa",
+      "type": "application",
+      "name": "lockfile-maintenance/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "85d260b6-e351-4da5-9236-2ab80401fd4f",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "98849664-e8f9-4c2f-a872-9164ac6c2bde",
+      "type": "application",
+      "name": "nuget/packages.lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9a4c0325-34c1-4b92-9aa3-cceae22c608b",
+      "type": "application",
+      "name": "python/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c077ecd6-a4e9-47f6-adcb-1642a06379d2",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d513d619-eb93-404b-86ed-2f9f9fede4ce",
+      "type": "application",
+      "name": "ruby/Gemfile.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "bundler"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e0710d05-5ec9-45d6-8e50-0567eeacb86f",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
         }
       ]
     },
@@ -4675,78 +4675,19 @@
   ],
   "dependencies": [
     {
-      "ref": "055fe896-aee9-48c6-81ee-51c238d341ce",
-      "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
-      ]
-    },
-    {
-      "ref": "05ece5eb-0c39-4ab4-9814-422634a9623a",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "11c675ff-751f-4d85-ae86-c51516cb64cc",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
-      ]
-    },
-    {
-      "ref": "11e31b4e-e08a-4b7e-8f65-57f7be6d0618",
-      "dependsOn": [
-        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
-        "pkg:swift/github.com/apple/swift-collections@1.0.4",
-        "pkg:swift/github.com/apple/swift-log@1.5.3",
-        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
-        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
-        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
-        "pkg:swift/github.com/apple/swift-nio@2.55.0"
-      ]
-    },
-    {
-      "ref": "1655e692-863a-4b39-b996-fbe94d0baec7",
+      "ref": "054fdeb9-94da-49d0-9a90-d1d7fc7b4cd2",
       "dependsOn": [
         "pkg:cargo/vero-test-fixtures-rust@0.1.0"
       ]
     },
     {
-      "ref": "4198eed7-96d9-40ed-9b0d-7996b98d4641",
+      "ref": "18ce52f7-9c07-4957-9347-823e6d7a0442",
       "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
       ]
     },
     {
-      "ref": "47328cbd-6ea4-4150-88e5-8239cc91f4e5",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "679bfd07-42be-44a4-80ec-139b2e51c611",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "924be91e-5fd4-4ce4-9b39-68564f921820",
+      "ref": "25486ea1-9712-4b9a-a2c8-0f6e4a63cc1f",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4763,38 +4704,97 @@
       ]
     },
     {
-      "ref": "96a20718-010b-414c-a9bf-f0615f7177ac",
-      "dependsOn": [
-        "055fe896-aee9-48c6-81ee-51c238d341ce",
-        "05ece5eb-0c39-4ab4-9814-422634a9623a",
-        "11c675ff-751f-4d85-ae86-c51516cb64cc",
-        "11e31b4e-e08a-4b7e-8f65-57f7be6d0618",
-        "1655e692-863a-4b39-b996-fbe94d0baec7",
-        "4198eed7-96d9-40ed-9b0d-7996b98d4641",
-        "47328cbd-6ea4-4150-88e5-8239cc91f4e5",
-        "679bfd07-42be-44a4-80ec-139b2e51c611",
-        "924be91e-5fd4-4ce4-9b39-68564f921820",
-        "abdf36b1-1c6c-422e-98c4-4656b7679d88",
-        "fc0abf7f-c8ee-4007-9dd9-59be8ff0cc22",
-        "fc8143fc-3c87-4cef-a4de-9442680d0b0a"
-      ]
-    },
-    {
-      "ref": "abdf36b1-1c6c-422e-98c4-4656b7679d88",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
-      ]
-    },
-    {
-      "ref": "fc0abf7f-c8ee-4007-9dd9-59be8ff0cc22",
+      "ref": "3b1ce5b4-cced-4d68-b032-347fd883d8fe",
       "dependsOn": [
         "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
       ]
     },
     {
-      "ref": "fc8143fc-3c87-4cef-a4de-9442680d0b0a",
+      "ref": "5fb92e11-025c-4600-b9c3-146d3c9a75ed",
       "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
+        "pkg:swift/github.com/apple/swift-collections@1.0.4",
+        "pkg:swift/github.com/apple/swift-log@1.5.3",
+        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
+        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
+        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
+        "pkg:swift/github.com/apple/swift-nio@2.55.0"
+      ]
+    },
+    {
+      "ref": "7e032bdd-5cda-49f6-a074-59082fcaa5fa",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "85d260b6-e351-4da5-9236-2ab80401fd4f",
+      "dependsOn": [
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
+      ]
+    },
+    {
+      "ref": "98849664-e8f9-4c2f-a872-9164ac6c2bde",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "9a4c0325-34c1-4b92-9aa3-cceae22c608b",
+      "dependsOn": [
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
+      ]
+    },
+    {
+      "ref": "ae78f9e9-4606-488d-a4df-a779f9ba56e1",
+      "dependsOn": [
+        "054fdeb9-94da-49d0-9a90-d1d7fc7b4cd2",
+        "18ce52f7-9c07-4957-9347-823e6d7a0442",
+        "25486ea1-9712-4b9a-a2c8-0f6e4a63cc1f",
+        "3b1ce5b4-cced-4d68-b032-347fd883d8fe",
+        "5fb92e11-025c-4600-b9c3-146d3c9a75ed",
+        "7e032bdd-5cda-49f6-a074-59082fcaa5fa",
+        "85d260b6-e351-4da5-9236-2ab80401fd4f",
+        "98849664-e8f9-4c2f-a872-9164ac6c2bde",
+        "9a4c0325-34c1-4b92-9aa3-cceae22c608b",
+        "c077ecd6-a4e9-47f6-adcb-1642a06379d2",
+        "d513d619-eb93-404b-86ed-2f9f9fede4ce",
+        "e0710d05-5ec9-45d6-8e50-0567eeacb86f"
+      ]
+    },
+    {
+      "ref": "c077ecd6-a4e9-47f6-adcb-1642a06379d2",
+      "dependsOn": [
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
+      ]
+    },
+    {
+      "ref": "d513d619-eb93-404b-86ed-2f9f9fede4ce",
+      "dependsOn": [
+        "pkg:gem/actionpack@6.1.4"
+      ]
+    },
+    {
+      "ref": "e0710d05-5ec9-45d6-8e50-0567eeacb86f",
+      "dependsOn": [
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
       ]
     },
     {
@@ -20356,6 +20356,12 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57845"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:59833"
+        },
+        {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60025"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60441"
         },
         {
@@ -20513,7 +20519,7 @@
         }
       ],
       "published": "2026-05-07T20:16:42+00:00",
-      "updated": "2026-09-02T13:17:27+00:00",
+      "updated": "2026-09-03T13:05:20+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -22009,7 +22015,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-02T13:17:39+00:00",
+      "updated": "2026-09-03T13:05:33+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22339,7 +22345,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-02T13:17:41+00:00",
+      "updated": "2026-09-03T13:05:34+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -26525,6 +26531,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57191"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:59833"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60520"
         },
         {
@@ -26553,7 +26562,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-08-28T16:18:05+00:00",
+      "updated": "2026-09-03T13:05:48+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -26751,6 +26760,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:57191"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:59833"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60520"
         },
         {
@@ -26776,7 +26788,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-08-28T16:18:06+00:00",
+      "updated": "2026-09-03T13:05:49+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -26943,6 +26955,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59360"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:59833"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60520"
         },
         {
@@ -26974,7 +26989,7 @@
         }
       ],
       "published": "2026-06-11T17:16:33+00:00",
-      "updated": "2026-08-28T16:18:07+00:00",
+      "updated": "2026-09-03T13:05:49+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -27659,6 +27674,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:56912"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:59833"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:8483"
         },
         {
@@ -27744,7 +27762,7 @@
         }
       ],
       "published": "2026-03-31T20:16:29+00:00",
-      "updated": "2026-08-31T13:18:20+00:00",
+      "updated": "2026-09-03T13:05:55+00:00",
       "affects": [
         {
           "ref": "pkg:npm/lodash-es@4.17.20",
@@ -29611,6 +29629,169 @@
       ]
     },
     {
+      "id": "CVE-2026-56811",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Aerlang"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        770
+      ],
+      "description": "Allocation of Resources Without Limits or Throttling vulnerability in phoenixframework phoenix (Phoenix.Socket module) allows an unauthenticated attacker to cause a denial of service against any endpoint that mounts a Phoenix socket with a reachable channel transport (WebSocket or LongPoll).\n\nThis vulnerability is associated with program files lib/phoenix/socket.ex and program routine 'Elixir.Phoenix.Socket':handle_in/4.\n\nPhoenix transports do not limit the number of channels that a single transport process may join. Every phx_join message a client sends over one connection starts a persistent channel process, and the socket process accepts an unbounded number of them. A single unauthenticated client can therefore open one WebSocket or LongPoll connection and stream a large number of phx_join messages, spawning hundreds of thousands of channel processes over that one connection and eventually reaching the BEAM maximum process limit. Once the process table is exhausted the virtual machine can no longer start new processes, denying service to legitimate traffic across the whole node. Because the amplification happens inside a single connection, network-layer connection caps and rate limiting do not mitigate it.\n\nThe fix adds a :max_channels_per_transport option (default 100) that bounds the number of channels a single transport process can join, forcing abusive clients to open many connections instead, where external load balancers and reverse proxies can throttle them.\n\nThis issue affects phoenix: from 0.11.0 before 1.5.15, from 1.6.0-rc.0 before 1.6.17, from 1.7.0-rc.0 before 1.7.24, and from 1.8.0-rc.0 before 1.8.9.",
+      "recommendation": "Upgrade phoenix to version 1.5.15, 1.6.17, 1.7.24, 1.8.9",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-56811"
+        },
+        {
+          "url": "https://cna.erlef.org/cves/CVE-2026-56811.html"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/16e295d2fccab185d1292322e2bee5d46c725c8a"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/a612100cd8a4279091abc1a2ef8fb98a6d01c0a1"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/c498ba8cf49f6accbbd0c643a5340b58db891218"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/d19ca0a8d9f82c130b7ed339b9f033433e2dea5e"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/security/advisories/GHSA-6983-jfq8-485w"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56811"
+        },
+        {
+          "url": "https://osv.dev/vulnerability/EEF-CVE-2026-56811"
+        }
+      ],
+      "published": "2026-07-07T16:16:40+00:00",
+      "updated": "2026-07-09T14:59:45+00:00",
+      "affects": [
+        {
+          "ref": "pkg:hex/phoenix@1.6.0",
+          "versions": [
+            {
+              "version": "1.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-56812",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Aerlang"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 6.3,
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "nvd"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        754
+      ],
+      "description": "Improper Check for Unusual or Exceptional Conditions vulnerability in phoenixframework phoenix (Presence JavaScript client) allows an attacker with ordinary channel access to cause a persistent client-side denial of service against every viewer of a presence channel topic.\n\nThis vulnerability is associated with program files assets/js/phoenix/presence.js and program routines Presence.syncState and Presence.syncDiff.\n\nThe Phoenix JavaScript presence client checks whether a presence already exists with a bare truthiness test (state[key]) instead of an own-property check. Presence keys can be attacker-controlled, because applications track presences under a username or id supplied by the client. A user who joins a channel choosing a key that is an Object.prototype member name (__proto__, constructor, toString, hasOwnProperty, and similar) makes that lookup return JavaScript's built-in Object.prototype instead of undefined. Because the prototype is truthy, the code treats it as an existing presence and reads .metas.map(...) off it, which throws an uncaught TypeError.\n\nThe exception propagates out of the presence message handler, so the local state is never updated and onSync() never fires. Because the malicious key is tracked on the server, it is re-pushed on every presence update and keeps re-throwing, so presence sync stays broken for every viewer of that channel topic until the attacker leaves. Both syncState and syncDiff use the same unsafe existence-check pattern. The impact is limited to the affected topic and is a read-time confusion of the prototype object, not a mutation of Object.prototype (it is not prototype pollution).\n\nThis issue affects phoenix: from 1.2.0-rc.0 before 1.5.15, from 1.6.0-rc.0 before 1.6.17, from 1.7.0-rc.0 before 1.7.24, and from 1.8.0-rc.0 before 1.8.9.",
+      "recommendation": "Upgrade phoenix to version 1.5.15, 1.6.17, 1.7.24, 1.8.9",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-56812"
+        },
+        {
+          "url": "https://cna.erlef.org/cves/CVE-2026-56812.html"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/7f7b971c1ea0994e3fbd1c11ddb05e780bd38ad8"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/89a1c4be161e436241e12b2378a719904b9bd96f"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/b90b22521465ece00eb5a19d5aa2b9465b209c85"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/commit/beffc4da1e787e572121f68902c63daf4fe7d9c2"
+        },
+        {
+          "url": "https://github.com/phoenixframework/phoenix/security/advisories/GHSA-63mc-hw7g-86rr"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56812"
+        },
+        {
+          "url": "https://osv.dev/vulnerability/EEF-CVE-2026-56812"
+        }
+      ],
+      "published": "2026-07-07T16:16:40+00:00",
+      "updated": "2026-07-09T14:51:19+00:00",
+      "affects": [
+        {
+          "ref": "pkg:hex/phoenix@1.6.0",
+          "versions": [
+            {
+              "version": "1.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-56852",
       "source": {
         "name": "govulndb",
@@ -29727,7 +29908,7 @@
         }
       ],
       "published": "2026-08-28T16:18:17+00:00",
-      "updated": "2026-08-28T22:16:52+00:00",
+      "updated": "2026-09-03T16:37:52+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -29747,6 +29928,9 @@
         "url": "https://pkg.go.dev/vuln/"
       },
       "ratings": [],
+      "cwes": [
+        770
+      ],
       "description": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests are handled explicitly. Then, treat all other messages as a protocol error and tear the connection down instead of buffering and blocking.",
       "recommendation": "Upgrade golang.org/x/crypto to version 0.56.0",
       "advisories": [
@@ -29767,7 +29951,7 @@
         }
       ],
       "published": "2026-09-02T20:17:36+00:00",
-      "updated": "2026-09-02T20:17:36+00:00",
+      "updated": "2026-09-03T16:37:52+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -30009,6 +30193,9 @@
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59198"
+        },
+        {
+          "url": "https://ubuntu.com/security/notices/USN-8690-1"
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-59198"
@@ -31461,6 +31648,9 @@
         "url": "https://pkg.go.dev/vuln/"
       },
       "ratings": [],
+      "cwes": [
+        770
+      ],
       "description": "Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we add an atomic established state, set when a channel becomes usable. Until such a time, handlePacket drops every packet other than the open confirmation/failure, without blocking and without tearing down the connection.",
       "recommendation": "Upgrade golang.org/x/crypto to version 0.56.0",
       "advisories": [
@@ -31481,7 +31671,7 @@
         }
       ],
       "published": "2026-09-02T20:17:37+00:00",
-      "updated": "2026-09-02T20:17:37+00:00",
+      "updated": "2026-09-03T16:37:52+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -31722,6 +31912,15 @@
           "severity": "medium",
           "method": "CVSSv4",
           "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
         }
       ],
       "cwes": [
@@ -31735,6 +31934,9 @@
           "url": "https://avd.aquasec.com/nvd/cve-2026-82417"
         },
         {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-82417"
+        },
+        {
           "url": "https://github.com/ljharb/qs"
         },
         {
@@ -31745,10 +31947,13 @@
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82417"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-82417"
         }
       ],
       "published": "2026-08-30T00:16:34+00:00",
-      "updated": "2026-08-31T18:17:21+00:00",
+      "updated": "2026-09-03T18:00:36+00:00",
       "affects": [
         {
           "ref": "pkg:npm/qs@6.7.0",
@@ -31830,7 +32035,7 @@
         }
       ],
       "published": "2026-09-01T15:17:39+00:00",
-      "updated": "2026-09-01T15:17:39+00:00",
+      "updated": "2026-09-03T17:17:24+00:00",
       "affects": [
         {
           "ref": "pkg:npm/xmldom@0.6.0",
