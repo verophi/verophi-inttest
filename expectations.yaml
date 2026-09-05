@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 225
-    severity: {critical: 21, high: 108, medium: 70, low: 17}
+    totalAdvisories: 222
+    severity: {critical: 21, high: 107, medium: 68, low: 17}
     correlated: 49
-    uncorrelated: 176
-    totalImpactScore: 757
+    uncorrelated: 173
+    totalImpactScore: 749
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1578,7 +1578,7 @@ uncorrelatedAdvisories:
     - id: CVE-2026-79770
       severity: high
       dependency: nokogiri@1.13.10
-      recommendation: Upgrade nokogiri to version 1.19.3
+      recommendation: Upgrade nokogiri to version >= 1.19.3
       occurrences:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
@@ -1592,15 +1592,6 @@ uncorrelatedAdvisories:
         - dependencyName: qs
           affectedVersion: 6.7.0
           fixVersion: 6.16.0
-          addressed: false
-    - id: GHSA-c4rq-3m3g-8wgx
-      severity: high
-      dependency: nokogiri@1.13.10
-      recommendation: Upgrade nokogiri to version >= 1.19.3
-      occurrences:
-        - dependencyName: nokogiri
-          affectedVersion: 1.13.10
-          fixVersion: 1.19.3
           addressed: false
     - id: GHSA-mrxw-mxhj-p664
       severity: high
@@ -2110,7 +2101,7 @@ uncorrelatedAdvisories:
     - id: CVE-2026-79771
       severity: medium
       dependency: nokogiri@1.13.10
-      recommendation: Upgrade nokogiri to version 1.19.3
+      recommendation: Upgrade nokogiri to version >= 1.19.3
       occurrences:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
@@ -2119,7 +2110,7 @@ uncorrelatedAdvisories:
     - id: CVE-2026-79772
       severity: medium
       dependency: nokogiri@1.13.10
-      recommendation: Upgrade nokogiri to version 1.19.1
+      recommendation: Upgrade nokogiri to version >= 1.19.1
       occurrences:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
@@ -2150,24 +2141,6 @@ uncorrelatedAdvisories:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
           fixVersion: 1.14.3
-          addressed: false
-    - id: GHSA-v2fc-qm4h-8hqv
-      severity: medium
-      dependency: nokogiri@1.13.10
-      recommendation: Upgrade nokogiri to version >= 1.19.3
-      occurrences:
-        - dependencyName: nokogiri
-          affectedVersion: 1.13.10
-          fixVersion: 1.19.3
-          addressed: false
-    - id: GHSA-wx95-c6cv-8532
-      severity: medium
-      dependency: nokogiri@1.13.10
-      recommendation: Upgrade nokogiri to version >= 1.19.1
-      occurrences:
-        - dependencyName: nokogiri
-          affectedVersion: 1.13.10
-          fixVersion: 1.19.1
           addressed: false
     - id: GHSA-xc9x-jj77-9p9j
       severity: medium
