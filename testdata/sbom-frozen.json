@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:4237f1ae-b9cc-417b-a421-04c5c6d995fc",
+  "serialNumber": "urn:uuid:9e5c93f1-1d06-45dc-ae7f-5a1e3e3ccd49",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-09-04T08:40:00+00:00",
+    "timestamp": "2026-09-05T08:12:09+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "ae78f9e9-4606-488d-a4df-a779f9ba56e1",
+      "bom-ref": "47744ffb-3b94-4536-8b5b-4e736cf11264",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,7 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "054fdeb9-94da-49d0-9a90-d1d7fc7b4cd2",
+      "bom-ref": "13104e59-95a3-401d-9530-a6b0eaf6d60e",
       "type": "application",
       "name": "rust/Cargo.lock",
       "properties": [
@@ -48,142 +48,7 @@
       ]
     },
     {
-      "bom-ref": "18ce52f7-9c07-4957-9347-823e6d7a0442",
-      "type": "application",
-      "name": "php/composer.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "composer"
-        }
-      ]
-    },
-    {
-      "bom-ref": "25486ea1-9712-4b9a-a2c8-0f6e4a63cc1f",
-      "type": "application",
-      "name": "npm/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3b1ce5b4-cced-4d68-b032-347fd883d8fe",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "5fb92e11-025c-4600-b9c3-146d3c9a75ed",
-      "type": "application",
-      "name": "swift/Package.resolved",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "swift"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7e032bdd-5cda-49f6-a074-59082fcaa5fa",
-      "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "85d260b6-e351-4da5-9236-2ab80401fd4f",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "98849664-e8f9-4c2f-a872-9164ac6c2bde",
-      "type": "application",
-      "name": "nuget/packages.lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "nuget"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9a4c0325-34c1-4b92-9aa3-cceae22c608b",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "c077ecd6-a4e9-47f6-adcb-1642a06379d2",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d513d619-eb93-404b-86ed-2f9f9fede4ce",
+      "bom-ref": "243c19e7-445d-4845-9b0a-838fec545724",
       "type": "application",
       "name": "ruby/Gemfile.lock",
       "properties": [
@@ -198,7 +63,22 @@
       ]
     },
     {
-      "bom-ref": "e0710d05-5ec9-45d6-8e50-0567eeacb86f",
+      "bom-ref": "28540410-d03f-4172-86a9-13fe2f8c3111",
+      "type": "application",
+      "name": "nuget/packages.lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7174a9d2-0cbf-4fc6-9ec8-770236ed346d",
       "type": "application",
       "name": "go/go.mod",
       "properties": [
@@ -209,6 +89,126 @@
         {
           "name": "aquasecurity:trivy:Type",
           "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7a7ec68c-3da0-441f-8d2e-8ee5ee897473",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "884532da-f63b-42c1-8efd-d971c07adc3b",
+      "type": "application",
+      "name": "maven/pom.xml",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "89a06aa3-205b-417e-8e20-88b65a509bf1",
+      "type": "application",
+      "name": "lockfile-maintenance/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8ba2d701-f5d7-4512-9ebb-7534ce4c43d3",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9963eb63-3290-48f9-8715-ba1005aacbe1",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d267bac6-6b4d-43c2-bdd1-56172736a0ec",
+      "type": "application",
+      "name": "python/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d8cc2dc9-bdfb-4e18-ad54-94875d4e6cad",
+      "type": "application",
+      "name": "swift/Package.resolved",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "swift"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f1386983-d5aa-40b6-a34c-72500e1d6612",
+      "type": "application",
+      "name": "php/composer.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "composer"
         }
       ]
     },
@@ -4675,19 +4675,73 @@
   ],
   "dependencies": [
     {
-      "ref": "054fdeb9-94da-49d0-9a90-d1d7fc7b4cd2",
+      "ref": "13104e59-95a3-401d-9530-a6b0eaf6d60e",
       "dependsOn": [
         "pkg:cargo/vero-test-fixtures-rust@0.1.0"
       ]
     },
     {
-      "ref": "18ce52f7-9c07-4957-9347-823e6d7a0442",
+      "ref": "243c19e7-445d-4845-9b0a-838fec545724",
       "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+        "pkg:gem/actionpack@6.1.4"
       ]
     },
     {
-      "ref": "25486ea1-9712-4b9a-a2c8-0f6e4a63cc1f",
+      "ref": "28540410-d03f-4172-86a9-13fe2f8c3111",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "47744ffb-3b94-4536-8b5b-4e736cf11264",
+      "dependsOn": [
+        "13104e59-95a3-401d-9530-a6b0eaf6d60e",
+        "243c19e7-445d-4845-9b0a-838fec545724",
+        "28540410-d03f-4172-86a9-13fe2f8c3111",
+        "7174a9d2-0cbf-4fc6-9ec8-770236ed346d",
+        "7a7ec68c-3da0-441f-8d2e-8ee5ee897473",
+        "884532da-f63b-42c1-8efd-d971c07adc3b",
+        "89a06aa3-205b-417e-8e20-88b65a509bf1",
+        "8ba2d701-f5d7-4512-9ebb-7534ce4c43d3",
+        "9963eb63-3290-48f9-8715-ba1005aacbe1",
+        "d267bac6-6b4d-43c2-bdd1-56172736a0ec",
+        "d8cc2dc9-bdfb-4e18-ad54-94875d4e6cad",
+        "f1386983-d5aa-40b6-a34c-72500e1d6612"
+      ]
+    },
+    {
+      "ref": "7174a9d2-0cbf-4fc6-9ec8-770236ed346d",
+      "dependsOn": [
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+      ]
+    },
+    {
+      "ref": "7a7ec68c-3da0-441f-8d2e-8ee5ee897473",
+      "dependsOn": [
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
+      ]
+    },
+    {
+      "ref": "884532da-f63b-42c1-8efd-d971c07adc3b",
+      "dependsOn": [
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "89a06aa3-205b-417e-8e20-88b65a509bf1",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "8ba2d701-f5d7-4512-9ebb-7534ce4c43d3",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4704,31 +4758,7 @@
       ]
     },
     {
-      "ref": "3b1ce5b4-cced-4d68-b032-347fd883d8fe",
-      "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
-      ]
-    },
-    {
-      "ref": "5fb92e11-025c-4600-b9c3-146d3c9a75ed",
-      "dependsOn": [
-        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
-        "pkg:swift/github.com/apple/swift-collections@1.0.4",
-        "pkg:swift/github.com/apple/swift-log@1.5.3",
-        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
-        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
-        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
-        "pkg:swift/github.com/apple/swift-nio@2.55.0"
-      ]
-    },
-    {
-      "ref": "7e032bdd-5cda-49f6-a074-59082fcaa5fa",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
-      ]
-    },
-    {
-      "ref": "85d260b6-e351-4da5-9236-2ab80401fd4f",
+      "ref": "9963eb63-3290-48f9-8715-ba1005aacbe1",
       "dependsOn": [
         "pkg:pub/collection@1.19.1",
         "pkg:pub/dio@4.0.0",
@@ -4741,14 +4771,7 @@
       ]
     },
     {
-      "ref": "98849664-e8f9-4c2f-a872-9164ac6c2bde",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "9a4c0325-34c1-4b92-9aa3-cceae22c608b",
+      "ref": "d267bac6-6b4d-43c2-bdd1-56172736a0ec",
       "dependsOn": [
         "pkg:pypi/pillow@9.0.0",
         "pkg:pypi/python-multipart@0.0.5",
@@ -4757,44 +4780,21 @@
       ]
     },
     {
-      "ref": "ae78f9e9-4606-488d-a4df-a779f9ba56e1",
+      "ref": "d8cc2dc9-bdfb-4e18-ad54-94875d4e6cad",
       "dependsOn": [
-        "054fdeb9-94da-49d0-9a90-d1d7fc7b4cd2",
-        "18ce52f7-9c07-4957-9347-823e6d7a0442",
-        "25486ea1-9712-4b9a-a2c8-0f6e4a63cc1f",
-        "3b1ce5b4-cced-4d68-b032-347fd883d8fe",
-        "5fb92e11-025c-4600-b9c3-146d3c9a75ed",
-        "7e032bdd-5cda-49f6-a074-59082fcaa5fa",
-        "85d260b6-e351-4da5-9236-2ab80401fd4f",
-        "98849664-e8f9-4c2f-a872-9164ac6c2bde",
-        "9a4c0325-34c1-4b92-9aa3-cceae22c608b",
-        "c077ecd6-a4e9-47f6-adcb-1642a06379d2",
-        "d513d619-eb93-404b-86ed-2f9f9fede4ce",
-        "e0710d05-5ec9-45d6-8e50-0567eeacb86f"
+        "pkg:swift/github.com/apple/swift-atomics@1.0.2",
+        "pkg:swift/github.com/apple/swift-collections@1.0.4",
+        "pkg:swift/github.com/apple/swift-log@1.5.3",
+        "pkg:swift/github.com/apple/swift-nio-http2@1.25.0",
+        "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
+        "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
+        "pkg:swift/github.com/apple/swift-nio@2.55.0"
       ]
     },
     {
-      "ref": "c077ecd6-a4e9-47f6-adcb-1642a06379d2",
+      "ref": "f1386983-d5aa-40b6-a34c-72500e1d6612",
       "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
-      ]
-    },
-    {
-      "ref": "d513d619-eb93-404b-86ed-2f9f9fede4ce",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "e0710d05-5ec9-45d6-8e50-0567eeacb86f",
-      "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
       ]
     },
     {
@@ -9858,7 +9858,7 @@
         212
       ],
       "description": "Guzzle, an extensible PHP HTTP client. `Authorization` headers on requests are sensitive information. In affected versions when using our Curl handler, it is possible to use the `CURLOPT_HTTPAUTH` option to specify an `Authorization` header. On making a request which responds with a redirect to a URI with a different origin (change in host, scheme or port), if we choose to follow it, we should remove the `CURLOPT_HTTPAUTH` option before continuing, stopping curl from appending the `Authorization` header to the new request. Affected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5. Note that a partial fix was implemented in Guzzle 7.4.2, where a change in host would trigger removal of the curl-added Authorization header, however this earlier fix did not cover change in scheme or change in port. If you do not require or expect redirects to be followed, one should simply disable redirects all together. Alternatively, one can specify to use the Guzzle steam handler backend, rather than curl.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.5, 6.5.8",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.8, 7.4.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31090"
@@ -16982,7 +16982,7 @@
         }
       ],
       "published": "2026-01-21T20:16:05+00:00",
-      "updated": "2026-08-27T13:16:34+00:00",
+      "updated": "2026-09-04T13:17:53+00:00",
       "affects": [
         {
           "ref": "pkg:npm/lodash-es@4.17.20",
@@ -18397,7 +18397,7 @@
         }
       ],
       "published": "2026-04-09T15:16:08+00:00",
-      "updated": "2026-08-31T13:17:17+00:00",
+      "updated": "2026-09-04T13:18:08+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -19015,7 +19015,7 @@
         }
       ],
       "published": "2026-02-09T21:15:49+00:00",
-      "updated": "2026-08-26T13:17:56+00:00",
+      "updated": "2026-09-04T13:18:26+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -20359,6 +20359,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59833"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60023"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:60025"
         },
         {
@@ -20519,7 +20522,7 @@
         }
       ],
       "published": "2026-05-07T20:16:42+00:00",
-      "updated": "2026-09-03T13:05:20+00:00",
+      "updated": "2026-09-04T13:19:00+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/net@v0.16.0",
@@ -21649,7 +21652,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-02T13:17:38+00:00",
+      "updated": "2026-09-04T13:19:33+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22015,7 +22018,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-03T13:05:33+00:00",
+      "updated": "2026-09-04T13:19:34+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22345,7 +22348,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-03T13:05:34+00:00",
+      "updated": "2026-09-04T13:19:35+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -22668,7 +22671,7 @@
         }
       ],
       "published": "2026-05-22T04:16:22+00:00",
-      "updated": "2026-09-02T13:17:42+00:00",
+      "updated": "2026-09-04T13:19:36+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -23131,7 +23134,7 @@
         }
       ],
       "published": "2026-05-22T04:16:24+00:00",
-      "updated": "2026-09-02T13:17:43+00:00",
+      "updated": "2026-09-04T13:19:37+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -23373,7 +23376,7 @@
         }
       ],
       "published": "2026-04-10T20:16:22+00:00",
-      "updated": "2026-08-26T13:18:43+00:00",
+      "updated": "2026-09-04T13:19:39+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -24002,7 +24005,7 @@
         }
       ],
       "published": "2026-04-24T18:16:29+00:00",
-      "updated": "2026-08-26T13:18:48+00:00",
+      "updated": "2026-09-04T13:19:43+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -24485,7 +24488,7 @@
         }
       ],
       "published": "2026-04-24T18:16:30+00:00",
-      "updated": "2026-08-26T13:18:49+00:00",
+      "updated": "2026-09-04T13:19:44+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25012,7 +25015,7 @@
         }
       ],
       "published": "2026-04-24T18:16:31+00:00",
-      "updated": "2026-08-26T13:18:50+00:00",
+      "updated": "2026-09-04T13:19:45+00:00",
       "affects": [
         {
           "ref": "pkg:npm/axios@0.21.1",
@@ -25694,7 +25697,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-09-02T13:17:49+00:00",
+      "updated": "2026-09-04T13:19:49+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -27172,7 +27175,7 @@
         }
       ],
       "published": "2026-05-22T04:16:25+00:00",
-      "updated": "2026-09-02T13:17:56+00:00",
+      "updated": "2026-09-04T13:19:54+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -27677,6 +27680,9 @@
           "url": "https://access.redhat.com/errata/RHSA-2026:59833"
         },
         {
+          "url": "https://access.redhat.com/errata/RHSA-2026:60023"
+        },
+        {
           "url": "https://access.redhat.com/errata/RHSA-2026:8483"
         },
         {
@@ -27762,7 +27768,7 @@
         }
       ],
       "published": "2026-03-31T20:16:29+00:00",
-      "updated": "2026-09-03T13:05:55+00:00",
+      "updated": "2026-09-04T13:19:57+00:00",
       "affects": [
         {
           "ref": "pkg:npm/lodash-es@4.17.20",
@@ -29951,7 +29957,7 @@
         }
       ],
       "published": "2026-09-02T20:17:36+00:00",
-      "updated": "2026-09-03T16:37:52+00:00",
+      "updated": "2026-09-04T16:34:56+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -31671,7 +31677,7 @@
         }
       ],
       "published": "2026-09-02T20:17:37+00:00",
-      "updated": "2026-09-03T16:37:52+00:00",
+      "updated": "2026-09-04T16:33:34+00:00",
       "affects": [
         {
           "ref": "pkg:golang/golang.org/x/crypto@v0.16.0",
@@ -31687,8 +31693,8 @@
     {
       "id": "CVE-2026-79770",
       "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
       },
       "ratings": [
         {
@@ -31708,13 +31714,19 @@
           "severity": "high",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "source": {
+            "name": "ruby-advisory-db"
+          },
+          "severity": "high"
         }
       ],
       "cwes": [
         1333
       ],
       "description": "Nokogiri versions before 1.19.3 contain regular expression denial of service vulnerabilities in the CSS selector tokenizer affecting string-literal and identifier tokenization. Attackers can inject adversarial CSS selectors into methods like Node#css, Node#at_css, and Searchable#search to cause exponential regex backtracking and denial of service.",
-      "recommendation": "Upgrade nokogiri to version 1.19.3",
+      "recommendation": "Upgrade nokogiri to version >= 1.19.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2026-79770"
@@ -31723,13 +31735,22 @@
           "url": "https://access.redhat.com/security/cve/CVE-2026-79770"
         },
         {
+          "url": "https://github.com/advisories/GHSA-c4rq-3m3g-8wgx"
+        },
+        {
           "url": "https://github.com/sparklemotion/nokogiri"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/blob/main/CHANGELOG.md#v1193--2026-04-27"
         },
         {
           "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-c4rq-3m3g-8wgx"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79770"
+        },
+        {
+          "url": "https://rubygems.org/gems/nokogiri/versions/1.19.3"
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-79770"
@@ -31755,8 +31776,8 @@
     {
       "id": "CVE-2026-79771",
       "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
       },
       "ratings": [
         {
@@ -31776,13 +31797,19 @@
           "severity": "medium",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "source": {
+            "name": "ruby-advisory-db"
+          },
+          "severity": "medium"
         }
       ],
       "cwes": [
         401
       ],
       "description": "Nokogiri versions before 1.19.3 contain a memory leak in the XSLT Stylesheet transform method when processing Ruby strings containing null bytes. Attackers can exploit this by passing attacker-controlled input with null bytes to transform parameters, causing heap allocations to leak and enabling denial of service against long-running processes.",
-      "recommendation": "Upgrade nokogiri to version 1.19.3",
+      "recommendation": "Upgrade nokogiri to version >= 1.19.3",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2026-79771"
@@ -31791,13 +31818,22 @@
           "url": "https://access.redhat.com/security/cve/CVE-2026-79771"
         },
         {
+          "url": "https://github.com/advisories/GHSA-v2fc-qm4h-8hqv"
+        },
+        {
           "url": "https://github.com/sparklemotion/nokogiri"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/blob/main/CHANGELOG.md#v1193--2026-04-27"
         },
         {
           "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-v2fc-qm4h-8hqv"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79771"
+        },
+        {
+          "url": "https://rubygems.org/gems/nokogiri/versions/1.19.3"
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-79771"
@@ -31823,8 +31859,8 @@
     {
       "id": "CVE-2026-79772",
       "source": {
-        "name": "ghsa",
-        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Arubygems"
+        "name": "ruby-advisory-db",
+        "url": "https://github.com/rubysec/ruby-advisory-db"
       },
       "ratings": [
         {
@@ -31844,13 +31880,19 @@
           "severity": "medium",
           "method": "CVSSv31",
           "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        },
+        {
+          "source": {
+            "name": "ruby-advisory-db"
+          },
+          "severity": "medium"
         }
       ],
       "cwes": [
         252
       ],
       "description": "Nokogiri versions before 1.19.1 fail to check the return value from xmlC14NExecute in the canonicalize method, returning an empty string on failure instead of raising an exception. Attackers can exploit this to bypass signature validation in downstream SAML libraries by providing invalid canonicalized XML that is incorrectly accepted as valid.",
-      "recommendation": "Upgrade nokogiri to version 1.19.1",
+      "recommendation": "Upgrade nokogiri to version >= 1.19.1",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2026-79772"
@@ -31859,13 +31901,22 @@
           "url": "https://access.redhat.com/security/cve/CVE-2026-79772"
         },
         {
+          "url": "https://github.com/advisories/GHSA-wx95-c6cv-8532"
+        },
+        {
           "url": "https://github.com/sparklemotion/nokogiri"
+        },
+        {
+          "url": "https://github.com/sparklemotion/nokogiri/blob/main/CHANGELOG.md#v1191--2026-02-16"
         },
         {
           "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-wx95-c6cv-8532"
         },
         {
           "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79772"
+        },
+        {
+          "url": "https://rubygems.org/gems/nokogiri/versions/1.19.1"
         },
         {
           "url": "https://www.cve.org/CVERecord?id=CVE-2026-79772"
@@ -32557,42 +32608,6 @@
       ]
     },
     {
-      "id": "GHSA-c4rq-3m3g-8wgx",
-      "source": {
-        "name": "ruby-advisory-db",
-        "url": "https://github.com/rubysec/ruby-advisory-db"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ruby-advisory-db"
-          },
-          "severity": "high"
-        }
-      ],
-      "description": "## Summary\n\nNokogiri's CSS selector tokenizer contains regular expressions whose construction may result in exponential regex backtracking on adversarial selectors. Three ReDoS vectors are addressed in this release:\n\n1. String-literal tokenization on certain unterminated quoted-string input.\n2. String-literal tokenization on a separate class of hex-escape-rich input.\n3. Identifier tokenization on hex-escape-rich input.\n\nThe public CSS selector methods that funnel through the affected tokenizer are `Nokogiri::CSS.xpath_for`, `Node#css`, `Node#at_css`, `Searchable#search`, and `CSS::Parser#parse`.\n\n\n## Mitigation\n\nUpgrade to Nokogiri `>= 1.19.3`.\n\nIf users are unable to upgrade, two options are available:\n\n- Avoid the use of attacker-controlled text in CSS selectors. Applications that only pass developer-authored selectors to Nokogiri are not directly exposed.\n- Set global `Regexp.timeout` (Ruby 3.2+, JRuby 9.4+) to bound parse time.\n\n## Severity\n\nThe Nokogiri maintainers have evaluated this as **High Severity** (CVSS 7.5, `AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H`).\n\nAn attacker able to inject user-supplied text into a CSS selector parse method can cause exponential backtracking, resulting in a potential denial of service.\n\n\n## Resources\n\n- [CWE-1333: Inefficient Regular Expression Complexity](https://cwe.mitre.org/data/definitions/1333.html)\n\n\n## Credit\n\nVector 1 was responsibly reported by @colby-swandale. Vectors 2 and 3 were discovered by @flavorjones during the response to the original report.\n",
-      "recommendation": "Upgrade nokogiri to version >= 1.19.3",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-c4rq-3m3g-8wgx"
-        },
-        {
-          "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-c4rq-3m3g-8wgx"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:gem/nokogiri@1.13.10",
-          "versions": [
-            {
-              "version": "1.13.10",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "GHSA-g9g8-vgvw-g3vf",
       "source": {
         "name": "ruby-advisory-db",
@@ -32940,42 +32955,6 @@
       ]
     },
     {
-      "id": "GHSA-v2fc-qm4h-8hqv",
-      "source": {
-        "name": "ruby-advisory-db",
-        "url": "https://github.com/rubysec/ruby-advisory-db"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ruby-advisory-db"
-          },
-          "severity": "medium"
-        }
-      ],
-      "description": "## Summary\n\nNokogiri's `Nokogiri::XSLT::Stylesheet#transform` leaks a small heap allocation when passed a Ruby string parameter containing a null byte.\n\nFor applications that pass attacker-controlled input through `XSLT.transform` parameters, this may be a vector for a denial of service attack against long-running processes.\n\n\n## Mitigation\n\nUpgrade to Nokogiri `>= 1.19.3`.\n\nUsers may also be able to mitigate this issue without upgrading by validating untrusted transform parameters before passing them to `Nokogiri::XSLT::Stylesheet#transform`.\n\n\n## Severity\n\nThe Nokogiri maintainers have evaluated this as **Moderate Severity**, CVSS 5.3.\n\nEach leaked allocation is approximately 24–32 bytes, so meaningful memory growth requires sustained attacker-controlled traffic at high call rates. The bug does not cause memory corruption, information disclosure, or any change in the behavior of the transform itself, and the string-handling exception is raised as expected.\n\nApplications that do not pass raw attacker-controlled bytes to XSLT parameters are unlikely to be affected in practice.\n\n\n## Resources\n\n- [CWE-401: Missing Release of Memory after Effective Lifetime](https://cwe.mitre.org/data/definitions/401.html)\n\n\n## Credit\n\nThis vulnerability was responsibly reported by @Captainjack-kor.\n",
-      "recommendation": "Upgrade nokogiri to version >= 1.19.3",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-v2fc-qm4h-8hqv"
-        },
-        {
-          "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-v2fc-qm4h-8hqv"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:gem/nokogiri@1.13.10",
-          "versions": [
-            {
-              "version": "1.13.10",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "GHSA-vvfq-8hwr-qm4m",
       "source": {
         "name": "ruby-advisory-db",
@@ -33136,42 +33115,6 @@
           "versions": [
             {
               "version": "1.0.6",
-              "status": "affected"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "GHSA-wx95-c6cv-8532",
-      "source": {
-        "name": "ruby-advisory-db",
-        "url": "https://github.com/rubysec/ruby-advisory-db"
-      },
-      "ratings": [
-        {
-          "source": {
-            "name": "ruby-advisory-db"
-          },
-          "severity": "medium"
-        }
-      ],
-      "description": "## Summary\n\nNokogiri's CRuby extension fails to check the return value from\n`xmlC14NExecute` in the method `Nokogiri::XML::Document#canonicalize`\nand `Nokogiri::XML::Node#canonicalize`. When canonicalization fails,\nan empty string is returned instead of raising an exception. This\nincorrect return value may allow downstream libraries to accept\ninvalid or incomplete canonicalized XML, which has been demonstrated\nto enable signature validation bypass in SAML libraries.\n\nJRuby is not affected, as the Java implementation correctly\nraises `RuntimeError` on canonicalization failure.\n\n## Mitigation\n\nUpgrade to Nokogiri `>= 1.19.1`.\n\n## Severity\n\nThe maintainers have assessed this as **Medium** severity. Nokogiri\nitself is a parsing library without a clear security boundary\nrelated to canonicalization, so the direct impact is that a method\nreturns incorrect data on invalid input. However, this behavior\nwas exploited in practice to bypass SAML signature validation\nin downstream libraries (see References).\n\n## Credit\n\nThis vulnerability was responsibly reported by HackerOne\nresearcher `d4d`.\n",
-      "recommendation": "Upgrade nokogiri to version >= 1.19.1",
-      "advisories": [
-        {
-          "url": "https://github.com/advisories/GHSA-wx95-c6cv-8532"
-        },
-        {
-          "url": "https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-wx95-c6cv-8532"
-        }
-      ],
-      "affects": [
-        {
-          "ref": "pkg:gem/nokogiri@1.13.10",
-          "versions": [
-            {
-              "version": "1.13.10",
               "status": "affected"
             }
           ]
