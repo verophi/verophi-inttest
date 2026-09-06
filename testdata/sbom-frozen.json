@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:9e5c93f1-1d06-45dc-ae7f-5a1e3e3ccd49",
+  "serialNumber": "urn:uuid:cbd6d62e-86c7-4ca4-a57a-8bc8bdc1ef6f",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-09-05T08:12:09+00:00",
+    "timestamp": "2026-09-06T08:29:58+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "47744ffb-3b94-4536-8b5b-4e736cf11264",
+      "bom-ref": "e17c8def-045a-4939-b2a8-09f4706de742",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,142 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "13104e59-95a3-401d-9530-a6b0eaf6d60e",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "243c19e7-445d-4845-9b0a-838fec545724",
-      "type": "application",
-      "name": "ruby/Gemfile.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
-        }
-      ]
-    },
-    {
-      "bom-ref": "28540410-d03f-4172-86a9-13fe2f8c3111",
-      "type": "application",
-      "name": "nuget/packages.lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "nuget"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7174a9d2-0cbf-4fc6-9ec8-770236ed346d",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "7a7ec68c-3da0-441f-8d2e-8ee5ee897473",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "884532da-f63b-42c1-8efd-d971c07adc3b",
-      "type": "application",
-      "name": "maven/pom.xml",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pom"
-        }
-      ]
-    },
-    {
-      "bom-ref": "89a06aa3-205b-417e-8e20-88b65a509bf1",
-      "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "8ba2d701-f5d7-4512-9ebb-7534ce4c43d3",
-      "type": "application",
-      "name": "npm/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "9963eb63-3290-48f9-8715-ba1005aacbe1",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d267bac6-6b4d-43c2-bdd1-56172736a0ec",
+      "bom-ref": "028ac758-17d4-4a5e-b884-703ed7538ba5",
       "type": "application",
       "name": "python/requirements.txt",
       "properties": [
@@ -183,7 +48,127 @@
       ]
     },
     {
-      "bom-ref": "d8cc2dc9-bdfb-4e18-ad54-94875d4e6cad",
+      "bom-ref": "03052126-3951-4dbb-8108-d258e3dfe897",
+      "type": "application",
+      "name": "nuget/packages.lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0365d760-6ca4-49e4-b347-ebe02f3afa13",
+      "type": "application",
+      "name": "php/composer.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "composer"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1a1ba069-6cc1-4958-9624-9915782f8a2c",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3ff24475-33d2-4976-8a31-6e4c6525785e",
+      "type": "application",
+      "name": "ruby/Gemfile.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "bundler"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5f4bdad5-f379-4220-9f29-701d5476ed9e",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5ff8112e-212b-4f89-b007-6fc0a391e834",
+      "type": "application",
+      "name": "lockfile-maintenance/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "604c4931-e0da-4f65-ad3b-b521901e8342",
+      "type": "application",
+      "name": "npm/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "634a42ca-45f5-431e-8fa5-e47c65e501f8",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "724ff7ae-46b1-43f1-b22a-dfc68c70ac25",
       "type": "application",
       "name": "swift/Package.resolved",
       "properties": [
@@ -198,9 +183,9 @@
       ]
     },
     {
-      "bom-ref": "f1386983-d5aa-40b6-a34c-72500e1d6612",
+      "bom-ref": "c4dfed3e-620f-4e95-89fe-c3280d209491",
       "type": "application",
-      "name": "php/composer.lock",
+      "name": "maven/pom.xml",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +193,22 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "composer"
+          "value": "pom"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f4740f81-6c8a-4474-be69-6ad12a65707d",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
         }
       ]
     },
@@ -4675,73 +4675,60 @@
   ],
   "dependencies": [
     {
-      "ref": "13104e59-95a3-401d-9530-a6b0eaf6d60e",
+      "ref": "028ac758-17d4-4a5e-b884-703ed7538ba5",
       "dependsOn": [
-        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
       ]
     },
     {
-      "ref": "243c19e7-445d-4845-9b0a-838fec545724",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "28540410-d03f-4172-86a9-13fe2f8c3111",
+      "ref": "03052126-3951-4dbb-8108-d258e3dfe897",
       "dependsOn": [
         "pkg:nuget/Newtonsoft.Json@12.0.3",
         "pkg:nuget/System.Text.Json@6.0.0"
       ]
     },
     {
-      "ref": "47744ffb-3b94-4536-8b5b-4e736cf11264",
+      "ref": "0365d760-6ca4-49e4-b347-ebe02f3afa13",
       "dependsOn": [
-        "13104e59-95a3-401d-9530-a6b0eaf6d60e",
-        "243c19e7-445d-4845-9b0a-838fec545724",
-        "28540410-d03f-4172-86a9-13fe2f8c3111",
-        "7174a9d2-0cbf-4fc6-9ec8-770236ed346d",
-        "7a7ec68c-3da0-441f-8d2e-8ee5ee897473",
-        "884532da-f63b-42c1-8efd-d971c07adc3b",
-        "89a06aa3-205b-417e-8e20-88b65a509bf1",
-        "8ba2d701-f5d7-4512-9ebb-7534ce4c43d3",
-        "9963eb63-3290-48f9-8715-ba1005aacbe1",
-        "d267bac6-6b4d-43c2-bdd1-56172736a0ec",
-        "d8cc2dc9-bdfb-4e18-ad54-94875d4e6cad",
-        "f1386983-d5aa-40b6-a34c-72500e1d6612"
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
       ]
     },
     {
-      "ref": "7174a9d2-0cbf-4fc6-9ec8-770236ed346d",
+      "ref": "1a1ba069-6cc1-4958-9624-9915782f8a2c",
       "dependsOn": [
-        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
       ]
     },
     {
-      "ref": "7a7ec68c-3da0-441f-8d2e-8ee5ee897473",
+      "ref": "3ff24475-33d2-4976-8a31-6e4c6525785e",
       "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
+        "pkg:gem/actionpack@6.1.4"
       ]
     },
     {
-      "ref": "884532da-f63b-42c1-8efd-d971c07adc3b",
+      "ref": "5f4bdad5-f379-4220-9f29-701d5476ed9e",
       "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+        "pkg:cargo/vero-test-fixtures-rust@0.1.0"
       ]
     },
     {
-      "ref": "89a06aa3-205b-417e-8e20-88b65a509bf1",
+      "ref": "5ff8112e-212b-4f89-b007-6fc0a391e834",
       "dependsOn": [
         "pkg:npm/debug@4.3.0"
       ]
     },
     {
-      "ref": "8ba2d701-f5d7-4512-9ebb-7534ce4c43d3",
+      "ref": "604c4931-e0da-4f65-ad3b-b521901e8342",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4758,29 +4745,13 @@
       ]
     },
     {
-      "ref": "9963eb63-3290-48f9-8715-ba1005aacbe1",
+      "ref": "634a42ca-45f5-431e-8fa5-e47c65e501f8",
       "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
+        "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
       ]
     },
     {
-      "ref": "d267bac6-6b4d-43c2-bdd1-56172736a0ec",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "d8cc2dc9-bdfb-4e18-ad54-94875d4e6cad",
+      "ref": "724ff7ae-46b1-43f1-b22a-dfc68c70ac25",
       "dependsOn": [
         "pkg:swift/github.com/apple/swift-atomics@1.0.2",
         "pkg:swift/github.com/apple/swift-collections@1.0.4",
@@ -4792,9 +4763,38 @@
       ]
     },
     {
-      "ref": "f1386983-d5aa-40b6-a34c-72500e1d6612",
+      "ref": "c4dfed3e-620f-4e95-89fe-c3280d209491",
       "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+      ]
+    },
+    {
+      "ref": "e17c8def-045a-4939-b2a8-09f4706de742",
+      "dependsOn": [
+        "028ac758-17d4-4a5e-b884-703ed7538ba5",
+        "03052126-3951-4dbb-8108-d258e3dfe897",
+        "0365d760-6ca4-49e4-b347-ebe02f3afa13",
+        "1a1ba069-6cc1-4958-9624-9915782f8a2c",
+        "3ff24475-33d2-4976-8a31-6e4c6525785e",
+        "5f4bdad5-f379-4220-9f29-701d5476ed9e",
+        "5ff8112e-212b-4f89-b007-6fc0a391e834",
+        "604c4931-e0da-4f65-ad3b-b521901e8342",
+        "634a42ca-45f5-431e-8fa5-e47c65e501f8",
+        "724ff7ae-46b1-43f1-b22a-dfc68c70ac25",
+        "c4dfed3e-620f-4e95-89fe-c3280d209491",
+        "f4740f81-6c8a-4474-be69-6ad12a65707d"
+      ]
+    },
+    {
+      "ref": "f4740f81-6c8a-4474-be69-6ad12a65707d",
+      "dependsOn": [
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
       ]
     },
     {
@@ -9858,7 +9858,7 @@
         212
       ],
       "description": "Guzzle, an extensible PHP HTTP client. `Authorization` headers on requests are sensitive information. In affected versions when using our Curl handler, it is possible to use the `CURLOPT_HTTPAUTH` option to specify an `Authorization` header. On making a request which responds with a redirect to a URI with a different origin (change in host, scheme or port), if we choose to follow it, we should remove the `CURLOPT_HTTPAUTH` option before continuing, stopping curl from appending the `Authorization` header to the new request. Affected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5. Note that a partial fix was implemented in Guzzle 7.4.2, where a change in host would trigger removal of the curl-added Authorization header, however this earlier fix did not cover change in scheme or change in port. If you do not require or expect redirects to be followed, one should simply disable redirects all together. Alternatively, one can specify to use the Guzzle steam handler backend, rather than curl.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.8, 7.4.5",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.5, 6.5.8",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31090"
