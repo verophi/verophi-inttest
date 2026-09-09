@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 222
-    severity: {critical: 21, high: 107, medium: 68, low: 17}
+    totalAdvisories: 230
+    severity: {critical: 21, high: 114, medium: 69, low: 17}
     correlated: 49
-    uncorrelated: 173
-    totalImpactScore: 749
+    uncorrelated: 181
+    totalImpactScore: 779
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1593,6 +1593,62 @@ uncorrelatedAdvisories:
           affectedVersion: 6.7.0
           fixVersion: 6.16.0
           addressed: false
+    - id: CVE-2026-83605
+      severity: high
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
+    - id: CVE-2026-83607
+      severity: high
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
+    - id: CVE-2026-83608
+      severity: high
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
+    - id: CVE-2026-83613
+      severity: high
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
+    - id: CVE-2026-83614
+      severity: high
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
+    - id: CVE-2026-83615
+      severity: high
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
+    - id: CVE-2026-83616
+      severity: high
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
     - id: GHSA-mrxw-mxhj-p664
       severity: high
       dependency: nokogiri@1.13.10
@@ -2117,6 +2173,14 @@ uncorrelatedAdvisories:
           fixVersion: 1.19.1
           addressed: false
     - id: CVE-2026-83610
+      severity: medium
+      dependency: xmldom@0.6.0
+      occurrences:
+        - dependencyName: xmldom
+          affectedVersion: 0.6.0
+          fixVersion: ""
+          addressed: false
+    - id: CVE-2026-83611
       severity: medium
       dependency: xmldom@0.6.0
       occurrences:
