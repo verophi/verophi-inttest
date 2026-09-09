@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.7",
-  "serialNumber": "urn:uuid:ebd750bd-cc0b-4c61-8dff-7b5210489bf8",
+  "serialNumber": "urn:uuid:c8a11414-7bd0-45c8-b3d3-01b5cec6a077",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-09-08T08:44:20+00:00",
+    "timestamp": "2026-09-09T08:50:18+00:00",
     "tools": {
       "components": [
         {
@@ -20,7 +20,7 @@
       ]
     },
     "component": {
-      "bom-ref": "48edb93f-61c9-4511-b926-c15d08ccd533",
+      "bom-ref": "4149cbba-8ec9-4759-aaef-b22216d48c52",
       "type": "application",
       "name": "/packages",
       "properties": [
@@ -33,127 +33,7 @@
   },
   "components": [
     {
-      "bom-ref": "2da8d39c-fbfd-4831-b0f4-aa45086cd0ff",
-      "type": "application",
-      "name": "dart/pubspec.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pub"
-        }
-      ]
-    },
-    {
-      "bom-ref": "3e300fdf-513b-4ec5-b4dd-01a83e984722",
-      "type": "application",
-      "name": "php/composer.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "composer"
-        }
-      ]
-    },
-    {
-      "bom-ref": "4bef1ea2-8b42-4193-a540-7f8e03bc6c02",
-      "type": "application",
-      "name": "elixir/mix.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "hex"
-        }
-      ]
-    },
-    {
-      "bom-ref": "577369f5-14b1-4b2e-a76d-6c159e6675c4",
-      "type": "application",
-      "name": "python/requirements.txt",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "pip"
-        }
-      ]
-    },
-    {
-      "bom-ref": "59e45c36-2aac-48fc-a8e4-17d10f73edba",
-      "type": "application",
-      "name": "ruby/Gemfile.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "bundler"
-        }
-      ]
-    },
-    {
-      "bom-ref": "966549db-7772-494d-9b49-bf1c1ae33834",
-      "type": "application",
-      "name": "npm/package-lock.json",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "npm"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a316ad17-5b9b-4fce-b956-c30ac32a981e",
-      "type": "application",
-      "name": "go/go.mod",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "gomod"
-        }
-      ]
-    },
-    {
-      "bom-ref": "a436a7ae-60b5-468d-ab35-a6d90be9e862",
-      "type": "application",
-      "name": "rust/Cargo.lock",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
-        },
-        {
-          "name": "aquasecurity:trivy:Type",
-          "value": "cargo"
-        }
-      ]
-    },
-    {
-      "bom-ref": "d029ae21-8dde-4d91-83e1-c9d6a207650c",
+      "bom-ref": "1cd573b6-0bd6-44e0-a23a-4b1a2a6c219e",
       "type": "application",
       "name": "maven/pom.xml",
       "properties": [
@@ -168,9 +48,9 @@
       ]
     },
     {
-      "bom-ref": "d3f72e4b-1499-4a33-9aed-7b9bbfe4eadc",
+      "bom-ref": "25c76f02-a6ae-4a45-90a8-62d08281a645",
       "type": "application",
-      "name": "swift/Package.resolved",
+      "name": "npm/package-lock.json",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -178,12 +58,117 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "swift"
+          "value": "npm"
         }
       ]
     },
     {
-      "bom-ref": "d74524e0-e625-44ce-8107-d96c983811c2",
+      "bom-ref": "26c43e75-915a-4f09-a36a-da3c9a7ba2bb",
+      "type": "application",
+      "name": "dart/pubspec.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pub"
+        }
+      ]
+    },
+    {
+      "bom-ref": "36e4a099-f93a-4b02-bb54-251f827ccb7b",
+      "type": "application",
+      "name": "python/requirements.txt",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "pip"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3e523579-de76-470d-9d9b-2a4d44296547",
+      "type": "application",
+      "name": "go/go.mod",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "gomod"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6f431421-626f-4601-b36d-c2a036ea7f7b",
+      "type": "application",
+      "name": "php/composer.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "composer"
+        }
+      ]
+    },
+    {
+      "bom-ref": "74c6021d-be6c-4a87-a768-5baf8cf21da4",
+      "type": "application",
+      "name": "lockfile-maintenance/package-lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b22fb0f2-e50a-4984-9fd3-d1807150e063",
+      "type": "application",
+      "name": "rust/Cargo.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "cargo"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d3034161-4c8a-4dda-aa49-27de22144301",
+      "type": "application",
+      "name": "elixir/mix.lock",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "hex"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e992c9d5-b8a8-47f0-bf0c-b1dc11ffed22",
       "type": "application",
       "name": "nuget/packages.lock.json",
       "properties": [
@@ -198,9 +183,9 @@
       ]
     },
     {
-      "bom-ref": "df1ba326-c95b-4dc2-b622-81e4758bc1ff",
+      "bom-ref": "f7f1d447-0a63-49ed-98fb-a64b90d3a8fa",
       "type": "application",
-      "name": "lockfile-maintenance/package-lock.json",
+      "name": "ruby/Gemfile.lock",
       "properties": [
         {
           "name": "aquasecurity:trivy:Class",
@@ -208,7 +193,22 @@
         },
         {
           "name": "aquasecurity:trivy:Type",
-          "value": "npm"
+          "value": "bundler"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fd9c74e1-4a4b-4a08-9147-11284a14f5c0",
+      "type": "application",
+      "name": "swift/Package.resolved",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "swift"
         }
       ]
     },
@@ -4675,70 +4675,13 @@
   ],
   "dependencies": [
     {
-      "ref": "2da8d39c-fbfd-4831-b0f4-aa45086cd0ff",
+      "ref": "1cd573b6-0bd6-44e0-a23a-4b1a2a6c219e",
       "dependsOn": [
-        "pkg:pub/collection@1.19.1",
-        "pkg:pub/dio@4.0.0",
-        "pkg:pub/http_parser@4.0.2",
-        "pkg:pub/path@1.9.1",
-        "pkg:pub/source_span@1.10.2",
-        "pkg:pub/string_scanner@1.4.1",
-        "pkg:pub/term_glyph@1.2.2",
-        "pkg:pub/typed_data@1.4.0"
+        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
       ]
     },
     {
-      "ref": "3e300fdf-513b-4ec5-b4dd-01a83e984722",
-      "dependsOn": [
-        "pkg:composer/guzzlehttp/guzzle@7.4.0"
-      ]
-    },
-    {
-      "ref": "48edb93f-61c9-4511-b926-c15d08ccd533",
-      "dependsOn": [
-        "2da8d39c-fbfd-4831-b0f4-aa45086cd0ff",
-        "3e300fdf-513b-4ec5-b4dd-01a83e984722",
-        "4bef1ea2-8b42-4193-a540-7f8e03bc6c02",
-        "577369f5-14b1-4b2e-a76d-6c159e6675c4",
-        "59e45c36-2aac-48fc-a8e4-17d10f73edba",
-        "966549db-7772-494d-9b49-bf1c1ae33834",
-        "a316ad17-5b9b-4fce-b956-c30ac32a981e",
-        "a436a7ae-60b5-468d-ab35-a6d90be9e862",
-        "d029ae21-8dde-4d91-83e1-c9d6a207650c",
-        "d3f72e4b-1499-4a33-9aed-7b9bbfe4eadc",
-        "d74524e0-e625-44ce-8107-d96c983811c2",
-        "df1ba326-c95b-4dc2-b622-81e4758bc1ff"
-      ]
-    },
-    {
-      "ref": "4bef1ea2-8b42-4193-a540-7f8e03bc6c02",
-      "dependsOn": [
-        "pkg:hex/mime@2.0.7",
-        "pkg:hex/phoenix@1.6.0",
-        "pkg:hex/phoenix_pubsub@2.2.0",
-        "pkg:hex/phoenix_view@1.1.2",
-        "pkg:hex/plug@1.19.2",
-        "pkg:hex/plug_crypto@1.2.5",
-        "pkg:hex/telemetry@1.4.2"
-      ]
-    },
-    {
-      "ref": "577369f5-14b1-4b2e-a76d-6c159e6675c4",
-      "dependsOn": [
-        "pkg:pypi/pillow@9.0.0",
-        "pkg:pypi/python-multipart@0.0.5",
-        "pkg:pypi/pyyaml@5.3.1",
-        "pkg:pypi/requests@2.31.0"
-      ]
-    },
-    {
-      "ref": "59e45c36-2aac-48fc-a8e4-17d10f73edba",
-      "dependsOn": [
-        "pkg:gem/actionpack@6.1.4"
-      ]
-    },
-    {
-      "ref": "966549db-7772-494d-9b49-bf1c1ae33834",
+      "ref": "25c76f02-a6ae-4a45-90a8-62d08281a645",
       "dependsOn": [
         "pkg:npm/axios@0.21.1",
         "pkg:npm/chalk@4.1.2",
@@ -4755,25 +4698,95 @@
       ]
     },
     {
-      "ref": "a316ad17-5b9b-4fce-b956-c30ac32a981e",
+      "ref": "26c43e75-915a-4f09-a36a-da3c9a7ba2bb",
+      "dependsOn": [
+        "pkg:pub/collection@1.19.1",
+        "pkg:pub/dio@4.0.0",
+        "pkg:pub/http_parser@4.0.2",
+        "pkg:pub/path@1.9.1",
+        "pkg:pub/source_span@1.10.2",
+        "pkg:pub/string_scanner@1.4.1",
+        "pkg:pub/term_glyph@1.2.2",
+        "pkg:pub/typed_data@1.4.0"
+      ]
+    },
+    {
+      "ref": "36e4a099-f93a-4b02-bb54-251f827ccb7b",
+      "dependsOn": [
+        "pkg:pypi/pillow@9.0.0",
+        "pkg:pypi/python-multipart@0.0.5",
+        "pkg:pypi/pyyaml@5.3.1",
+        "pkg:pypi/requests@2.31.0"
+      ]
+    },
+    {
+      "ref": "3e523579-de76-470d-9d9b-2a4d44296547",
       "dependsOn": [
         "pkg:golang/github.com/verophi/vero-test-fixtures/packages/go"
       ]
     },
     {
-      "ref": "a436a7ae-60b5-468d-ab35-a6d90be9e862",
+      "ref": "4149cbba-8ec9-4759-aaef-b22216d48c52",
+      "dependsOn": [
+        "1cd573b6-0bd6-44e0-a23a-4b1a2a6c219e",
+        "25c76f02-a6ae-4a45-90a8-62d08281a645",
+        "26c43e75-915a-4f09-a36a-da3c9a7ba2bb",
+        "36e4a099-f93a-4b02-bb54-251f827ccb7b",
+        "3e523579-de76-470d-9d9b-2a4d44296547",
+        "6f431421-626f-4601-b36d-c2a036ea7f7b",
+        "74c6021d-be6c-4a87-a768-5baf8cf21da4",
+        "b22fb0f2-e50a-4984-9fd3-d1807150e063",
+        "d3034161-4c8a-4dda-aa49-27de22144301",
+        "e992c9d5-b8a8-47f0-bf0c-b1dc11ffed22",
+        "f7f1d447-0a63-49ed-98fb-a64b90d3a8fa",
+        "fd9c74e1-4a4b-4a08-9147-11284a14f5c0"
+      ]
+    },
+    {
+      "ref": "6f431421-626f-4601-b36d-c2a036ea7f7b",
+      "dependsOn": [
+        "pkg:composer/guzzlehttp/guzzle@7.4.0"
+      ]
+    },
+    {
+      "ref": "74c6021d-be6c-4a87-a768-5baf8cf21da4",
+      "dependsOn": [
+        "pkg:npm/debug@4.3.0"
+      ]
+    },
+    {
+      "ref": "b22fb0f2-e50a-4984-9fd3-d1807150e063",
       "dependsOn": [
         "pkg:cargo/vero-test-fixtures-rust@0.1.0"
       ]
     },
     {
-      "ref": "d029ae21-8dde-4d91-83e1-c9d6a207650c",
+      "ref": "d3034161-4c8a-4dda-aa49-27de22144301",
       "dependsOn": [
-        "pkg:maven/dev.verophi.fixtures/vero-test-fixtures-maven@1.0.0"
+        "pkg:hex/mime@2.0.7",
+        "pkg:hex/phoenix@1.6.0",
+        "pkg:hex/phoenix_pubsub@2.2.0",
+        "pkg:hex/phoenix_view@1.1.2",
+        "pkg:hex/plug@1.19.2",
+        "pkg:hex/plug_crypto@1.2.5",
+        "pkg:hex/telemetry@1.4.2"
       ]
     },
     {
-      "ref": "d3f72e4b-1499-4a33-9aed-7b9bbfe4eadc",
+      "ref": "e992c9d5-b8a8-47f0-bf0c-b1dc11ffed22",
+      "dependsOn": [
+        "pkg:nuget/Newtonsoft.Json@12.0.3",
+        "pkg:nuget/System.Text.Json@6.0.0"
+      ]
+    },
+    {
+      "ref": "f7f1d447-0a63-49ed-98fb-a64b90d3a8fa",
+      "dependsOn": [
+        "pkg:gem/actionpack@6.1.4"
+      ]
+    },
+    {
+      "ref": "fd9c74e1-4a4b-4a08-9147-11284a14f5c0",
       "dependsOn": [
         "pkg:swift/github.com/apple/swift-atomics@1.0.2",
         "pkg:swift/github.com/apple/swift-collections@1.0.4",
@@ -4782,19 +4795,6 @@
         "pkg:swift/github.com/apple/swift-nio-ssl@2.23.0",
         "pkg:swift/github.com/apple/swift-nio-transport-services@1.17.0",
         "pkg:swift/github.com/apple/swift-nio@2.55.0"
-      ]
-    },
-    {
-      "ref": "d74524e0-e625-44ce-8107-d96c983811c2",
-      "dependsOn": [
-        "pkg:nuget/Newtonsoft.Json@12.0.3",
-        "pkg:nuget/System.Text.Json@6.0.0"
-      ]
-    },
-    {
-      "ref": "df1ba326-c95b-4dc2-b622-81e4758bc1ff",
-      "dependsOn": [
-        "pkg:npm/debug@4.3.0"
       ]
     },
     {
@@ -9681,7 +9681,7 @@
         212
       ],
       "description": "Guzzle is an open source PHP HTTP client. In affected versions the `Cookie` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, or on making a request to a server which responds with a redirect to a a URI to a different host, we should not forward the `Cookie` header on. Prior to this fix, only cookies that were managed by our cookie middleware would be safely removed, and any `Cookie` header manually added to the initial request would not be stripped. We now always strip it, and allow the cookie middleware to re-add any cookies that it deems should be there. Affected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4. Users unable to upgrade may consider an alternative approach to use your own redirect middleware, rather than ours. If you do not require or expect redirects to be followed, one should simply disable redirects all together.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.7, 7.4.4",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.4, 6.5.7",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31042"
@@ -9774,7 +9774,7 @@
         212
       ],
       "description": "Guzzle is an open source PHP HTTP client. In affected versions `Authorization` headers on requests are sensitive information. On making a request using the `https` scheme to a server which responds with a redirect to a URI with the `http` scheme, we should not forward the `Authorization` header on. This is much the same as to how we don't forward on the header if the host changes. Prior to this fix, `https` to `http` downgrades did not result in the `Authorization` header being removed, only changes to the host. Affected Guzzle 7 users should upgrade to Guzzle 7.4.4 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.7 or 7.4.4. Users unable to upgrade may consider an alternative approach which would be to use their own redirect middleware. Alternately users may simply disable redirects all together if redirects are not expected or required.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.4, 6.5.7",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.7, 7.4.4",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31043"
@@ -9944,7 +9944,7 @@
         200
       ],
       "description": "Guzzle, an extensible PHP HTTP client. `Authorization` and `Cookie` headers on requests are sensitive information. In affected versions on making a request which responds with a redirect to a URI with a different port, if we choose to follow it, we should remove the `Authorization` and `Cookie` headers from the request, before containing. Previously, we would only consider a change in host or scheme. Affected Guzzle 7 users should upgrade to Guzzle 7.4.5 as soon as possible. Affected users using any earlier series of Guzzle should upgrade to Guzzle 6.5.8 or 7.4.5. Note that a partial fix was implemented in Guzzle 7.4.2, where a change in host would trigger removal of the curl-added Authorization header, however this earlier fix did not cover change in scheme or change in port. An alternative approach would be to use your own redirect middleware, rather than ours, if you are unable to upgrade. If you do not require or expect redirects to be followed, one should simply disable redirects all together.",
-      "recommendation": "Upgrade guzzlehttp/guzzle to version 7.4.5, 6.5.8",
+      "recommendation": "Upgrade guzzlehttp/guzzle to version 6.5.8, 7.4.5",
       "advisories": [
         {
           "url": "https://avd.aquasec.com/nvd/cve-2022-31091"
@@ -31010,7 +31010,7 @@
         }
       ],
       "published": "2026-08-01T13:17:04+00:00",
-      "updated": "2026-08-03T19:16:52+00:00",
+      "updated": "2026-09-08T20:35:01+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -31087,7 +31087,7 @@
         }
       ],
       "published": "2026-08-01T13:17:06+00:00",
-      "updated": "2026-08-03T19:16:53+00:00",
+      "updated": "2026-09-08T20:35:01+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -31164,7 +31164,7 @@
         }
       ],
       "published": "2026-08-01T13:17:06+00:00",
-      "updated": "2026-08-03T19:16:53+00:00",
+      "updated": "2026-09-08T20:35:01+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -31241,7 +31241,7 @@
         }
       ],
       "published": "2026-08-01T13:17:06+00:00",
-      "updated": "2026-08-03T20:17:27+00:00",
+      "updated": "2026-09-08T20:35:01+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -31308,7 +31308,7 @@
         }
       ],
       "published": "2026-08-03T21:16:42+00:00",
-      "updated": "2026-08-04T16:16:28+00:00",
+      "updated": "2026-09-08T20:41:31+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -31376,7 +31376,7 @@
         }
       ],
       "published": "2026-08-03T21:16:42+00:00",
-      "updated": "2026-08-04T15:16:42+00:00",
+      "updated": "2026-09-08T20:41:31+00:00",
       "affects": [
         {
           "ref": "pkg:composer/guzzlehttp/guzzle@7.4.0",
@@ -32021,6 +32021,252 @@
       ]
     },
     {
+      "id": "CVE-2026-83605",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 8.1,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        91
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.14 and 0.9.11, and in xmldom version 0.6.0 and earlier, Element.setAttribute() calls the private _createAttribute(name) path without validating the attribute name, while Document.createAttribute(name) validates against QName. XMLSerializer.serializeToString() emits attribute names verbatim, and requireWellFormed: true did not validate them, so a crafted name can terminate the intended attribute and inject additional attributes, including event handlers, into browser-consumed output; synthesized xmlns:PREFIX declarations expose the same unchecked-name boundary. This issue is fixed in @xmldom/xmldom versions 0.8.14 and 0.9.11; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83605"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83605"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/cba1321218b069182695813fa7565653708e172e"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/d8212e632507eaf1d9f609657dd4c56abeb12d44"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1043"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1050"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.14"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.11"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-4w3w-2rp5-g8jm"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83605"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83605"
+        }
+      ],
+      "published": "2026-09-01T15:17:38+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83607",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 8.1,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        91
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.14 and 0.9.11, and in xmldom version 0.6.0 and earlier, Document.createElement(tagName) stores an unvalidated element name and XMLSerializer.serializeToString() emits that name verbatim. The requireWellFormed: true path did not validate the element qualified name or synthesized xmlns:PREFIX declaration, so attacker-controlled tag names could inject attributes, elements, or processing instructions into serialized XML or HTML and could cause cross-site scripting when browser-consumed. The unchecked values violate the XML QName constraint, and default serialization and creation-time createElement() behavior remain permissive. This issue is fixed in @xmldom/xmldom versions 0.8.14 and 0.9.11; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83607"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83607"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/cba1321218b069182695813fa7565653708e172e"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/d8212e632507eaf1d9f609657dd4c56abeb12d44"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1043"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1050"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.14"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.11"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-w2rr-34g9-rvrj"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83607"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83607"
+        }
+      ],
+      "published": "2026-09-01T15:17:38+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83608",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 3.1,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes": [
+        91
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.15 and 0.9.12, and in xmldom version 0.6.0 and earlier, the DOCUMENT_TYPE_NODE branch in lib/dom.js validates publicId, systemId, and internalSubset under requireWellFormed: true but emits DocumentType.name verbatim. A name containing > or whitespace can terminate the <!DOCTYPE ...> declaration and inject sibling markup; the value can be supplied through createDocumentType() on the 0.8.x and unscoped lines or through a direct DocumentType.name property write on every affected line. The default path and legacy creation-time behavior remain permissive, while the vulnerable strict path fails to enforce an XML Name. This issue is fixed in @xmldom/xmldom versions 0.8.15 and 0.9.12; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83608"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83608"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/57aec90ac57b4408ae7c5d1746bf2a693b5ed90e"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/85f12eb4d14b44de33216cfb72b50af4d24e9fdd"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1071"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1072"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.15"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.12"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-27p8-2357-5qqv"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83608"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83608"
+        }
+      ],
+      "published": "2026-09-01T15:17:38+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "CVE-2026-83610",
       "source": {
         "name": "ghsa",
@@ -32089,7 +32335,421 @@
         }
       ],
       "published": "2026-09-01T15:17:39+00:00",
-      "updated": "2026-09-03T17:17:24+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83611",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 6.9,
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 5.3,
+          "severity": "medium",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "cwes": [
+        1286
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.15 and 0.9.12, and in xmldom version 0.6.0 and earlier, DOMParser.parseFromString() can silently accept an end tag such as </a\\njunk>, close the element, and discard the trailing content. On 0.9.x, the lib/sax.js end-tag validator inherits the multiline flag from reg(), allowing the first line to satisfy the anchored XML ETag production; older lines have no equivalent residue validation. This parser differential can bypass a parse-before-trust well-formedness gate, although it does not inject the discarded content; onError on 0.9.x and errorHandler on 0.8.x are the relevant reporting interfaces. This issue is fixed in @xmldom/xmldom versions 0.8.15 and 0.9.12; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83611"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83611"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/4430189660b0d380ee9c9ee7550a1358688e8828"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/7b2ec67e1750daadd0bb06c92e875e726544a362"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1071"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1072"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.15"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.12"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-6h8r-xr42-gp59"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83611"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83611"
+        }
+      ],
+      "published": "2026-09-01T15:17:39+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83613",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        407
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.15 and 0.9.12, and in xmldom version 0.6.0 and earlier, DOMHandler.startElement in lib/dom-parser.js inserts every parsed attribute through setAttributeNode, while NamedNodeMap.setNamedItem in lib/dom.js calls the linear getNamedItem or getNamedItemNS lookup for each insertion. A well-formed element with many distinct attributes therefore requires quadratic comparisons during DOMParser.parseFromString() and can stall a Node.js event loop before application validation. This issue is fixed in @xmldom/xmldom versions 0.8.15 and 0.9.12; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83613"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83613"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/2c548f200cfec991cd5846627ef8f03542309213"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/cfb09b5dbeb035fdfedc9f01e2bbaf226bf47cf3"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1071"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1072"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.15"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.12"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-27p8-2357-5qqv"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-8344-3jmq-59r6"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83613"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83613"
+        }
+      ],
+      "published": "2026-09-01T15:17:39+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83614",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        400,
+        407
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.15 and 0.9.12, and in xmldom versions 0.3.0 through 0.6.0, two independent quadratic paths can cause denial of service. In lib/sax.js, parseElementStartPart repeatedly rescans a malformed tag name to the next > during single-character recovery; in lib/dom.js, normalize() repeatedly removes and appends adjacent text nodes, causing quadratic reindexing and string rebuilding. The first path is reachable through default DOMParser.parseFromString() processing, while the second is also reachable through a direct normalize() call on a programmatically constructed DOM, and endDocument invokes that normalization after parsing. This issue is fixed in @xmldom/xmldom versions 0.8.15 and 0.9.12; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83614"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83614"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/0748720b620555f8c222782dcab575cf0cf403b4"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/f40ccb861eee0acbf5ee4feb9a34932e87b329c9"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1071"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1072"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.15"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.12"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-93r5-fhx6-vmg9"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83614"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83614"
+        }
+      ],
+      "published": "2026-09-01T15:17:39+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83615",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "cwes": [
+        770
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.15 and 0.9.12, and in xmldom versions 0.1.5 through 0.6.0, appendElement in lib/sax.js uses _copy to clone the complete currentNSMap for each nested element that declares a new namespace prefix. Keeping every ancestor map live on the parse stack creates quadratic peak namespace-map storage, so a small highly compressible XML document can exhaust the process heap before application validation. This issue is fixed in @xmldom/xmldom versions 0.8.15 and 0.9.12; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83615"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83615"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/954370f58c046223faf95ba77efcbc8ce014409d"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/dabffe884e864eeecb1f515c716f875e1bc47ec1"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1071"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1072"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.15"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.12"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-965w-775f-mr7g"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83615"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83615"
+        }
+      ],
+      "published": "2026-09-01T15:17:39+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
+      "affects": [
+        {
+          "ref": "pkg:npm/xmldom@0.6.0",
+          "versions": [
+            {
+              "version": "0.6.0",
+              "status": "affected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CVE-2026-83616",
+      "source": {
+        "name": "ghsa",
+        "url": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+      },
+      "ratings": [
+        {
+          "source": {
+            "name": "ghsa"
+          },
+          "score": 8.7,
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        },
+        {
+          "source": {
+            "name": "redhat"
+          },
+          "score": 7.5,
+          "severity": "high",
+          "method": "CVSSv31",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        91
+      ],
+      "description": "xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. Prior to @xmldom/xmldom versions 0.8.15 and 0.9.12, and in xmldom version 0.6.0 and earlier, Document.createProcessingInstruction(target, data) in lib/dom.js accepts an unvalidated target, while the requireWellFormed: true serializer checks only for a colon and the reserved case-insensitive xml name on 0.9.x and performs no target check on 0.8.x. Because serialization emits <?target data?>, a target containing >, ?, whitespace, or another invalid XML-name character can break the processing-instruction boundary and inject XML structure. This issue is fixed in @xmldom/xmldom versions 0.8.15 and 0.9.12; no fixed version is available for xmldom.",
+      "advisories": [
+        {
+          "url": "https://avd.aquasec.com/nvd/cve-2026-83616"
+        },
+        {
+          "url": "https://access.redhat.com/security/cve/CVE-2026-83616"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/1cde3e31a07c41c87cfd368d6946aa477f16b4f9"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/commit/3b694872bcb5c7e3cbadba961a4be2488750ce5b"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1071"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/pull/1072"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.8.15"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/releases/tag/0.9.12"
+        },
+        {
+          "url": "https://github.com/xmldom/xmldom/security/advisories/GHSA-c7q8-3ch8-vqpv"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83616"
+        },
+        {
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-83616"
+        }
+      ],
+      "published": "2026-09-01T15:17:40+00:00",
+      "updated": "2026-09-08T21:11:31+00:00",
       "affects": [
         {
           "ref": "pkg:npm/xmldom@0.6.0",
