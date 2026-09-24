@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 230
-    severity: {critical: 20, high: 115, medium: 71, low: 17}
+    totalAdvisories: 231
+    severity: {critical: 20, high: 116, medium: 71, low: 17}
     correlated: 49
-    uncorrelated: 181
-    totalImpactScore: 779
+    uncorrelated: 182
+    totalImpactScore: 783
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -1457,6 +1457,15 @@ uncorrelatedAdvisories:
         - dependencyName: Pillow
           affectedVersion: 9.0.0
           fixVersion: 12.3.0
+          addressed: false
+    - id: CVE-2026-54892
+      severity: high
+      dependency: plug@1.19.2
+      recommendation: Upgrade plug to version 1.15.5, 1.16.4, 1.17.2, 1.18.3, 1.19.3
+      occurrences:
+        - dependencyName: plug
+          affectedVersion: 1.19.2
+          fixVersion: 1.19.3
           addressed: false
     - id: CVE-2026-54904
       severity: high
