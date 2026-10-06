@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 231
-    severity: {critical: 20, high: 118, medium: 69, low: 17}
+    totalAdvisories: 232
+    severity: {critical: 21, high: 118, medium: 69, low: 17}
     correlated: 49
-    uncorrelated: 182
-    totalImpactScore: 787
+    uncorrelated: 183
+    totalImpactScore: 795
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -875,6 +875,15 @@ uncorrelatedAdvisories:
         - dependencyName: concurrent-ruby
           affectedVersion: 1.3.6
           fixVersion: 1.3.7
+          addressed: false
+    - id: CVE-2026-90711
+      severity: critical
+      dependency: proxy-addr@2.0.7
+      recommendation: Upgrade proxy-addr to version 2.0.8
+      occurrences:
+        - dependencyName: proxy-addr
+          affectedVersion: 2.0.7
+          fixVersion: 2.0.8
           addressed: false
     - id: GHSA-353f-x4gh-cqq8
       severity: critical
