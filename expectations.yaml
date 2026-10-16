@@ -23,10 +23,10 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 238
-    severity: {critical: 21, high: 118, medium: 72, low: 17}
+    severity: {critical: 21, high: 118, medium: 74, low: 17}
     correlated: 49
     uncorrelated: 189
-    totalImpactScore: 801
+    totalImpactScore: 805
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -2190,6 +2190,24 @@ uncorrelatedAdvisories:
           affectedVersion: 1.5.0
           fixVersion: 1.7.1
           addressed: false
+    - id: CVE-2026-78659
+      severity: medium
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
+          addressed: false
+    - id: CVE-2026-78660
+      severity: medium
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
+          addressed: false
     - id: CVE-2026-78662
       severity: medium
       dependency: golang.org/x/crypto@v0.16.0
@@ -2448,24 +2466,6 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/text
           affectedVersion: v0.14.0
           fixVersion: 0.41.0
-          addressed: false
-    - id: CVE-2026-78659
-      severity: unknown
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
-          addressed: false
-    - id: CVE-2026-78660
-      severity: unknown
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
           addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
