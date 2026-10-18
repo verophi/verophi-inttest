@@ -23,10 +23,10 @@ correlation:
     repository: verophi/test-fixtures
 metrics:
     totalAdvisories: 238
-    severity: {critical: 21, high: 118, medium: 74, low: 17}
+    severity: {critical: 22, high: 122, medium: 70, low: 17}
     correlated: 49
     uncorrelated: 189
-    totalImpactScore: 805
+    totalImpactScore: 821
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -876,6 +876,15 @@ uncorrelatedAdvisories:
           affectedVersion: 1.3.6
           fixVersion: 1.3.7
           addressed: false
+    - id: CVE-2026-78663
+      severity: critical
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
+          addressed: false
     - id: CVE-2026-90711
       severity: critical
       dependency: proxy-addr@2.0.7
@@ -1503,6 +1512,15 @@ uncorrelatedAdvisories:
           affectedVersion: 9.0.0
           fixVersion: 12.3.0
           addressed: false
+    - id: CVE-2026-56851
+      severity: high
+      dependency: golang.org/x/text@v0.14.0
+      recommendation: Upgrade golang.org/x/text to version 0.41.0
+      occurrences:
+        - dependencyName: golang.org/x/text
+          affectedVersion: v0.14.0
+          fixVersion: 0.41.0
+          addressed: false
     - id: CVE-2026-56852
       severity: high
       dependency: golang.org/x/text@v0.14.0
@@ -1602,6 +1620,24 @@ uncorrelatedAdvisories:
           affectedVersion: 7.4.0
           fixVersion: 7.15.2
           addressed: false
+    - id: CVE-2026-78659
+      severity: high
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
+          addressed: false
+    - id: CVE-2026-78660
+      severity: high
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
+          addressed: false
     - id: CVE-2026-78669
       severity: high
       dependency: golang.org/x/net@v0.16.0
@@ -1684,6 +1720,15 @@ uncorrelatedAdvisories:
         - dependencyName: xmldom
           affectedVersion: 0.6.0
           fixVersion: ""
+          addressed: false
+    - id: CVE-2026-97032
+      severity: high
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
           addressed: false
     - id: GHSA-mrxw-mxhj-p664
       severity: high
@@ -2190,24 +2235,6 @@ uncorrelatedAdvisories:
           affectedVersion: 1.5.0
           fixVersion: 1.7.1
           addressed: false
-    - id: CVE-2026-78659
-      severity: medium
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
-          addressed: false
-    - id: CVE-2026-78660
-      severity: medium
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
-          addressed: false
     - id: CVE-2026-78662
       severity: medium
       dependency: golang.org/x/crypto@v0.16.0
@@ -2216,15 +2243,6 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/crypto
           affectedVersion: v0.16.0
           fixVersion: 0.56.0
-          addressed: false
-    - id: CVE-2026-78663
-      severity: medium
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
           addressed: false
     - id: CVE-2026-79771
       severity: medium
@@ -2259,15 +2277,6 @@ uncorrelatedAdvisories:
         - dependencyName: xmldom
           affectedVersion: 0.6.0
           fixVersion: ""
-          addressed: false
-    - id: CVE-2026-97032
-      severity: medium
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
           addressed: false
     - id: GHSA-5prr-v3j2-97mh
       severity: medium
@@ -2457,15 +2466,6 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/sys
           affectedVersion: v0.15.0
           fixVersion: 0.44.0
-          addressed: false
-    - id: CVE-2026-56851
-      severity: unknown
-      dependency: golang.org/x/text@v0.14.0
-      recommendation: Upgrade golang.org/x/text to version 0.41.0
-      occurrences:
-        - dependencyName: golang.org/x/text
-          affectedVersion: v0.14.0
-          fixVersion: 0.41.0
           addressed: false
     - id: GHSA-6jxj-px6v-747w
       severity: unknown
