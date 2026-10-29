@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 279
-    severity: {critical: 27, high: 149, medium: 74, low: 19}
+    totalAdvisories: 280
+    severity: {critical: 27, high: 149, medium: 75, low: 19}
     correlated: 49
-    uncorrelated: 230
-    totalImpactScore: 979
+    uncorrelated: 231
+    totalImpactScore: 981
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -2238,6 +2238,15 @@ uncorrelatedAdvisories:
         - dependencyName: Pillow
           affectedVersion: 9.0.0
           fixVersion: 13.0.0
+          addressed: false
+    - id: CVE-2026-116695
+      severity: medium
+      dependency: crass@1.0.6
+      recommendation: Upgrade crass to version 1.0.8
+      occurrences:
+        - dependencyName: crass
+          affectedVersion: 1.0.6
+          fixVersion: 1.0.8
           addressed: false
     - id: CVE-2026-12590
       severity: medium
