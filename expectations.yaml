@@ -22,11 +22,11 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 280
-    severity: {critical: 27, high: 149, medium: 75, low: 19}
+    totalAdvisories: 283
+    severity: {critical: 26, high: 150, medium: 78, low: 19}
     correlated: 49
-    uncorrelated: 231
-    totalImpactScore: 981
+    uncorrelated: 234
+    totalImpactScore: 983
     reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
@@ -913,15 +913,6 @@ uncorrelatedAdvisories:
           fixVersion: 1.3.7
           addressed: false
     - id: CVE-2026-78663
-      severity: critical
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
-          addressed: false
-    - id: CVE-2026-78669
       severity: critical
       dependency: golang.org/x/net@v0.16.0
       recommendation: Upgrade golang.org/x/net to version 0.60.0
@@ -1899,6 +1890,15 @@ uncorrelatedAdvisories:
           affectedVersion: v0.16.0
           fixVersion: 0.56.0
           addressed: false
+    - id: CVE-2026-78669
+      severity: high
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
+          addressed: false
     - id: CVE-2026-79770
       severity: high
       dependency: nokogiri@1.13.10
@@ -2477,6 +2477,33 @@ uncorrelatedAdvisories:
         - dependencyName: guzzlehttp/guzzle
           affectedVersion: 7.4.0
           fixVersion: 7.12.3
+          addressed: false
+    - id: CVE-2026-61846
+      severity: medium
+      dependency: crass@1.0.6
+      recommendation: Upgrade crass to version 1.0.7
+      occurrences:
+        - dependencyName: crass
+          affectedVersion: 1.0.6
+          fixVersion: 1.0.7
+          addressed: false
+    - id: CVE-2026-61847
+      severity: medium
+      dependency: crass@1.0.6
+      recommendation: Upgrade crass to version 1.0.7
+      occurrences:
+        - dependencyName: crass
+          affectedVersion: 1.0.6
+          fixVersion: 1.0.7
+          addressed: false
+    - id: CVE-2026-61848
+      severity: medium
+      dependency: crass@1.0.6
+      recommendation: Upgrade crass to version 1.0.7
+      occurrences:
+        - dependencyName: crass
+          affectedVersion: 1.0.6
+          fixVersion: 1.0.7
           addressed: false
     - id: CVE-2026-67319
       severity: medium
