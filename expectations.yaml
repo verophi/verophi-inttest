@@ -22,12 +22,12 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 283
-    severity: {critical: 26, high: 150, medium: 78, low: 19}
+    totalAdvisories: 284
+    severity: {critical: 25, high: 153, medium: 77, low: 19}
     correlated: 49
-    uncorrelated: 234
-    totalImpactScore: 983
-    reducibleImpactScore: 227
+    uncorrelated: 235
+    totalImpactScore: 985
+    reducibleImpactScore: 219
     matchedRequests: 22
     unmatchedRequests: 16
     unparsedRequests: 1
@@ -60,30 +60,6 @@ changeRequests:
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.0, addressed: true}
             - advisory: {id: CVE-2023-4863, severity: high}
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.1, addressed: true}
-    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
-      status: matched
-      riskTier: {name: minor, risk: 2}
-      hasUnknownRisk: false
-      impactScore: 32
-      mergeEfficiency: 16
-      fixes: {total: 4, critical: 4, high: 0, medium: 0, low: 0}
-      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
-      assessments:
-        - change:
-            dependencyName: org.apache.logging.log4j:log4j-core
-            currentVersion: 2.14.1
-            targetVersion: 2.17.1
-            changeType: {name: minor, risk: 2}
-          impactScore: 32
-          advisoryMatches:
-            - advisory: {id: CVE-2021-44228, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
-            - advisory: {id: CVE-2021-44832, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
-            - advisory: {id: CVE-2021-45046, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
-            - advisory: {id: CVE-2021-45105, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency actionpack to v6.1.7.8'
       status: matched
       riskTier: {name: patch, risk: 1}
@@ -115,6 +91,30 @@ changeRequests:
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.5.1, addressed: true}
             - advisory: {id: CVE-2023-28362, severity: medium}
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.7.4, addressed: true}
+    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
+      status: matched
+      riskTier: {name: minor, risk: 2}
+      hasUnknownRisk: false
+      impactScore: 24
+      mergeEfficiency: 12
+      fixes: {total: 4, critical: 2, high: 2, medium: 0, low: 0}
+      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
+      assessments:
+        - change:
+            dependencyName: org.apache.logging.log4j:log4j-core
+            currentVersion: 2.14.1
+            targetVersion: 2.17.1
+            changeType: {name: minor, risk: 2}
+          impactScore: 24
+          advisoryMatches:
+            - advisory: {id: CVE-2021-44228, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
+            - advisory: {id: CVE-2021-45046, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
+            - advisory: {id: CVE-2021-44832, severity: high}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
+            - advisory: {id: CVE-2021-45105, severity: high}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency pillow to v9.5.0'
       status: matched
       riskTier: {name: minor, risk: 2}
@@ -921,6 +921,15 @@ uncorrelatedAdvisories:
           affectedVersion: v0.16.0
           fixVersion: 0.60.0
           addressed: false
+    - id: CVE-2026-78669
+      severity: critical
+      dependency: golang.org/x/net@v0.16.0
+      recommendation: Upgrade golang.org/x/net to version 0.60.0
+      occurrences:
+        - dependencyName: golang.org/x/net
+          affectedVersion: v0.16.0
+          fixVersion: 0.60.0
+          addressed: false
     - id: CVE-2026-90711
       severity: critical
       dependency: proxy-addr@2.0.7
@@ -1264,6 +1273,15 @@ uncorrelatedAdvisories:
         - dependencyName: Pillow
           affectedVersion: 9.0.0
           fixVersion: 13.0.0
+          addressed: false
+    - id: CVE-2026-116689
+      severity: high
+      dependency: follow-redirects@1.16.0
+      recommendation: Upgrade follow-redirects to version 1.16.2
+      occurrences:
+        - dependencyName: follow-redirects
+          affectedVersion: 1.16.0
+          fixVersion: 1.16.2
           addressed: false
     - id: CVE-2026-2391
       severity: high
@@ -1845,6 +1863,15 @@ uncorrelatedAdvisories:
           affectedVersion: 1.0.6
           fixVersion: 1.0.7
           addressed: false
+    - id: CVE-2026-61847
+      severity: high
+      dependency: crass@1.0.6
+      recommendation: Upgrade crass to version 1.0.7
+      occurrences:
+        - dependencyName: crass
+          affectedVersion: 1.0.6
+          fixVersion: 1.0.7
+          addressed: false
     - id: CVE-2026-67316
       severity: high
       dependency: axios@0.21.1
@@ -1889,15 +1916,6 @@ uncorrelatedAdvisories:
         - dependencyName: golang.org/x/crypto
           affectedVersion: v0.16.0
           fixVersion: 0.56.0
-          addressed: false
-    - id: CVE-2026-78669
-      severity: high
-      dependency: golang.org/x/net@v0.16.0
-      recommendation: Upgrade golang.org/x/net to version 0.60.0
-      occurrences:
-        - dependencyName: golang.org/x/net
-          affectedVersion: v0.16.0
-          fixVersion: 0.60.0
           addressed: false
     - id: CVE-2026-79770
       severity: high
@@ -2479,15 +2497,6 @@ uncorrelatedAdvisories:
           fixVersion: 7.12.3
           addressed: false
     - id: CVE-2026-61846
-      severity: medium
-      dependency: crass@1.0.6
-      recommendation: Upgrade crass to version 1.0.7
-      occurrences:
-        - dependencyName: crass
-          affectedVersion: 1.0.6
-          fixVersion: 1.0.7
-          addressed: false
-    - id: CVE-2026-61847
       severity: medium
       dependency: crass@1.0.6
       recommendation: Upgrade crass to version 1.0.7
