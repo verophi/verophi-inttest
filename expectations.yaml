@@ -22,12 +22,12 @@ correlation:
     status: complete
     repository: verophi/test-fixtures
 metrics:
-    totalAdvisories: 284
-    severity: {critical: 25, high: 153, medium: 77, low: 19}
+    totalAdvisories: 287
+    severity: {critical: 27, high: 152, medium: 78, low: 20}
     correlated: 49
-    uncorrelated: 235
-    totalImpactScore: 985
-    reducibleImpactScore: 219
+    uncorrelated: 238
+    totalImpactScore: 1000
+    reducibleImpactScore: 227
     matchedRequests: 22
     unmatchedRequests: 16
     unparsedRequests: 1
@@ -60,6 +60,30 @@ changeRequests:
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.0, addressed: true}
             - advisory: {id: CVE-2023-4863, severity: high}
               occurrence: {affectedVersion: 9.0.0, fixVersion: 10.0.1, addressed: true}
+    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
+      status: matched
+      riskTier: {name: minor, risk: 2}
+      hasUnknownRisk: false
+      impactScore: 32
+      mergeEfficiency: 16
+      fixes: {total: 4, critical: 4, high: 0, medium: 0, low: 0}
+      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
+      assessments:
+        - change:
+            dependencyName: org.apache.logging.log4j:log4j-core
+            currentVersion: 2.14.1
+            targetVersion: 2.17.1
+            changeType: {name: minor, risk: 2}
+          impactScore: 32
+          advisoryMatches:
+            - advisory: {id: CVE-2021-44228, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
+            - advisory: {id: CVE-2021-44832, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
+            - advisory: {id: CVE-2021-45046, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
+            - advisory: {id: CVE-2021-45105, severity: critical}
+              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency actionpack to v6.1.7.8'
       status: matched
       riskTier: {name: patch, risk: 1}
@@ -91,30 +115,6 @@ changeRequests:
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.5.1, addressed: true}
             - advisory: {id: CVE-2023-28362, severity: medium}
               occurrence: {affectedVersion: 6.1.4, fixVersion: 6.1.7.4, addressed: true}
-    - title: 'fix(deps): update dependency org.apache.logging.log4j:log4j-core to v2.17.1'
-      status: matched
-      riskTier: {name: minor, risk: 2}
-      hasUnknownRisk: false
-      impactScore: 24
-      mergeEfficiency: 12
-      fixes: {total: 4, critical: 2, high: 2, medium: 0, low: 0}
-      notes: Maven group:artifact identity resolved via the occurrence PURL coordinate.
-      assessments:
-        - change:
-            dependencyName: org.apache.logging.log4j:log4j-core
-            currentVersion: 2.14.1
-            targetVersion: 2.17.1
-            changeType: {name: minor, risk: 2}
-          impactScore: 24
-          advisoryMatches:
-            - advisory: {id: CVE-2021-44228, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.15.0, addressed: true}
-            - advisory: {id: CVE-2021-45046, severity: critical}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.16.0, addressed: true}
-            - advisory: {id: CVE-2021-44832, severity: high}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.1, addressed: true}
-            - advisory: {id: CVE-2021-45105, severity: high}
-              occurrence: {affectedVersion: 2.14.1, fixVersion: 2.17.0, addressed: true}
     - title: 'chore(deps): update dependency pillow to v9.5.0'
       status: matched
       riskTier: {name: minor, risk: 2}
@@ -2036,6 +2036,15 @@ uncorrelatedAdvisories:
           affectedVersion: v0.16.0
           fixVersion: 0.60.0
           addressed: false
+    - id: GHSA-5v64-555j-wjxm
+      severity: high
+      dependency: rack@2.2.23
+      recommendation: Upgrade rack to version ~> 2.2.25, ~> 3.1.23, >= 3.2.8
+      occurrences:
+        - dependencyName: rack
+          affectedVersion: 2.2.23
+          fixVersion: 2.2.25
+          addressed: false
     - id: GHSA-mrxw-mxhj-p664
       severity: high
       dependency: nokogiri@1.13.10
@@ -2665,6 +2674,15 @@ uncorrelatedAdvisories:
           affectedVersion: 1.13.10
           fixVersion: 1.14.3
           addressed: false
+    - id: GHSA-wvg4-6p58-3gh3
+      severity: medium
+      dependency: rack@2.2.23
+      recommendation: Upgrade rack to version ~> 2.2.25, ~> 3.1.23, >= 3.2.8
+      occurrences:
+        - dependencyName: rack
+          affectedVersion: 2.2.23
+          fixVersion: 2.2.25
+          addressed: false
     - id: GHSA-xc9x-jj77-9p9j
       severity: medium
       dependency: nokogiri@1.13.10
@@ -2781,6 +2799,15 @@ uncorrelatedAdvisories:
         - dependencyName: nokogiri
           affectedVersion: 1.13.10
           fixVersion: 1.19.4
+          addressed: false
+    - id: GHSA-p8x9-v4hv-2w4g
+      severity: low
+      dependency: rack@2.2.23
+      recommendation: Upgrade rack to version ~> 2.2.25, ~> 3.1.23, >= 3.2.8
+      occurrences:
+        - dependencyName: rack
+          affectedVersion: 2.2.23
+          fixVersion: 2.2.25
           addressed: false
     - id: GHSA-phwj-rprq-35pp
       severity: low
